@@ -8,3 +8,9 @@
 Oct 15, 2020 9:22:16 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTraceNotification
 2020.10.15 21:26:41 INFO  shutting down Metals
+2020.10.16 11:28:03 INFO  started: Metals version 0.9.4 in workspace 'D:\Re_Coded\ReScrap\capstone-project-rescrap' for client vscode.
+2020.10.16 11:28:05 INFO  time: initialize in 1.98s
+2020.10.16 11:28:07 WARN  no build tool detected in workspace 'D:\Re_Coded\ReScrap\capstone-project-rescrap'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Oct 16, 2020 11:33:34 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+2020.10.16 11:34:39 INFO  shutting down Metals
