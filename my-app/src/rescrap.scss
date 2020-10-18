@@ -1,0 +1,9 @@
+//we will implement the theme colors here as well as the font and custom elements
+
+// this will import the normal bootstrap library don't edit this
+$theme-colors: (
+    //example how to add colors
+"primary-green":#00AD45
+);
+
+@import '~bootstrap/scss/bootstrap.scss';
