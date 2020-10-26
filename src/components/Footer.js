@@ -16,30 +16,30 @@ function Footer() {
           {/* Column2 */}
           <div className="flex-1">
           <h4 className="font-semibold">Product</h4>
-            <ui className="list-none">
+            <ul className="list-none">
               <li className="text-gray-700 py-2 text-xs">Categories</li>
               <li className="text-gray-700 py-2 text-xs">Pricing</li>
               <li className="text-gray-700 py-2 text-xs">Locations</li>
               <li className="text-gray-700 py-2 text-xs">Countries</li>
-                          </ui>
+                          </ul>
                      </div>
           {/* Column3 */}
           <div className="flex-1">
           <h4 className="font-semibold">Engage</h4>
-            <ui className="list-none">
+            <ul className="list-none">
               <li className="text-gray-700 py-2 text-xs"><a herf="#">ReScarp?</a></li>
               <li className="text-gray-700 py-2 text-xs">FAQ</li>
               <li className="text-gray-700 py-2 text-xs">About Us</li>
-              </ui>
+              </ul>
             
           </div>
           {/* Column4 */}
           <div className="flex-1">
-            <ui className="list-none ">
+            <ul className="list-none ">
             <h4 className="font-semibold">Earn Money</h4>
               <li className="  text-gray-700 py-2 text-xs"><a herf="#">Sell?</a></li>
               <li className=" text-gray-700 py-2 text-xs">Become a partner</li>
-                          </ui>
+                          </ul>
           </div>
         </div>
           <div className="row">
