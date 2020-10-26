@@ -1,0 +1,15 @@
+#menu-toggle:checked + #menu {
+  display: block;
+}
+.navbar {
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  color: #fff;
+}
+.navbar.active {
+  background-color: #fff;
+  color: #00ad45;
+  box-shadow: 0px 1px 10px #999;
+}
