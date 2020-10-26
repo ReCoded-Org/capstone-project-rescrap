@@ -67,8 +67,8 @@ module.exports = {
         900: '#744210',
       },
       green: {
-        100: '#f0fff4',
-        200: '#c6f6d5',
+        100: '#00AD45',
+        200: '#5ECC62',
         300: '#9ae6b4',
         400: '#68d391',
         500: '#48bb78',
@@ -267,6 +267,9 @@ module.exports = {
       ],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
+      fontFamily: {
+        body: ['Rubik']
+      }
     },
     fontSize: {
       xs: '0.75rem',
