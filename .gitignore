@@ -27,3 +27,4 @@ yarn-error.log*
 .metals/metals.h2.db
 .metals/metals.log
 .metals/metals.lock.db
+src/styles/main.css
