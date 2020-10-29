@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom';
 import RescrapLogo from './RescrapLogo';
 import NavbarItems from './NavbarItems';
 import './Navbar.css';
@@ -15,10 +16,10 @@ const Navbar = () => {
   window.addEventListener('scroll', changeBackground);
   return (
     <section className={navbar ? 'navbar active' : 'navbar'}>
-      <div className="container mx-auto px-4 py-2 pt-4 flex justify-between flex-wrap ">
-        <div>
+      <div className="container mx-auto px-4 py-2 pt-4 flex justify-between flex-wrap">
+        <Link to="/">
           <RescrapLogo />
-        </div>
+        </Link>
         <label
           for="menu-toggle"
           className="block md:hidden cursor-pointer self-center mr-2 menuIcon"
@@ -43,7 +44,7 @@ const Navbar = () => {
                   className="py-2 mx-4 transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300"
                   key={index}
                 >
-                  <a href={item.url}>{item.label}</a>
+                  <Link to={item.url}>{item.label}</Link>
                 </li>
               );
             })}
