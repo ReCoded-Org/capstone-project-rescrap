@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import AboutUsTitle from '../About-us-title';
+import AboutUsInfo from '../About-us-info';
 
 it("matches the snapshot", () =>{
-    const tree = renderer.create(<AboutUsTitle/>).toJSON();
+    const tree = renderer.create(<AboutUsInfo/>).toJSON();
     expect(tree).toMatchSnapshot();
 })

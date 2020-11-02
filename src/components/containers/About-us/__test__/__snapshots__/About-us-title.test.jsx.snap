@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the snapshot 1`] = `
+<div
+  className="aboutUsTitle"
+  data-testid="AboutUsTitle"
+>
+  <h1
+    className="text-5xl text-center text-white py-20"
+  >
+    OUR BUSSINESS
+  </h1>
+</div>
+`;
