@@ -15,19 +15,19 @@ const SellersAndBuyers = () => {
     let [sellerHeader,setSellerHeader]=useState(" text-green-200 inline-block m-4 underline");
     let [buyerHeader,setBuyerHeader]=useState(" text-green-200 inline-block m-4");
 
-    let [sellerClasses,setSellerClasses]=useState("sellers grid grid-cols-3 col-gap-32 mx-32 my-20");
-    let [buyerClasses,setBuyerClasses]=useState("buyers grid grid-cols-3 col-gap-32 mx-32 my-20 hidden");
+    let [sellerClasses,setSellerClasses]=useState("sellers grid sm\:row-gap-10 sm\:grid-cols-1 md\:grid-cols-2 lg\:grid-cols-3 xl\:grid-cols-3  col-gap-32 mx-32 my-20");
+    let [buyerClasses,setBuyerClasses]=useState("buyers grid sm\:row-gap-10 sm\:grid-cols-1 md\:grid-cols-2 lg\:grid-cols-3 xl\:grid-cols-3  col-gap-32 mx-32 my-20 hidden");
 
     const sellerHandeler=()=>{
-        setSellerClasses("sellers grid grid-cols-3 col-gap-32 mx-32 my-20 visible");
-        setBuyerClasses("buyers grid grid-cols-3 col-gap-32 mx-32 my-20 hidden");
+        setSellerClasses("sellers grid sm\:row-gap-10 sm\:grid-cols-1 md\:grid-cols-2 lg\:grid-cols-3 xl\:grid-cols-3  col-gap-32 mx-32 my-20 visible");
+        setBuyerClasses("buyers grid sm\:row-gap-10 sm\:grid-cols-1 md\:grid-cols-2 lg\:grid-cols-3 xl\:grid-cols-3  col-gap-32 mx-32 my-20 hidden");
         setSellerHeader(" text-green-200 inline-block m-4 underline");
         setBuyerHeader(" text-green-200 inline-block m-4")
         console.log("hello");
     }
     const buyerHandeler=()=>{
-        setBuyerClasses("buyers grid grid-cols-3 col-gap-32 mx-32 my-20 visible");
-        setSellerClasses("sellers grid grid-cols-3 col-gap-32 mx-32 my-20 hidden");
+        setBuyerClasses("buyers grid sm\:row-gap-10 sm\:grid-cols-1 md\:grid-cols-2 lg\:grid-cols-3 xl\:grid-cols-3  col-gap-32 mx-32 my-20 visible");
+        setSellerClasses("sellers grid sm\:row-gap-10 sm\:grid-cols-1 md\:grid-cols-2 lg\:grid-cols-3 xl\:grid-cols-3  col-gap-32 mx-32 my-20 hidden");
         setSellerHeader(" text-green-200 inline-block m-4");
         setBuyerHeader(" text-green-200 inline-block m-4 underline");
         console.log("buyer");
@@ -36,8 +36,8 @@ const SellersAndBuyers = () => {
     return ( <div className="sellersBuyers">
         <div className="text-center pt-24">
         <Title classes=" text-green-200" text="HOW IT WORKS"/>
-        <a href="#" onClick={sellerHandeler} className="cursor-pointer"><SubTitle classes={sellerHeader} text="Sellers"/></a>
-        <a href='#' onClick={buyerHandeler} className="cursor-pointer"><SubTitle classes={buyerHeader} text="Buyers"/></a>
+        <a  onClick={sellerHandeler} className="cursor-pointer"><SubTitle classes={sellerHeader} text="Sellers"/></a>
+        <a  onClick={buyerHandeler} className="cursor-pointer"><SubTitle classes={buyerHeader} text="Buyers"/></a>
         </div>
         <div className={sellerClasses}>
             <FeatureCard imgPath={seller1} imgDesc="seller3" featHeader="Post your offer" featDesc="Join the marketplace and post products you want to sell in less than a minute."/>
