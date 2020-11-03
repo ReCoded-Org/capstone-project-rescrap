@@ -1,5 +1,5 @@
 import React from 'react';
-import SubTitle from '../../SubTitle/SubTitle';
+import SubTitle from '../../components/SubTitle/SubTitle';
 
 
 const AboutUsInfo = () => {
