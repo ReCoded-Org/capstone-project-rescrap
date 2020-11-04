@@ -4,13 +4,12 @@ import SellersAndBuyers from './../../components/SellersAndBuyers/SellersAndBuye
 import NewOffer from './../../components/NewOffer/NewOffer';
 import Statistics from './../../components/Statistics/Statistics';
 
-
-const Home= ({navbar, Footer}) => {
+const Home= ({navbar, footer}) => {
     return (<>
     <Intro nav={navbar}/>
     <SellersAndBuyers/>
     <NewOffer/>
-    <Statistics footer={Footer}/>
+    <Statistics footer={footer}/>
     </>  );
 }
  
