@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import SellersAndBuyers from './../components/SellersAndBuyers/SellersAndBuyers';
+import SellersAndBuyers from '../components/SellersAndBuyers/SellersAndBuyers';
 
 
 it("matches the snapshot",()=>{
