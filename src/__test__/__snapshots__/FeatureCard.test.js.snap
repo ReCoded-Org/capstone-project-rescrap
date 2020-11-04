@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the snapshot 1`] = `
+<div
+  className="w-64 sm\\\\:pb-64 text-center"
+>
+  <img
+    className="h-24 w-24 inline-block bg-green-400"
+  />
+  <h1
+    className="text-3xl normal my-3"
+  />
+  <p
+    className="text-base font-normal "
+  />
+</div>
+`;
