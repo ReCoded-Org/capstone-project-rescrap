@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the snapshot 1`] = `
+<div
+  className="sellersBuyers"
+>
+  <div
+    className="text-center pt-24"
+  >
+    <h1
+      className="text-3xl normal text-green-200"
+    >
+      HOW IT WORKS
+    </h1>
+    <a
+      className="cursor-pointer"
+      onClick={[Function]}
+    >
+      <h2
+        className="text-2xl thin text-green-200 inline-block m-4 underline"
+      >
+        Sellers
+      </h2>
+    </a>
+    <a
+      className="cursor-pointer"
+      onClick={[Function]}
+    >
+      <h2
+        className="text-2xl thin text-green-200 inline-block m-4"
+      >
+        Buyers
+      </h2>
+    </a>
+  </div>
+  <div
+    className="sellers grid sm:row-gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  col-gap-32 mx-32 my-20"
+  >
+    <div
+      className="w-64 sm\\\\:pb-64 text-center"
+    >
+      <img
+        alt="seller3"
+        className="h-24 w-24 inline-block bg-green-400"
+        src="seller1.jpg"
+      />
+      <h1
+        className="text-3xl normal my-3"
+      >
+        Post your offer
+      </h1>
+      <p
+        className="text-base font-normal "
+      >
+        Join the marketplace and post products you want to sell in less than a minute.
+      </p>
+    </div>
+    <div
+      className="w-64 sm\\\\:pb-64 text-center"
+    >
+      <img
+        alt="seller3"
+        className="h-24 w-24 inline-block bg-green-400"
+        src="seller2.jpg"
+      />
+      <h1
+        className="text-3xl normal my-3"
+      >
+        Get the best price
+      </h1>
+      <p
+        className="text-base font-normal "
+      >
+        Negotiate with buyers in real-time and get the best price for your products.
+      </p>
+    </div>
+    <div
+      className="w-64 sm\\\\:pb-64 text-center"
+    >
+      <img
+        alt="seller3"
+        className="h-24 w-24 inline-block bg-green-400"
+        src="seller3.jpg"
+      />
+      <h1
+        className="text-3xl normal my-3"
+      >
+        Sell to customers
+      </h1>
+      <p
+        className="text-base font-normal "
+      >
+        Sell products directly to customers in your country and around the world.
+      </p>
+    </div>
+  </div>
+  <div
+    className="buyers grid sm:row-gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  col-gap-32 mx-32 my-20 hidden"
+  >
+    <div
+      className="w-64 sm\\\\:pb-64 text-center"
+    >
+      <img
+        alt="buyer1"
+        className="h-24 w-24 inline-block bg-green-400"
+        src="buyer1.jpg"
+      />
+      <h1
+        className="text-3xl normal my-3"
+      >
+        Find what you’re looking for
+      </h1>
+      <p
+        className="text-base font-normal "
+      >
+        Browse through thousands of offers posted in the marketplace and find what you’re looking for.
+      </p>
+    </div>
+    <div
+      className="w-64 sm\\\\:pb-64 text-center"
+    >
+      <img
+        alt="buyer2"
+        className="h-24 w-24 inline-block bg-green-400"
+        src="buyer2.jpg"
+      />
+      <h1
+        className="text-3xl normal my-3"
+      >
+        Negotiate the best deal
+      </h1>
+      <p
+        className="text-base font-normal "
+      >
+        Negotiate with multiple sellers in real-time and make the best deal.
+      </p>
+    </div>
+    <div
+      className="w-64 sm\\\\:pb-64 text-center"
+    >
+      <img
+        alt="buyer3"
+        className="h-24 w-24 inline-block bg-green-400"
+        src="buyer3.jpg"
+      />
+      <h1
+        className="text-3xl normal my-3"
+      >
+        Buy directly from suppliers
+      </h1>
+      <p
+        className="text-base font-normal "
+      >
+        Buy directly from suppliers of quality material in your country or internationally.
+      </p>
+    </div>
+  </div>
+</div>
+`;

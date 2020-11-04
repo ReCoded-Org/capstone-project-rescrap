@@ -6,22 +6,13 @@ import Description from '../Description/Description';
 import Butten from '../Button/Button';
 import './Intro.css'
 
-const Intro = () => {
+const Intro = ({nav}) => {
     return ( <div className="intro h-screen">
-        <Router>
-      <Navbar />
-      <Switch>
-        <Route path="/about-us">About Us</Route>
-        <Route path="/shop">Shop</Route>
-        <Route path="/add-product">Add Product</Route>
-        <Route path="/contact-us">Contact Us</Route>
-        <Route path="/"></Route>
-      </Switch>
-    </Router>
+      {nav}
     <div className="intro-content p-12 py-24">
-        <Title classes=" text-green-500 my-4" text="Plastic Recycling Marketplace"/>
+        <Title classes=" text-green-200 my-4" text="Recycling Marketplace"/>
         <Description classes=" text-lg my-4" text="Connect and trade directly with suppliers & buyers of recyclable plastics" />
-        <Butten btnClasses=" bg-green-500 text-white my-4" btnClickHandler='' btnText="Sign up" />
+        <Butten btnClasses=" bg-green-200 text-white my-4" btnClickHandler='' btnText="Sign up" />
     </div> </div>);
 }
  
