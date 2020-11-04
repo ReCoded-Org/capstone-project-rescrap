@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="container sm:block md:flex justify-between"
+  data-testid="statistics"
+>
+  <div
+    className="sm:my-3 flex-1 text-center px-4 py-2 m-2"
+  >
+    <div
+      className="text-green-100 text-6xl"
+    >
+      <i
+        class="fas fa-globe-asia"
+      />
+    </div>
+    <h1
+      className="text-3xl normal"
+    >
+      150+
+    </h1>
+    <h2
+      className="text-2xl thin"
+    >
+      Countries
+    </h2>
+  </div>
+  <div
+    className="sm:my-3 flex-1 text-center px-4 py-2 m-2"
+  >
+    <div
+      className="text-green-100 text-6xl"
+    >
+      <i
+        class="fas fa-chart-bar"
+      />
+    </div>
+    <h1
+      className="text-3xl normal"
+    >
+      4000+
+    </h1>
+    <h2
+      className="text-2xl thin"
+    >
+      Registered businesses
+    </h2>
+  </div>
+  <div
+    className="sm:my-3 flex-1 text-center px-4 py-2 m-2"
+  >
+    <div
+      className="text-green-100 text-6xl"
+    >
+      <i
+        class="fas fa-shopping-cart"
+      />
+    </div>
+    <h1
+      className="text-3xl normal"
+    >
+      2.5m
+    </h1>
+    <h2
+      className="text-2xl thin"
+    >
+      Pounds of listed material
+    </h2>
+  </div>
+</div>
+`;
