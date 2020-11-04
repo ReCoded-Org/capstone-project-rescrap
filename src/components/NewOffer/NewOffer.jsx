@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from '../../../components/card/Card';
-import Title from '../../../components/Title/Title';
-import Button from '../../../components/Button/Button';
+import Card from './../card/Card';
+import Title from './../Title/Title';
+import Button from './../Button/Button';
 const NewOffer = () => {
   return (
     <div className="container mx-auto">

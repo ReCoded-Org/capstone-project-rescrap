@@ -2,13 +2,13 @@
 
 exports[`matches the snapshot 1`] = `
 <div
-  className="w-64 sm\\\\:pb-64 text-center"
+  className="w-64 sm:pb-16 text-center undefined"
 >
   <img
     className="h-24 w-24 inline-block bg-green-400"
   />
-  <h1
-    className="text-3xl normal my-3"
+  <h2
+    className="text-2xl thin my-3"
   />
   <p
     className="text-base font-normal "

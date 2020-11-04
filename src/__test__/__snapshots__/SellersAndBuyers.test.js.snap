@@ -34,21 +34,21 @@ exports[`matches the snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sellers grid sm:row-gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  col-gap-32 mx-32 my-20"
+    className="grid sm:row-gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  col-gap-32 mx-32 my-20"
   >
     <div
-      className="w-64 sm\\\\:pb-64 text-center"
+      className="w-64 sm:pb-16 text-center undefined"
     >
       <img
-        alt="seller3"
+        alt="Post your offer"
         className="h-24 w-24 inline-block bg-green-400"
         src="seller1.jpg"
       />
-      <h1
-        className="text-3xl normal my-3"
+      <h2
+        className="text-2xl thin my-3"
       >
         Post your offer
-      </h1>
+      </h2>
       <p
         className="text-base font-normal "
       >
@@ -56,18 +56,18 @@ exports[`matches the snapshot 1`] = `
       </p>
     </div>
     <div
-      className="w-64 sm\\\\:pb-64 text-center"
+      className="w-64 sm:pb-16 text-center undefined"
     >
       <img
-        alt="seller3"
+        alt="Get the best price"
         className="h-24 w-24 inline-block bg-green-400"
         src="seller2.jpg"
       />
-      <h1
-        className="text-3xl normal my-3"
+      <h2
+        className="text-2xl thin my-3"
       >
         Get the best price
-      </h1>
+      </h2>
       <p
         className="text-base font-normal "
       >
@@ -75,18 +75,18 @@ exports[`matches the snapshot 1`] = `
       </p>
     </div>
     <div
-      className="w-64 sm\\\\:pb-64 text-center"
+      className="w-64 sm:pb-16 text-center undefined"
     >
       <img
-        alt="seller3"
+        alt="Sell to customers"
         className="h-24 w-24 inline-block bg-green-400"
         src="seller3.jpg"
       />
-      <h1
-        className="text-3xl normal my-3"
+      <h2
+        className="text-2xl thin my-3"
       >
         Sell to customers
-      </h1>
+      </h2>
       <p
         className="text-base font-normal "
       >
@@ -95,21 +95,21 @@ exports[`matches the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="buyers grid sm:row-gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  col-gap-32 mx-32 my-20 hidden"
+    className="grid sm:row-gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  col-gap-32 mx-32 my-20 hidden"
   >
     <div
-      className="w-64 sm\\\\:pb-64 text-center"
+      className="w-64 sm:pb-16 text-center undefined"
     >
       <img
-        alt="buyer1"
+        alt="Find what you’re looking for"
         className="h-24 w-24 inline-block bg-green-400"
         src="buyer1.jpg"
       />
-      <h1
-        className="text-3xl normal my-3"
+      <h2
+        className="text-2xl thin my-3"
       >
         Find what you’re looking for
-      </h1>
+      </h2>
       <p
         className="text-base font-normal "
       >
@@ -117,18 +117,18 @@ exports[`matches the snapshot 1`] = `
       </p>
     </div>
     <div
-      className="w-64 sm\\\\:pb-64 text-center"
+      className="w-64 sm:pb-16 text-center undefined"
     >
       <img
-        alt="buyer2"
+        alt="Negotiate the best deal"
         className="h-24 w-24 inline-block bg-green-400"
         src="buyer2.jpg"
       />
-      <h1
-        className="text-3xl normal my-3"
+      <h2
+        className="text-2xl thin my-3"
       >
         Negotiate the best deal
-      </h1>
+      </h2>
       <p
         className="text-base font-normal "
       >
@@ -136,18 +136,18 @@ exports[`matches the snapshot 1`] = `
       </p>
     </div>
     <div
-      className="w-64 sm\\\\:pb-64 text-center"
+      className="w-64 sm:pb-16 text-center undefined"
     >
       <img
-        alt="buyer3"
+        alt="Buy directly from suppliers"
         className="h-24 w-24 inline-block bg-green-400"
         src="buyer3.jpg"
       />
-      <h1
-        className="text-3xl normal my-3"
+      <h2
+        className="text-2xl thin my-3"
       >
         Buy directly from suppliers
-      </h1>
+      </h2>
       <p
         className="text-base font-normal "
       >

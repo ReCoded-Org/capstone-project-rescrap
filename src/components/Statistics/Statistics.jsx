@@ -1,6 +1,6 @@
 import React from 'react';
-import Title from '../../../components/Title/Title';
-import SubTitle from '../../../components/SubTitle/SubTitle';
+import Title from './../Title/Title';
+import SubTitle from './../SubTitle/SubTitle';
 const statisticsItems = [
   {
     icon: <i class="fas fa-globe-asia"></i>,
@@ -19,8 +19,9 @@ const statisticsItems = [
   },
 ];
 
-const Statistics = () => {
+const Statistics = ({footer}) => {
   return (
+    <div>
     <div
       className="container sm:block md:flex justify-between"
       data-testid="statistics"
@@ -34,6 +35,8 @@ const Statistics = () => {
           </div>
         );
       })}
+    </div>
+    <div className="mt-16">{footer}</div>
     </div>
   );
 };

@@ -1,8 +1,8 @@
 import React from 'react';
-import Statistics from '../../Statistics/Statistics';
 import renderer from 'react-test-renderer';
+import NewOffers from './../components/NewOffer/NewOffer';
 
 it('matches snapshot', () => {
-  const tree = renderer.create(<Statistics />).toJSON();
+  const tree = renderer.create(<NewOffers />).toJSON();
   expect(tree).toMatchSnapshot();
 });
