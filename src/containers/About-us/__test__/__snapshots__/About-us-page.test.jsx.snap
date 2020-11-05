@@ -3,7 +3,7 @@
 exports[`matches the snapshot 1`] = `
 <div>
   <div
-    className="aboutUsTitle"
+    className="bg-green-200 aboutUsTitle bg-no-repeat bg-auto"
     data-testid="AboutUsTitle"
   >
     <h1

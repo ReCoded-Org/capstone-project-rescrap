@@ -8,7 +8,7 @@ import './Navbar.css';
 const Navbar = (props) => {
 
   let history=useHistory();
-  const [navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState(props.bg);
   const [user,setUser]=useState(props.userData);
 
   useEffect(() => {
@@ -18,15 +18,17 @@ const Navbar = (props) => {
   }, [props.userData]);
 
   const changeBackground = () => {
+   if(!props.bg){
     if (window.scrollY >= 50) {
       setNavbar(true);
     } else {
       setNavbar(false);
     }
+   }
   };
   window.addEventListener('scroll', changeBackground);
   return (
-    <section className={navbar ? 'navbar active' : 'navbar'}>
+    <section className={(navbar ? 'navbar active' : 'navbar' )+ " sm:bg-white md:bg-white"}>
       <div className="container mx-auto px-4 py-2 pt-4 flex justify-between flex-wrap">
         <Link to="/">
           <RescrapLogo />
@@ -60,7 +62,7 @@ const Navbar = (props) => {
               );
             })}
           </ul>
-          <button onClick={() => {
+          <button className="mx-2 " onClick={() => {
             props.handleSignInClick();
           }}>
               
@@ -74,9 +76,9 @@ const Navbar = (props) => {
              'Sign In'
             )}
           </button>
-          <button onClick={()=>{
+          {user.loggedIn?<button className="bg-red-500 text-white hover:bg-red-600" onClick={()=>{
             props.handleSignout()
-          }}>Sign out</button>
+          }}>Sign out</button>:""}
         </nav>
       </div>
     </section>

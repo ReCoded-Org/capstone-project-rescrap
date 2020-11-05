@@ -190,7 +190,9 @@ Array [
     >
       NEW OFFERS
     </h1>
-    <div>
+    <div
+      className="flex justify-center"
+    >
       <div
         className=" flex flex-wrap px-4 justify-between"
       >

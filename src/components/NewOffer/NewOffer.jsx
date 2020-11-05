@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './../card/Card';
+import Card from './../Card/Card';
 import Title from './../Title/Title';
 import Button from './../Button/Button';
 const NewOffer = () => {
@@ -9,7 +9,7 @@ const NewOffer = () => {
         classes="uppercase font-semibold leading-5  tracking-widest text-green-100 text-center p-2 my-2 "
         text="NEW OFFERS"
       />
-      <div>
+      <div className="flex justify-center">
         <div className=" flex flex-wrap px-4 justify-between">
           <Card
             cardImageSrc="https://source.unsplash.com/random"
