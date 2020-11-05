@@ -5,8 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Signup from './containers/Signup/Signup';
 import firebase from './firebase.config';
-mport Home from './containers/Home/Home';
-
+import Home from './containers/Home/Home';
 
 function App() {
   const initialUserData = {
@@ -138,8 +137,7 @@ function App() {
     </Router>
   );
 
-//       <Home navbar={navbar} Footer={<Footer />} />
- 
+  //       <Home navbar={navbar} Footer={<Footer />} />
 }
 
 export default App;
