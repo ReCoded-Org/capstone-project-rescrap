@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {Link, useHistory} from 'react-router-dom';
+import {Link, useHistory,useLocation} from 'react-router-dom';
 import RescrapLogo from './RescrapLogo';
 import NavbarItems from './NavbarItems';
 import './Navbar.css';
@@ -10,7 +10,7 @@ const Navbar = (props) => {
   let history=useHistory();
   const [navbar, setNavbar] = useState(props.bg);
   const [user,setUser]=useState(props.userData);
-
+  
   useEffect(() => {
    setUser(props.userData);
    if(props.userData.loggedIn&&props.userData.firstLogin)

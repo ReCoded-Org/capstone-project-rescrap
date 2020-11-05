@@ -9,7 +9,7 @@ import Home from './containers/Home/Home';
 import AboutUs from './containers/About-us/About-us-page';
 
 function App() {
-  const location = window.location.pathname;
+  const [location, setLocation] = useState('/');
   // console.log(location);
 
   const initialUserData = {
@@ -111,7 +111,13 @@ function App() {
       {location === '/' ? (
         ''
       ) : (
-        <Navbar handleSignInClick={signIn} handleSignout={signOut} userData={user} bg />
+        <Navbar
+          handleSignInClick={signIn}
+          handleSignout={signOut}
+          userData={user}
+          bg
+          setPath={setLocation}
+        />
       )}
       <Switch>
         {/* Later you will replace the words I placed with your components */}
@@ -137,12 +143,13 @@ function App() {
                 handleSignout={signOut}
                 userData={user}
                 bg={false}
+                setPath={setLocation}
               />
             }
           />
         </Route>
       </Switch>
-      <Footer />
+      <Footer setPath={setLocation} />
     </Router>
   );
 
