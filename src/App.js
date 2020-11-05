@@ -5,7 +5,6 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Signup from './containers/Signup/Signup';
 import firebase from './firebase.config';
-import Home from './containers/Home/Home';
 
 function App() {
   const initialUserData = {
