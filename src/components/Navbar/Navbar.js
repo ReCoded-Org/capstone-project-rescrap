@@ -1,11 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 import RescrapLogo from './RescrapLogo';
 import NavbarItems from './NavbarItems';
 import './Navbar.css';
-const Navbar = () => {
+
+
+const Navbar = (props) => {
+
+  let history=useHistory();
   const [navbar, setNavbar] = useState(false);
-  const [signin, setSignin] = useState(false);
+  const [user,setUser]=useState(props.userData);
+
+  useEffect(() => {
+   setUser(props.userData);
+   if(props.userData.loggedIn&&props.userData.firstLogin)
+   history.push("/sign-up");
+  }, [props.userData]);
+
   const changeBackground = () => {
     if (window.scrollY >= 50) {
       setNavbar(true);
@@ -49,13 +60,23 @@ const Navbar = () => {
               );
             })}
           </ul>
-          <button onClick={() => setSignin(true)}>
-            {signin ? (
-              <i className="text-green-100 fas fa-user-circle fa-2x"></i>
+          <button onClick={() => {
+            props.handleSignInClick();
+          }}>
+              
+            {user.loggedIn ? (
+              <span className="flex align-center justify-between">
+              <i className="text-green-100 fas fa-user-circle fa-2x mx-2"></i>  
+             {user.name.split(" ")[0]}
+              </span>
+            
             ) : (
-              'Sign In'
+             'Sign In'
             )}
           </button>
+          <button onClick={()=>{
+            props.handleSignout()
+          }}>Sign out</button>
         </nav>
       </div>
     </section>

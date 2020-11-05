@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignupForm matches its snapshot file 1`] = `
+<form
+  className="text-center bg-white shadow-2xl py-3 px-4 rounded-xl w-6/12 m-auto"
+  method="post"
+  onSubmit={[Function]}
+>
+  <h1
+    className="text-3xl normal text-green-100"
+  >
+    Welcome !
+  </h1>
+  <p
+    className="text-base font-normal  text-gray-700"
+  >
+    Fill out these important information to help people reach you better :D
+  </p>
+  <br />
+  <input
+    className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight w-4/5 focus:outline-none text-green-100  border-green-200"
+    id="phoneNumber"
+    name="Phone Number"
+    onChange={[Function]}
+    placeholder="Enter your Phone Number"
+    type="number"
+    value=""
+  />
+  
+  
+  <br />
+  <br />
+  <input
+    className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight w-4/5 focus:outline-none text-green-100  border-green-200"
+    id="countryCity"
+    name="Country/City"
+    onChange={[Function]}
+    placeholder="City/Country"
+    type="text"
+    value=""
+  />
+  
+  
+  <br />
+  <br />
+  <textarea
+    className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight w-4/5 focus:outline-none text-green-100  border-green-200"
+    name="Address"
+    onChange={[Function]}
+    placeholder="Enter your Address"
+    value=""
+  />
+  
+  
+  <br />
+  <br />
+  <button
+    className="rounded-full py-2 px-4 text-white bg-green-100 hover:bg-green-200 focus:outline-none"
+  >
+    Submit
+  </button>
+</form>
+`;
