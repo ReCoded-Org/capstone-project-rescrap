@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Info from '../containers/PorudctDetails/Info';
+import Info from '../Info';
 
 it('matches snapshot', () => {
   const x= renderer.create(<Info />).toJSON();
