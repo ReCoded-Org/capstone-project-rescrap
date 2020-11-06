@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the snapshot 1`] = `
+<div>
+  <div
+    className="bg-green-200 aboutUsTitle bg-no-repeat bg-auto"
+    data-testid="AboutUsTitle"
+  >
+    <h1
+      className="text-5xl text-center text-white py-20"
+    >
+      OUR BUSSINESS
+    </h1>
+  </div>
+  <div>
+    <h2
+      className="text-2xl thintext-5xl text-center text-green-100 m-4 "
+    >
+      THE STORY OF RESCRAP
+    </h2>
+    <div
+      className="text-base flex mx-8 mb-16"
+    >
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum quis nunc ac efficitur. Donec euismod mauris vel massa ullamcorper, sit amet varius sapien tempus. Pellentesque rutrum ac ipsum tristique porttitor. Sed ornare, enim faucibus placerat luctus, dolor sem convallis quam, nec pellentesque ipsum neque id ligula. Pellentesque accumsan accumsan nulla, id luctus odio
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum quis nunc ac efficitur. Donec euismod mauris vel massa ullamcorper, sit amet varius sapien tempus. Pellentesque rutrum ac ipsum tristique porttitor. Sed ornare, enim faucibus placerat luctus, dolor sem convallis quam, nec pellentesque ipsum neque id ligula. Pellentesque accumsan accumsan nulla, id luctus odio
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -1,21 +1,34 @@
 import React, { useState, useEffect } from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useHistory,useLocation} from 'react-router-dom';
 import RescrapLogo from './RescrapLogo';
 import NavbarItems from './NavbarItems';
 import './Navbar.css';
-const Navbar = () => {
-  const [navbar, setNavbar] = useState(false);
-  const [signin, setSignin] = useState(false);
+
+
+const Navbar = (props) => {
+
+  let history=useHistory();
+  const [navbar, setNavbar] = useState(props.bg);
+  const [user,setUser]=useState(props.userData);
+  
+  useEffect(() => {
+   setUser(props.userData);
+   if(props.userData.loggedIn&&props.userData.firstLogin)
+   history.push("/sign-up");
+  }, [props.userData]);
+
   const changeBackground = () => {
+   if(!props.bg){
     if (window.scrollY >= 50) {
       setNavbar(true);
     } else {
       setNavbar(false);
     }
+   }
   };
   window.addEventListener('scroll', changeBackground);
   return (
-    <section className={navbar ? 'navbar active' : 'navbar'}>
+    <section className={(navbar ? 'navbar active' : 'navbar' )+ " sm:bg-white md:bg-white"}>
       <div className="container mx-auto px-4 py-2 pt-4 flex justify-between flex-wrap">
         <Link to="/">
           <RescrapLogo />
@@ -49,13 +62,23 @@ const Navbar = () => {
               );
             })}
           </ul>
-          <button onClick={() => setSignin(true)}>
-            {signin ? (
-              <i className="text-green-100 fas fa-user-circle fa-2x"></i>
+          <button className="mx-2 " onClick={() => {
+            props.handleSignInClick();
+          }}>
+              
+            {user.loggedIn ? (
+              <span className="flex align-center justify-between">
+              <i className="text-green-100 fas fa-user-circle fa-2x mx-2"></i>  
+             {user.name.split(" ")[0]}
+              </span>
+            
             ) : (
-              'Sign In'
+             'Sign In'
             )}
           </button>
+          {user.loggedIn?<button className="bg-red-500 text-white hover:bg-red-600" onClick={()=>{
+            props.handleSignout()
+          }}>Sign out</button>:""}
         </nav>
       </div>
     </section>

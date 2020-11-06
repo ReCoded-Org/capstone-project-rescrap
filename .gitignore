@@ -28,3 +28,5 @@ yarn-error.log*
 .metals/metals.log
 .metals/metals.lock.db
 *.log
+src/codeTesting.jsx
+src/login.session.jsx
