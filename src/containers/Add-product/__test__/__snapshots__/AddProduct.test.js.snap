@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the snapshot 1`] = `
+<section>
+  <div>
+    <form
+      className="flex justify-center bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+      method="POST"
+      onSubmit={[Function]}
+    >
+      <div
+        className="w-full md:w-4/5 lg:w4/5 lg:shadow-lg py-8 px-8 rounded-lg"
+      >
+        <div
+          className="mb-4 text-center"
+        >
+          <h1
+            className="text-3xl normal text-green-100 "
+          >
+            Add Product
+          </h1>
+        </div>
+        <div
+          className="mb-4 hidden"
+          id="errorRequired"
+        >
+          <p
+            className="text-red-700"
+          >
+            *Please fill the red fields as they are required!!!
+          </p>
+        </div>
+        <div
+          className="mb-4"
+        >
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            for="Upload-Image"
+          >
+            Upload Product Image
+          </label>
+          <input
+            accept="image/png, image/jpeg"
+            className=""
+            name="Upload-Image"
+            onChange={[Function]}
+            type="file"
+          />
+        </div>
+        <div
+          className="mb-4"
+        >
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            for="Product Name"
+          >
+            Product Name
+          </label>
+          <input
+            className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight  shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-green-200"
+            id=""
+            name="Product Name"
+            onChange={[Function]}
+            placeholder="Enter Product Name"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="mb-4"
+        >
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            for="Product Name"
+          >
+            Category
+          </label>
+          <input
+            className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight  shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-green-200"
+            id=""
+            name="Category"
+            onChange={[Function]}
+            placeholder="Enter Category"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="mb-4 flex flex-wrap justify-between"
+        >
+          <div
+            className="w-full lg:w-5/12"
+          >
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              for="Product Name"
+            >
+              Quantity
+            </label>
+            <input
+              className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight  shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-green-200"
+              id=""
+              name="Quantity"
+              onChange={[Function]}
+              placeholder="Enter Quantity"
+              type="number"
+              value=""
+            />
+          </div>
+          <div
+            className="w-full lg:w-6/12"
+          >
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              for="Product Name"
+            >
+              Price
+            </label>
+            <input
+              className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight  shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-green-200"
+              id=""
+              name="Price"
+              onChange={[Function]}
+              placeholder="Enter Price (*to donate for free type free or leave empty)"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="mb-4"
+        >
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            for="Product Name"
+          >
+            Description
+          </label>
+          <textarea
+            className=" shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-green-200"
+            name="Description"
+            onChange={[Function]}
+            placeholder="Enter Description"
+            value=""
+          />
+        </div>
+        <div
+          className="mb-4"
+        >
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            for="Product Name"
+          >
+            Phone Number
+          </label>
+          <input
+            className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight  shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-green-200"
+            id=""
+            name="Phone Number"
+            onChange={[Function]}
+            placeholder="Enter your phone number"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="mb-4"
+        >
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            for="Product Name"
+          >
+            Address Details
+          </label>
+          <textarea
+            className=" shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-green-200"
+            name="Address Details"
+            onChange={[Function]}
+            placeholder="Enter your address"
+            value=""
+          />
+        </div>
+        <div
+          className="flex items-center justify-center"
+        >
+          <button
+            className=" py-2 px-4 bg-green-200 hover:bg-green-100 text-white font-bold rounded focus:outline-none"
+            type="submit"
+          >
+            Add product
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+`;
