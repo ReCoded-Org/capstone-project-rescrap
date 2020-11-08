@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import Signup from './containers/Signup/Signup';
 import Home from './containers/Home/Home';
 import AboutUs from './containers/About-us/About-us-page';
+import AddProduct from './containers/Add-product/AddProduct';
 
 function App() {
   const [location, setLocation] = useState('/');
@@ -125,7 +126,14 @@ function App() {
           <AboutUs />
         </Route>
         <Route path="/shop">Shop</Route>
-        <Route path="/add-product">Add Product</Route>
+        <Route path="/add-product">
+          <AddProduct
+            userData={user}
+            loggedIn={user.loggedIn}
+            firstLogin={user.firstLogin}
+            uid={user.uid}
+          />
+        </Route>
         <Route path="/contact-us">Contact Us</Route>
         <Route path="/sign-up">
           <Signup
@@ -135,6 +143,7 @@ function App() {
             uid={user.uid}
           />
         </Route>
+        <Route path="/not-found">Not Found</Route>
         <Route path="/">
           <Home
             navbar={
