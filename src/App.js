@@ -8,6 +8,8 @@ import Signup from './containers/Signup/Signup';
 import Home from './containers/Home/Home';
 import AboutUs from './containers/About-us/About-us-page';
 import AddProduct from './containers/Add-product/AddProduct';
+import ProductDetials from './containers/ProductDetials/ProductDetials';
+import Shop from './containers/Shop/Shop';
 
 function App() {
   const [location, setLocation] = useState('/');
@@ -125,7 +127,9 @@ function App() {
         <Route path="/about-us">
           <AboutUs />
         </Route>
-        <Route path="/shop">Shop</Route>
+        <Route path="/shop">
+          <Shop />
+        </Route>
         <Route path="/add-product">
           <AddProduct
             userData={user}

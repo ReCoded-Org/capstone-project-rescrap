@@ -26,7 +26,7 @@ exports[`matches snapshot 1`] = `
           >
             category
           </h2>
-            
+           
           <h2
             className="text-2xl thinundefined"
           >
@@ -41,7 +41,7 @@ exports[`matches snapshot 1`] = `
           >
             Quantity
           </h2>
-            
+           
           <h2
             className="text-2xl thinundefined"
           >
@@ -56,7 +56,7 @@ exports[`matches snapshot 1`] = `
           >
             Location
           </h2>
-            
+           
           <h2
             className="text-2xl thinundefined"
           >
@@ -85,7 +85,7 @@ exports[`matches snapshot 1`] = `
             <i
               className="fa fa-user text-2xl"
             />
-              
+             
           </div>
            
           <h3
@@ -109,7 +109,9 @@ exports[`matches snapshot 1`] = `
           <email
             className="border-b-2 border-gray-300 text-xl mx-4 "
           >
-             malthawr@gmail.com 
+             
+            malthawr@gmail.com
+             
           </email>
         </div>
         <div

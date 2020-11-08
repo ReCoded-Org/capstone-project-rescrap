@@ -1,0 +1,423 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div>
+  <div>
+    <div
+      className="flex sm:flex-row md:flex-row lg:flex-row  justify-center "
+    >
+      <div
+        className="w-full md:w-1/2 lg:w-1/2 p-2 mx-6 my-4"
+      >
+        <img
+          alt="bottle"
+          src="https://cdn.mos.cms.futurecdn.net/3KnPinofHaKaQDaeRov3Qg-320-80.jpg"
+        />
+      </div>
+      <div
+        className=" overflow-hidden  w-1/2 p-2 "
+      >
+        <h1
+          className="text-3xl normaluppercase font-semibold leading-5  tracking-widest  text-left  my-2  "
+        >
+          Name of product
+        </h1>
+        <div
+          className="text-base flex   my-3   text-gray-700"
+        >
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum quis nunc ac efficitur consectetur adipiscing elit Vivamus vestibulum quis nunc ac efficitur consectetur adipiscing elit Vivamus vestibulum quis nunc ac efficitur consectetur adipiscing elit Vivamus vestibulum quis nunc ac efficitur consectetur adipiscing elit
+          </p>
+        </div>
+        <h2
+          className="text-2xl thin text-green-200 uppercase font-semibold leading-5  tracking-widest  text-left  my-2  "
+        >
+          5000 YR
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div
+    className="mx-10 flex flex-col justify-center "
+  >
+    <div
+      className="flex flex-row px-10"
+    >
+      <div
+        className="w-1/2"
+      >
+        <h2
+          className="text-2xl thin  uppercase font-semibold leading-5  tracking-widest  text-left  my-2  "
+        >
+          Details
+        </h2>
+        <div
+          className="flex flex-col w-3/5 text-gray-700"
+        >
+          <div
+            className="flex flex-row justify-between border-b-2 border-gray-400 my-4"
+          >
+            <h2
+              className="text-2xl thinundefined"
+            >
+              category
+            </h2>
+             
+            <h2
+              className="text-2xl thinundefined"
+            >
+              Plastic
+            </h2>
+          </div>
+          <div
+            className="flex flex-row justify-between border-b-2 border-gray-400 my-4"
+          >
+            <h2
+              className="text-2xl thinundefined"
+            >
+              Quantity
+            </h2>
+             
+            <h2
+              className="text-2xl thinundefined"
+            >
+              2 kg
+            </h2>
+          </div>
+          <div
+            className="flex flex-row justify-between border-b-2 border-gray-400 my-4"
+          >
+            <h2
+              className="text-2xl thinundefined"
+            >
+              Location
+            </h2>
+             
+            <h2
+              className="text-2xl thinundefined"
+            >
+              Haddah street,Sana'a
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div
+        className="w-1/2"
+      >
+        <h2
+          className="text-2xl thin  uppercase font-semibold   my-2  "
+        >
+          Sellers
+        </h2>
+        <div
+          className="flex flex-col w-1/3 text-gray-700 "
+        >
+          <div
+            className="flex flex-row justify-between my-2 "
+          >
+            <div
+              className="text-green-100"
+            >
+              <i
+                className="fa fa-user text-2xl"
+              />
+               
+            </div>
+             
+            <h3
+              className="text-green-100 text-xl mx-4"
+            >
+              Mr Mohammed
+            </h3>
+          </div>
+          <div
+            className="flex flex-row justify-between my-2 "
+          >
+            <div
+              className="text-green-100"
+            >
+              <i
+                className="fa fa-at  text-2xl"
+              />
+               
+            </div>
+             
+            <email
+              className="border-b-2 border-gray-300 text-xl mx-4 "
+            >
+               
+              malthawr@gmail.com
+               
+            </email>
+          </div>
+          <div
+            className="flex flex-row justify-between my-2  "
+          >
+            <div
+              className="text-green-100"
+            >
+              <i
+                className="fas fa-phone-alt text-2xl"
+              />
+               
+            </div>
+             
+            <h3
+              className="text-xl "
+            >
+              00967 77777777
+            </h3>
+          </div>
+          <div
+            className="flex flex-row justify-between my-2 "
+          >
+            <div
+              className="text-green-100"
+            >
+              <i
+                class="fas fa-globe-americas text-2xl"
+              />
+               
+            </div>
+             
+            <h3
+              className="text-xl"
+            >
+              Location
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="mx-10 flex flex-col justify-center"
+  >
+    <h1
+      className="text-3xl normaluppercase font-semibold leading-5  tracking-widest  text-left p-2 my-2 mx-4 "
+    >
+      Suggested products
+    </h1>
+    <div
+      className="flex flex-wrap"
+    >
+      <div
+        class="flex items-center "
+      >
+        <i
+          className=" far fa-angle-left text-green-100 hover:text-black font-bold hover:shadow-lg rounded-full text-6xl "
+          onClick={[Function]}
+        >
+            
+        </i>
+      </div>
+      <div
+        className="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 flex-col bg-white border rounded-lg overflow-hidden shadow-lg mx-4 my-4"
+      >
+        <a
+          href="#"
+          target="_blank"
+        >
+          <img
+            alt="Add image source or correct Alt"
+            className="h-40 w-full justify-self-center bg-green-400"
+            src="default"
+          />
+        </a>
+        <div
+          className="p-4"
+        >
+          <a
+            href="#"
+            target="_blank"
+          >
+             
+            <h4
+              className="mt-1 font-semibold text-lg truncate leading-5"
+            >
+              0
+            </h4>
+          </a>
+          <p
+            className="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide leading-8"
+          >
+            Product type
+          </p>
+          <div
+            className="flex flex-row justify-between"
+          >
+            <span
+              className="ml-1 inline-block bg-green-500 text-white text-sm px-2 rounded-full"
+            >
+               Location
+            </span>
+             
+            <h4
+              className="text-green-600"
+            >
+              999YER
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div
+        className="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 flex-col bg-white border rounded-lg overflow-hidden shadow-lg mx-4 my-4"
+      >
+        <a
+          href="#"
+          target="_blank"
+        >
+          <img
+            alt="Add image source or correct Alt"
+            className="h-40 w-full justify-self-center bg-green-400"
+            src="default"
+          />
+        </a>
+        <div
+          className="p-4"
+        >
+          <a
+            href="#"
+            target="_blank"
+          >
+             
+            <h4
+              className="mt-1 font-semibold text-lg truncate leading-5"
+            >
+              1
+            </h4>
+          </a>
+          <p
+            className="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide leading-8"
+          >
+            Product type
+          </p>
+          <div
+            className="flex flex-row justify-between"
+          >
+            <span
+              className="ml-1 inline-block bg-green-500 text-white text-sm px-2 rounded-full"
+            >
+               Location
+            </span>
+             
+            <h4
+              className="text-green-600"
+            >
+              999YER
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div
+        className="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 flex-col bg-white border rounded-lg overflow-hidden shadow-lg mx-4 my-4"
+      >
+        <a
+          href="#"
+          target="_blank"
+        >
+          <img
+            alt="Add image source or correct Alt"
+            className="h-40 w-full justify-self-center bg-green-400"
+            src="default"
+          />
+        </a>
+        <div
+          className="p-4"
+        >
+          <a
+            href="#"
+            target="_blank"
+          >
+             
+            <h4
+              className="mt-1 font-semibold text-lg truncate leading-5"
+            >
+              2
+            </h4>
+          </a>
+          <p
+            className="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide leading-8"
+          >
+            Product type
+          </p>
+          <div
+            className="flex flex-row justify-between"
+          >
+            <span
+              className="ml-1 inline-block bg-green-500 text-white text-sm px-2 rounded-full"
+            >
+               Location
+            </span>
+             
+            <h4
+              className="text-green-600"
+            >
+              999YER
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div
+        className="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 flex-col bg-white border rounded-lg overflow-hidden shadow-lg mx-4 my-4"
+      >
+        <a
+          href="#"
+          target="_blank"
+        >
+          <img
+            alt="Add image source or correct Alt"
+            className="h-40 w-full justify-self-center bg-green-400"
+            src="default"
+          />
+        </a>
+        <div
+          className="p-4"
+        >
+          <a
+            href="#"
+            target="_blank"
+          >
+             
+            <h4
+              className="mt-1 font-semibold text-lg truncate leading-5"
+            >
+              3
+            </h4>
+          </a>
+          <p
+            className="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide leading-8"
+          >
+            Product type
+          </p>
+          <div
+            className="flex flex-row justify-between"
+          >
+            <span
+              className="ml-1 inline-block bg-green-500 text-white text-sm px-2 rounded-full"
+            >
+               Location
+            </span>
+             
+            <h4
+              className="text-green-600"
+            >
+              999YER
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex items-center "
+      >
+        <i
+          className="far fa-angle-right  text-green-100 hover:text-black font-bold hover:shadow-lg  text-6xl"
+          onClick={[Function]}
+        >
+           
+        </i>
+      </div>
+    </div>
+  </div>
+</div>
+`;

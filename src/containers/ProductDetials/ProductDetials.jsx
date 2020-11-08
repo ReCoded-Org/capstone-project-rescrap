@@ -6,10 +6,14 @@ import SuggestedProducts from './SuggestedProducts';
 const ProductsDetials= () => {
     
   return (
+    <div>
+
+    
   <Intro  />
   <Info />
   <SuggestedProducts />
-    );
+  </div>
+    )
 }
 
 export default ProductsDetials;

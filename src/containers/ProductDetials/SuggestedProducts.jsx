@@ -1,5 +1,5 @@
 import React, {useState ,useEffect} from 'react';
-import Card from '../../components/card/Card';
+import Card from '../../components/Card/Card';
 import Title from '../../components/Title/Title';
 import SubTitle from '../../components/SubTitle/SubTitle';
 
