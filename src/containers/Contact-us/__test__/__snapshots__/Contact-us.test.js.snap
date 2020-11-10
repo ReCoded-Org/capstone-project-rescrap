@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the snapshot 1`] = `
+<div
+  className="flex flex-col md:flex-col lg:flex-row xl:flex-row "
+  id="contact"
+>
+  <div
+    className=" lg:h-screen"
+  >
+    <form
+      className="bg-white px-10 mx-40 pb-16 pt-5  #w-4/12"
+    >
+      <h1
+        className="text-3xl normal text-green-100 pb-1"
+      >
+        Let's Contact!!
+        <h1 />
+      </h1>
+      <div
+        className="py-1"
+      >
+        <label
+          className="text-sm"
+        >
+          Name
+        </label>
+        <input
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\\" id=\\"username"
+          placeholder="Name"
+        />
+      </div>
+      <div
+        className="py-1"
+      >
+        <label
+          className="text-sm"
+        >
+          Subject
+        </label>
+        <input
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\\" id=\\"username"
+          placeholder="Subject"
+        />
+      </div>
+      <div
+        className="py-1"
+      >
+        <label
+          className="text-sm"
+        >
+          Email
+        </label>
+        <input
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\\" id=\\"username"
+          placeholder="Email"
+        />
+      </div>
+      <div
+        className="py-1"
+      >
+        <label
+          className="text-sm"
+        >
+          Message
+        </label>
+        <textarea
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\\" id=\\"username"
+          placeholder="Message"
+        />
+      </div>
+      <div
+        className=" text-center py-1"
+      >
+        <button
+          className="bg-green-100 py-4 px-40 border rounded text-white "
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  <div
+    className="flex justify-center pt-10 lg:pt-0 lg:pb-20 lg:justify-start mb-4 items-center"
+    id="contact-text"
+  >
+    <div
+      className="text-white w-3/4  "
+    >
+      <h1
+        className="text-2xl"
+      >
+        How Can We Help?
+      </h1>
+      <p
+        className="text-xl"
+      >
+        Please select a topic below related to your inquiry. If you don't find what you need, fill out our contact form.Email us with any questions or inquiries or call 518-387-9327. We would be happy to answer your questions and set up a meeting with you.
+      </p>
+    </div>
+  </div>
+</div>
+`;

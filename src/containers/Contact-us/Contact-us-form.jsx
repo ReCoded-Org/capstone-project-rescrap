@@ -2,8 +2,8 @@ import React from 'react'
 
  
 const ContactUsForm = () => {
-     return <div className=' pb-40'>
-                 <form  className='bg-white px-10 mx-40 pb-40 pt-5  #w-4/12'>
+     return <div className=' lg:h-screen'>
+                 <form  className='bg-white px-10 mx-40 pb-16 pt-5  #w-4/12'>
                  <h1 className='text-3xl normal text-green-100 pb-1'>Let's Contact!!<h1/>
                 </h1>
           <div className="py-1">
