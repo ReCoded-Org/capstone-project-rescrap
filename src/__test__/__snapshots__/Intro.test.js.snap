@@ -4,6 +4,7 @@ exports[`matches the snapshot 1`] = `
 <div
   className="intro h-screen"
 >
+  <div />
   <div
     className="intro-content p-12 py-24"
   >
