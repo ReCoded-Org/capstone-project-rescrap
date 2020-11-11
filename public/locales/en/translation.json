@@ -1,0 +1,14 @@
+{
+	"navigation": {
+		"About Us": "About Us",
+		"Home": "Home"
+	},
+	"pages": {
+		"aboutus": {
+			"title": "OUR BUSINESS"
+		},
+		"home": {
+			"title": "Scrap Recycling Marketplace"
+		}
+	}
+}

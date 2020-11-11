@@ -5,6 +5,7 @@ import NewOffer from './../../components/NewOffer/NewOffer';
 import Statistics from './../../components/Statistics/Statistics';
 
 const Home= ({navbar, footer}) => {
+    
     return (<>
     <Intro nav={navbar}/>
     <SellersAndBuyers/>

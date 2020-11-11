@@ -19,7 +19,7 @@ Array [
         Connect and trade directly with suppliers & buyers of recyclable plastics
       </p>
       <button
-        className="rounded-full py-2 px-4 bg-green-200 text-white my-4"
+        className="rounded-full py-2 px-4 bg-green-200 text-white my-4 "
         onClick=""
       >
         Sign up
@@ -190,7 +190,9 @@ Array [
     >
       NEW OFFERS
     </h1>
-    <div>
+    <div
+      className="flex justify-center"
+    >
       <div
         className=" flex flex-wrap px-4 justify-between"
       >

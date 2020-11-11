@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div>
+  <div
+    className="flex sm:flex-row md:flex-row lg:flex-row  justify-center "
+  >
+    <div
+      className="w-full md:w-1/2 lg:w-1/2 p-2 mx-6 my-4"
+    >
+      <img
+        alt="bottle"
+        src="https://cdn.mos.cms.futurecdn.net/3KnPinofHaKaQDaeRov3Qg-320-80.jpg"
+      />
+    </div>
+    <div
+      className=" overflow-hidden  w-1/2 p-2 "
+    >
+      <h1
+        className="text-3xl normaluppercase font-semibold leading-5  tracking-widest  text-left  my-2  "
+      >
+        Name of product
+      </h1>
+      <div
+        className="text-base flex   my-3   text-gray-700"
+      >
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum quis nunc ac efficitur consectetur adipiscing elit Vivamus vestibulum quis nunc ac efficitur consectetur adipiscing elit Vivamus vestibulum quis nunc ac efficitur consectetur adipiscing elit Vivamus vestibulum quis nunc ac efficitur consectetur adipiscing elit
+        </p>
+      </div>
+      <h2
+        className="text-2xl thin text-green-200 uppercase font-semibold leading-5  tracking-widest  text-left  my-2  "
+      >
+        5000 YR
+      </h2>
+    </div>
+  </div>
+</div>
+`;
