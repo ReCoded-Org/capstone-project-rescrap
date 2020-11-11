@@ -1,7 +1,11 @@
 {
 	"navigation": {
 		"About Us": "About Us",
-		"Home": "Home"
+		"Home": "Home",
+		"Shop": "Shop",
+		"Contact Us":"Contact Us",
+		"Add Product":"Add Product"
+
 	},
 	"pages": {
 		"aboutus": {

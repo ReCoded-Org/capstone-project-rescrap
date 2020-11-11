@@ -3,13 +3,20 @@ import {Link, useHistory,useLocation} from 'react-router-dom';
 import RescrapLogo from './RescrapLogo';
 import NavbarItems from './NavbarItems';
 import './Navbar.css';
+import { useTranslation } from 'react-i18next';
 
 
 const Navbar = (props) => {
+  const {t, i18n}=useTranslation();
+  
+  useEffect(() => {
+      document.dir=i18n.dir();
+  }, [i18n,i18n.language])
+
 // const Navbar = ({atHome, hasAccount}) => {
 //   const [navbar, setNavbar] = useState(false);
 //   const [signin, setSignin] = useState(false);
-//   const [humbergur, setHumbergur]=useState("fill-current text-white");
+  const [humbergur, setHumbergur]=useState("fill-current text-white");
   
   let history=useHistory();
   const [navbar, setNavbar] = useState(props.bg);
@@ -35,14 +42,14 @@ const Navbar = (props) => {
   window.addEventListener('scroll', changeBackground);
 let items=NavbarItems;
 
-if(!hasAccount && atHome){
-  items=NavbarItems.filter(item=>item.label!=='Add Product');
-}
+// if(!user.loggedIn){
+//   items=NavbarItems.filter(item=>item.label!=='Add Product');
+// }
 
   return (
 
-  <section className={navbar ? 'navbar active' : 'navbar'}>
-      <div className="container mx-auto px-4 py-2 pt-4 flex justify-between flex-wrap bg-opacity-50">
+  <section className={(navbar ? 'navbar active' : 'navbar')+" sm:bg-green-200 md:bg-green-200 lg:bg-none"}>
+      <div className="container mx-auto px-4 py-2 pt-4 flex justify-between flex-wrap">
 
         <Link to="/">
           <RescrapLogo />
@@ -66,14 +73,29 @@ if(!hasAccount && atHome){
         <nav className="hidden w-full text-center md:flex md:w-auto" id="menu">
           <ul className="pt-5 mb-5 md:mb-0 md:pt-0 md:flex">
             {items.map((item, index) => {
-              return (
+              if(item.label!=="Add Product"){
+                return (
                 <li
                   className="py-2 mx-4 transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300"
                   key={index}
                 >
-                  <Link to={item.url}>{item.label}</Link>
+                  <Link to={item.url}>{t("navigation."+item.label)}</Link>
                 </li>
               );
+              }else{
+               if(user.loggedIn){
+                return (
+                <li
+                  className="py-2 mx-4 transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300"
+                  key={index}
+                >
+                  <Link to={item.url}>{t("navigation."+item.label)}</Link>
+                </li>
+              );
+               }
+              }
+                
+              
             })}
           </ul>
           <button className="mx-2 " onClick={() => {
@@ -93,7 +115,15 @@ if(!hasAccount && atHome){
           {user.loggedIn?<button className="bg-red-500 text-white hover:bg-red-600" onClick={()=>{
             props.handleSignout()
           }}>Sign out</button>:""}
+          <select className="bg-green-200 text-white rounded-lg" onChange={(event)=>{
+              i18n.changeLanguage(event.target.value);
+            }
+          }>
+            <option value="en">en</option>
+            <option value="ar">ar</option>
+          </select>
         </nav>
+     
       </div>
     </section>
   );

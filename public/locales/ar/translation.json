@@ -1,7 +1,10 @@
 {
 	"navigation": {
 		"About Us": "من نحن",
-		"Home": "الصفحة الرئيسية"
+		"Home": "الصفحة الرئيسية",
+		"Shop": "المتجر",
+		"Contact Us":"تواصل معنا",
+		"Add Product":"اضف منتج"
 	},
 	"pages": {
 		"aboutus": {
