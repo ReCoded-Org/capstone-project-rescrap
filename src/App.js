@@ -10,6 +10,7 @@ import AboutUs from './containers/About-us/About-us-page';
 import AddProduct from './containers/Add-product/AddProduct';
 import ProductDetials from './containers/ProductDetials/ProductDetials';
 import Shop from './containers/Shop/Shop';
+import ContactUs from './containers/Contact-us/Contact-us';
 
 function App() {
   const [location, setLocation] = useState('/');
@@ -111,17 +112,24 @@ function App() {
 
   return (
     <Router>
-      {location === '/' ? (
+      {/* {location === '/' ? (
         ''
       ) : (
         <Navbar
           handleSignInClick={signIn}
           handleSignout={signOut}
           userData={user}
-          bg
+          bg={true}
           setPath={setLocation}
         />
-      )}
+      )} */}
+      <Navbar
+        handleSignInClick={signIn}
+        handleSignout={signOut}
+        userData={user}
+        bg={false}
+        setPath={setLocation}
+      />
       <Switch>
         {/* Later you will replace the words I placed with your components */}
         <Route path="/about-us">
@@ -138,7 +146,9 @@ function App() {
             uid={user.uid}
           />
         </Route>
-        <Route path="/contact-us">Contact Us</Route>
+        <Route path="/contact-us">
+          <ContactUs />
+        </Route>
         <Route path="/sign-up">
           <Signup
             userData={user}
@@ -150,16 +160,16 @@ function App() {
         <Route path="/not-found">Not Found</Route>
         <Route path="/">
           <Home
-            navbar={
-              <Navbar
-                handleSignInClick={signIn}
-                handleSignout={signOut}
-                userData={user}
-                bg={false}
-                setPath={setLocation}
-              />
-            }
+
+          //  navbar={
+          //     <Navbar
+          //       handleSignInClick={signIn}
+          //       handleSignout={signOut}
+          //       userData={user}
+          //       bg={false}
+          //       setPath={setLocation}
           />
+          } />
         </Route>
       </Switch>
       <Footer setPath={setLocation} />
