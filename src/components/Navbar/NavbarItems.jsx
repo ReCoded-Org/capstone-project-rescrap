@@ -3,27 +3,27 @@ import React from 'react';
 const NavbarItems = [
   {
     label: 'Home',
-    url: '#',
+    url: '/',
     signIn: false,
   },
   {
     label: 'About Us',
-    url: '#',
+    url: '/about-us',
     signIn: false,
   },
   {
     label: 'Shop',
-    url: '#',
+    url: '/shop',
     signIn: false,
   },
   {
     label: 'Add Product',
-    url: '#',
+    url: '/add-product',
     signIn: true,
   },
   {
     label: 'Contact Us',
-    url: '#',
+    url: '/contact-us',
     signIn: false,
   },
 ];

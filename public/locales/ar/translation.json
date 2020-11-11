@@ -1,0 +1,17 @@
+{
+	"navigation": {
+		"About Us": "من نحن",
+		"Home": "الصفحة الرئيسية",
+		"Shop": "المتجر",
+		"Contact Us":"تواصل معنا",
+		"Add Product":"اضف منتج"
+	},
+	"pages": {
+		"aboutus": {
+			"title": "عملنا"
+		},
+		"home": {
+			"title": "متجر اعادة تدوير الخردة"
+		}
+	}
+}
