@@ -2,14 +2,14 @@
 
 exports[`matches the snapshot 1`] = `
 <div
-  className="flex justify-center pt-10 lg:pt-0 lg:pb-20 lg:justify-start mb-4 items-center"
+  className="flex justify-center pt-10 lg:pt-0 lg:pb-20 lg:justify-start mb-4 items-center sm:h-full lg:h-screen w-full "
   id="contact-text"
 >
   <div
     className="text-white w-3/4  "
   >
     <h1
-      className="text-2xl"
+      className="text-4xl"
     >
       How Can We Help?
     </h1>

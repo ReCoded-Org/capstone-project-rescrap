@@ -6,10 +6,10 @@ exports[`matches the snapshot 1`] = `
   id="contact"
 >
   <div
-    className=" lg:h-screen"
+    className="sm:h-full lg:h-screen w-full px-20"
   >
     <form
-      className="bg-white px-10 mx-40 pb-16 pt-5  #w-4/12"
+      className="bg-white px-4 pb-16 pt-5 "
     >
       <h1
         className="text-3xl normal text-green-100 pb-1"
@@ -73,7 +73,7 @@ exports[`matches the snapshot 1`] = `
         className=" text-center py-1"
       >
         <button
-          className="bg-green-100 py-4 px-40 border rounded text-white "
+          className="bg-green-100 py-4 w-4/5 border rounded text-white "
           type="submit"
         >
           Submit
@@ -82,14 +82,14 @@ exports[`matches the snapshot 1`] = `
     </form>
   </div>
   <div
-    className="flex justify-center pt-10 lg:pt-0 lg:pb-20 lg:justify-start mb-4 items-center"
+    className="flex justify-center pt-10 lg:pt-0 lg:pb-20 lg:justify-start mb-4 items-center sm:h-full lg:h-screen w-full "
     id="contact-text"
   >
     <div
       className="text-white w-3/4  "
     >
       <h1
-        className="text-2xl"
+        className="text-4xl"
       >
         How Can We Help?
       </h1>
