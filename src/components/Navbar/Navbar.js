@@ -6,7 +6,11 @@ import './Navbar.css';
 
 
 const Navbar = (props) => {
-
+// const Navbar = ({atHome, hasAccount}) => {
+//   const [navbar, setNavbar] = useState(false);
+//   const [signin, setSignin] = useState(false);
+//   const [humbergur, setHumbergur]=useState("fill-current text-white");
+  
   let history=useHistory();
   const [navbar, setNavbar] = useState(props.bg);
   const [user,setUser]=useState(props.userData);
@@ -21,15 +25,25 @@ const Navbar = (props) => {
    if(!props.bg){
     if (window.scrollY >= 50) {
       setNavbar(true);
+      setHumbergur("fill-current text-green-200");
     } else {
       setNavbar(false);
+      setHumbergur("fill-current text-white");
     }
    }
   };
   window.addEventListener('scroll', changeBackground);
+let items=NavbarItems;
+
+if(!hasAccount && atHome){
+  items=NavbarItems.filter(item=>item.label!=='Add Product');
+}
+
   return (
-    <section className={(navbar ? 'navbar active' : 'navbar' )+ " sm:bg-white md:bg-white"}>
-      <div className="container mx-auto px-4 py-2 pt-4 flex justify-between flex-wrap">
+
+  <section className={navbar ? 'navbar active' : 'navbar'}>
+      <div className="container mx-auto px-4 py-2 pt-4 flex justify-between flex-wrap bg-opacity-50">
+
         <Link to="/">
           <RescrapLogo />
         </Link>
@@ -38,7 +52,7 @@ const Navbar = (props) => {
           className="block md:hidden cursor-pointer self-center mr-2 menuIcon"
         >
           <svg
-            className="fill-current text-green-200 "
+            className={humbergur}
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="20"
@@ -51,7 +65,7 @@ const Navbar = (props) => {
         <input class="hidden" type="checkbox" id="menu-toggle" />
         <nav className="hidden w-full text-center md:flex md:w-auto" id="menu">
           <ul className="pt-5 mb-5 md:mb-0 md:pt-0 md:flex">
-            {NavbarItems.map((item, index) => {
+            {items.map((item, index) => {
               return (
                 <li
                   className="py-2 mx-4 transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300"

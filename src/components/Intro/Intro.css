@@ -16,6 +16,16 @@ button {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.navbar {
+  width: 100%;
+  /* color: #5ecc62; */
+  color: white;
+  background-color: #5ecc6275;
+  position: fixed;
+}
+.navbar.active {
+  background-color: rgba(255, 255, 255, 0.9);
+}
 @media only screen and (max-width: 920px) {
   .intro-content {
     width: 24rem;
