@@ -16,9 +16,16 @@ const Navbar = (props) => {
 // const Navbar = ({atHome, hasAccount}) => {
 //   const [navbar, setNavbar] = useState(false);
 //   const [signin, setSignin] = useState(false);
-  const [humbergur, setHumbergur]=useState("fill-current text-white");
+
   
   let history=useHistory();
+
+  const [humbergur, setHumbergur]=useState("fill-current text-green-200");
+
+  if(history.path==="/"){
+    setHumbergur("fill-current text-white");
+  }
+
   const [navbar, setNavbar] = useState(props.bg);
   const [user,setUser]=useState(props.userData);
   
@@ -48,7 +55,7 @@ let items=NavbarItems;
 
   return (
 
-  <section className={(navbar ? 'navbar active' : 'navbar')+" sm:bg-green-200 md:bg-green-200 lg:bg-none"}>
+  <section className={(navbar ? 'navbar active' : 'navbar')+"  sm:bg-green-200 md:bg-green-200 "}>
       <div className="container mx-auto px-4 py-2 pt-4 flex justify-between flex-wrap">
 
         <Link to="/">
