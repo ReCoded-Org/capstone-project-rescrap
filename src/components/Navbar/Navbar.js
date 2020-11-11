@@ -8,9 +8,9 @@ import { useTranslation } from 'react-i18next';
 
 const Navbar = (props) => {
   const {t, i18n}=useTranslation();
-  
+
   useEffect(() => {
-      document.dir=i18n.dir();
+      document.dir=i18n.dir;
   }, [i18n,i18n.language])
 
 // const Navbar = ({atHome, hasAccount}) => {
