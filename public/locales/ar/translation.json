@@ -1,10 +1,10 @@
 {
 	"navigation": {
 		"About Us": "من نحن",
+		"Add Product": "اضف منتج",
+		"Contact Us": "تواصل معنا",
 		"Home": "الصفحة الرئيسية",
-		"Shop": "المتجر",
-		"Contact Us":"تواصل معنا",
-		"Add Product":"اضف منتج"
+		"Shop": "المتجر"
 	},
 	"pages": {
 		"aboutus": {

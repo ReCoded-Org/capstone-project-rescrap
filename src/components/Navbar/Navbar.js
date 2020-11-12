@@ -7,33 +7,33 @@ import { useTranslation } from 'react-i18next';
 
 
 const Navbar = (props) => {
-  const {t, i18n}=useTranslation();
-
-  useEffect(() => {
-      document.dir=i18n.dir;
-  }, [i18n,i18n.language])
-
-// const Navbar = ({atHome, hasAccount}) => {
-//   const [navbar, setNavbar] = useState(false);
-//   const [signin, setSignin] = useState(false);
-
-  
   let history=useHistory();
-
+  let navBar="";
   const [humbergur, setHumbergur]=useState("fill-current text-green-200");
-
-  if(history.path==="/"){
-    setHumbergur("fill-current text-white");
-  }
-
   const [navbar, setNavbar] = useState(props.bg);
   const [user,setUser]=useState(props.userData);
   
+  const {t, i18n}=useTranslation();
+
+
+  useEffect(() => {
+      document.dir=i18n.dir();
+      if(i18n.language=="ar"){
+        navBar=document.getElementById("mainNav");
+        navBar.classList.add("active")
+      }
+  }, [i18n,i18n.language])
+
+
   useEffect(() => {
    setUser(props.userData);
    if(props.userData.loggedIn&&props.userData.firstLogin)
    history.push("/sign-up");
   }, [props.userData]);
+  
+  if(history.path==="/"){
+    setHumbergur("fill-current text-white");
+  }
 
   const changeBackground = () => {
    if(!props.bg){
@@ -41,13 +41,31 @@ const Navbar = (props) => {
       setNavbar(true);
       setHumbergur("fill-current text-green-200");
     } else {
-      setNavbar(false);
-      setHumbergur("fill-current text-white");
+   
+      // setHumbergur("fill-current text-white");
+      if(i18n.language=="ar"){
+        navBar=document.getElementById("mainNav");
+        navBar.classList.add("active")
+      }else{
+        setNavbar(false);
+      }
     }
+     navBar=document.getElementById("mainNav");
+      navBar.classList.add("navHomeResize");
+      navBar.classList.add("navbar__position-fixed");
+      
+      // console.log(window.width);
+      // if(window.screen.width){
+        // setHumbergur("fill-current text-green-200");
+      // }
+   }else{
+     
+   
    }
   };
   window.addEventListener('scroll', changeBackground);
-let items=NavbarItems;
+  window.addEventListener('resize',changeBackground);
+const items=NavbarItems;
 
 // if(!user.loggedIn){
 //   items=NavbarItems.filter(item=>item.label!=='Add Product');
@@ -55,7 +73,7 @@ let items=NavbarItems;
 
   return (
 
-  <section className={(navbar ? 'navbar active' : 'navbar')+"  sm:bg-green-200 md:bg-green-200 "}>
+  <section id="mainNav" className={(navbar ? 'navbar active' : 'navbar')+" w-full "}>
       <div className="container mx-auto px-4 py-2 pt-4 flex justify-between flex-wrap">
 
         <Link to="/">
@@ -66,7 +84,7 @@ let items=NavbarItems;
           className="block md:hidden cursor-pointer self-center mr-2 menuIcon"
         >
           <svg
-            className={humbergur}
+            className={"fill-current sm:text-green-200"+ humbergur}
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="20"
@@ -124,6 +142,8 @@ let items=NavbarItems;
           }}>Sign out</button>:""}
           <select className="bg-green-200 text-white rounded-lg" onChange={(event)=>{
               i18n.changeLanguage(event.target.value);
+           
+            
             }
           }>
             <option value="en">en</option>

@@ -112,24 +112,24 @@ function App() {
 
   return (
     <Router>
-      {/* {location === '/' ? (
+      {location === '/' ? (
         ''
       ) : (
         <Navbar
           handleSignInClick={signIn}
           handleSignout={signOut}
           userData={user}
-          bg={true}
+          bg
           setPath={setLocation}
         />
-      )} */}
-      <Navbar
+      )}
+      {/* <Navbar
         handleSignInClick={signIn}
         handleSignout={signOut}
         userData={user}
         bg={false}
         setPath={setLocation}
-      />
+      /> */}
       <Switch>
         {/* Later you will replace the words I placed with your components */}
         <Route path="/about-us">
@@ -160,16 +160,16 @@ function App() {
         <Route path="/not-found">Not Found</Route>
         <Route path="/">
           <Home
-
-          //  navbar={
-          //     <Navbar
-          //       handleSignInClick={signIn}
-          //       handleSignout={signOut}
-          //       userData={user}
-          //       bg={false}
-          //       setPath={setLocation}
+            navbar={
+              <Navbar
+                handleSignInClick={signIn}
+                handleSignout={signOut}
+                userData={user}
+                bg={false}
+                setPath={setLocation}
+              />
+            }
           />
-          } />
         </Route>
       </Switch>
       <Footer setPath={setLocation} />
