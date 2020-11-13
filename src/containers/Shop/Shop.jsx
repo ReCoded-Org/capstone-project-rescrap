@@ -3,26 +3,90 @@ import Card from '../../components/Card/Card';
 import Button from '../../components/Button/Button';
 import Title from '../../components/Title/Title';
 import ShopSearch from './ShopSearch';
-const cards = [];
-for (let i = 0; i < 16; i++) {
-  cards.push(
-    <Card
-      cardImageSrc="https://source.unsplash.com/random"
-      cardImageAlt="Rescrap Product"
-      productDetailsLink="#"
-      cardTitle="Plastic Bottels"
-      typeOfProduct="Plastic"
-      cardLocation="Sana'a"
-      cardPrice="777YER"
-    />
-  );
-}
+import firebase from '../../firebase.config';
+
+
+// for (let i = 0; i < 16; i++) {
+//   cards.push(
+//     <Card
+//       cardImageSrc="https://source.unsplash.com/random"
+//       cardImageAlt="Rescrap Product"
+//       productDetailsLink="#"
+//       cardTitle="Plastic Bottels"
+//       typeOfProduct="Plastic"
+//       cardLocation="Sana'a"
+//       cardPrice="777YER"
+//     />
+//   );
+// }
 
 const Shop = () => {
+  // const cards = [];
+  const [cards,setCards]=useState([]);
   const [start, setStart] = useState(0);
   useEffect(() => {
     setStart(0);
   }, []);
+
+  useEffect(() => {
+    console.log(cards);
+  }, [cards])
+
+  useEffect(async () => {
+
+   firebase.database().ref('posts/').on('value', async function(snapshot) {
+
+
+    const fetchImage =async (imageID)=>{
+      const ref =  firebase.storage().ref('/posts-images/'+imageID);
+      const url = await ref.getDownloadURL();
+      return url;
+    }
+    const posts = snapshot.val();
+    const keys=Object.keys(snapshot.val());
+    
+    console.log(keys);
+    for(let i =0;i<keys.length;i++){
+      const post =posts[keys[i]];
+      console.log();
+      const img=await fetchImage(posts[keys[i]].productImageKey);
+           setCards(
+            (previousState) => {
+              return [...previousState,<Card
+                cardImageSrc={img}
+                cardImageAlt={post.description}
+                productDetailsLink={"/shop/"+keys[i]}
+                cardTitle="Plastic Bottels"
+                typeOfProduct="Plastic"
+                cardLocation="Sana'a"
+                cardPrice="777YER"
+                   />];
+          }
+         );
+    }
+    // snapshot.forEach( (element,key)=>{
+    //   // const post = element.toJSON();
+    //   // console.log(post);
+    //   // console.log(key)
+ 
+
+    //   // setCards([...cards,(<Card
+    //   //   cardImageSrc={url}
+    //   //   cardImageAlt={post.description}
+    //   //   productDetailsLink={"/shop/"}
+    //   //   cardTitle="Plastic Bottels"
+    //   //   typeOfProduct="Plastic"
+    //   //   cardLocation="Sana'a"
+    //   //   cardPrice="777YER"
+    //   // />)]);
+    
+    // })
+
+  
+  }
+   )
+  }, [])
+
   return (
     <div className="container mx-auto">
       <Title
@@ -33,13 +97,9 @@ const Shop = () => {
 
       <div className="mb-4">
         <div className=" flex flex-wrap justify-between">
-          {(() => {
-            let disp = [];
-            for (let i = start; i < cards.length + start; i++) {
-              disp.push(cards[i]);
-            }
-            return disp;
-          })()}
+          {
+            cards
+          }
         </div>
       </div>
       <Button

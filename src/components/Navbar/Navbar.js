@@ -18,6 +18,7 @@ const Navbar = (props) => {
 
   useEffect(() => {
       // document.dir=i18n.dir();
+     
       if(i18n.language=="ar"){
         navBar=document.getElementById("mainNav");
         navBar.classList.add("active")
