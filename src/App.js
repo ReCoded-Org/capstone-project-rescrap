@@ -11,6 +11,7 @@ import AddProduct from './containers/Add-product/AddProduct';
 import ProductDetials from './containers/ProductDetials/ProductDetials';
 import Shop from './containers/Shop/Shop';
 import ContactUs from './containers/Contact-us/Contact-us';
+import NotFound from './containers/NotFound/NotFound';
 
 function App() {
   const [location, setLocation] = useState('/');
@@ -163,8 +164,8 @@ function App() {
         <Route path="/shop">
           <Shop />
         </Route>
-        <Route path="/not-found">Not Found</Route>
-        <Route path="/">
+
+        <Route exact path="/">
           <Home
             navbar={
               <Navbar
@@ -177,6 +178,7 @@ function App() {
             }
           />
         </Route>
+        <Route path="*" component={NotFound} />
       </Switch>
       <Footer setPath={setLocation} />
     </Router>

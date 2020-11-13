@@ -61,17 +61,6 @@ const ProductsDetials = (props) => {
           });
       };
 
-      //     addressDetails: "near baralas"
-      // category: "Anime"
-      // datePosted: "2020-11-8 10:59:15 PM"
-      // description: "This is an image from buko no hreo"
-      // ownerID: "1D2yW2LNr1MzPr8iW2NA5SgMj6f1"
-      // phoneNumber: "777691270"
-      // price: "free"
-      // productImageKey: "-MLdRAm2E3-CraaDxclz-1080p-anime-wallpaper.jpg"
-      // productName: "Test Post"
-      // quantity: "3"
-
       firebase
         .database()
         .ref()
