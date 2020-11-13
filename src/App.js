@@ -135,9 +135,6 @@ function App() {
         <Route path="/about-us">
           <AboutUs />
         </Route>
-        <Route path="/shop">
-          <Shop />
-        </Route>
         <Route path="/add-product">
           <AddProduct
             userData={user}
@@ -156,6 +153,15 @@ function App() {
             firstLogin={user.firstLogin}
             uid={user.uid}
           />
+        </Route>
+        <Route
+          path="/shop/:id/"
+          render={(props) => (
+            <ProductDetials {...props} loggedIn={user.loggedIn} uid={user.uid} userData={user} />
+          )}
+        />
+        <Route path="/shop">
+          <Shop />
         </Route>
         <Route path="/not-found">Not Found</Route>
         <Route path="/">
