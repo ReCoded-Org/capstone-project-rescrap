@@ -4,6 +4,13 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
 i18n
+  .on('languageChanged', (lng) => {
+    if (lng === 'ar') {
+      document.dir = 'rtl';
+    } else {
+      document.dir = 'ltr';
+    }
+  })
   .use(Backend)
   .use(LanguageDetector)
   .use(initReactI18next)
