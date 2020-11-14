@@ -3,14 +3,17 @@ import Card from '../../components/Card/Card';
 import Button from '../../components/Button/Button';
 import Title from '../../components/Title/Title';
 import ShopSearch from './ShopSearch';
+import { useTranslation } from 'react-i18next';
+
+
 const cards = [];
-for (let i = 0; i < 16; i++) {
-  cards.push(
+for (let i = 0; i < 16; i++) { 
+  cards.push( 
     <Card
       cardImageSrc="https://source.unsplash.com/random"
       cardImageAlt="Rescrap Product"
       productDetailsLink="#"
-      cardTitle="Plastic Bottels"
+      cardTitle= " Plastic Bottels " 
       typeOfProduct="Plastic"
       cardLocation="Sana'a"
       cardPrice="777YER"
@@ -19,15 +22,18 @@ for (let i = 0; i < 16; i++) {
 }
 
 const Shop = () => {
+
   const [start, setStart] = useState(0);
   useEffect(() => {
     setStart(0);
   }, []);
+  const {t, i18n}=useTranslation();
+
   return (
     <div className="container mx-auto">
       <Title
         classes="uppercase font-semibold leading-5  tracking-widest text-green-500 text-center p-2 my-2 "
-        text="SHOP PRODUCTS"
+        text={ t('translation:pages.shop.title') }
       />
       <ShopSearch />
 
@@ -44,7 +50,7 @@ const Shop = () => {
       </div>
       <Button
         btnClasses="container block capitaliz mx-auto shadow bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none text-white text-lg py-3 px-10 rounded my-2"
-        btnText="See More"
+        btnText={ t('translation:pages.shop.btn-see-more') }
         btnClickHandler=""
       />
     </div>

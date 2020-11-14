@@ -134,7 +134,7 @@ const items=NavbarItems;
               </span>
             
             ) : (
-             'Sign In'
+               t('translation:navigation.signin') 
             )}
           </button>
           {user.loggedIn?<button className="bg-red-500 text-white hover:bg-red-600" onClick={()=>{
