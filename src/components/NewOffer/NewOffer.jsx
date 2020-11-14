@@ -1,8 +1,51 @@
-import React from 'react';
-import Card from './../Card/Card';
+import React,{ useEffect, useState} from 'react';
+import Card from './../card/Card';
 import Title from './../Title/Title';
 import Button from './../Button/Button';
+import firebase from 'firebase';
+
+
 const NewOffer = () => {
+
+const [cards,setCards]=useState([]);
+  const [start, setStart] = useState(0);
+  useEffect(() => {
+    setStart(0);
+  }, []);
+
+  useEffect(async () => {
+   firebase.database().ref('posts/').limitToLast(8).on('value', async function(snapshot) {
+    const fetchImage =async (imageID)=>{
+      const ref =  firebase.storage().ref('/posts-images/'+imageID);
+      const url = await ref.getDownloadURL();
+      return url;
+    }
+    const posts = snapshot.val();
+    const keys=Object.keys(snapshot.val());
+    
+    console.log(keys);
+    for(let i =0;i<keys.length;i++){
+      const post =posts[keys[i]];
+      console.log();
+      const img=await fetchImage(posts[keys[i]].productImageKey);
+           setCards(
+            (previousState) => {
+              return [...previousState,<Card
+                cardImageSrc={img}
+                cardImageAlt={post.description}
+                productDetailsLink={"/shop/"}
+                cardTitle={post.productName}
+                typeOfProduct={post.category}
+                cardLocation={post.addressDetails}
+                cardPrice={post.price}
+                   />];
+          }
+         );
+    }
+  }
+   )
+  }, [])
+
   return (
     <div className="container mx-auto">
       <Title
@@ -11,78 +54,7 @@ const NewOffer = () => {
       />
       <div className="flex justify-center">
         <div className=" flex flex-wrap px-4 justify-between">
-          <Card
-            cardImageSrc="https://source.unsplash.com/random"
-            cardImageAlt="Rescrap Product"
-            productDetailsLink="#"
-            cardTitle="Plastic Bottels"
-            typeOfProduct="Plastic"
-            cardLocation="Sana'a"
-            cardPrice="777YER"
-          />
-          <Card
-            cardImageSrc="https://source.unsplash.com/random"
-            cardImageAlt="Rescrap Product"
-            productDetailsLink="#"
-            cardTitle="Plastic Bottels"
-            typeOfProduct="Plastic"
-            cardLocation="Sana'a"
-            cardPrice="777YER"
-          />
-          <Card
-            cardImageSrc="https://source.unsplash.com/random"
-            cardImageAlt="Rescrap Product"
-            productDetailsLink="#"
-            cardTitle="Plastic Bottels"
-            typeOfProduct="Plastic"
-            cardLocation="Sana'a"
-            cardPrice="777YER"
-          />
-          <Card
-            cardImageSrc="https://source.unsplash.com/random"
-            cardImageAlt="Rescrap Product"
-            productDetailsLink="#"
-            cardTitle="Plastic Bottels"
-            typeOfProduct="Plastic"
-            cardLocation="Sana'a"
-            cardPrice="777YER"
-          />
-          <Card
-            cardImageSrc="https://source.unsplash.com/random"
-            cardImageAlt="Rescrap Product"
-            productDetailsLink="#"
-            cardTitle="Plastic Bottels"
-            typeOfProduct="Plastic"
-            cardLocation="Sana'a"
-            cardPrice="777YER"
-          />
-          <Card
-            cardImageSrc="https://source.unsplash.com/random"
-            cardImageAlt="Rescrap Product"
-            productDetailsLink="#"
-            cardTitle="Plastic Bottels"
-            typeOfProduct="Plastic"
-            cardLocation="Sana'a"
-            cardPrice="777YER"
-          />
-          <Card
-            cardImageSrc="https://source.unsplash.com/random"
-            cardImageAlt="Rescrap Product"
-            productDetailsLink="#"
-            cardTitle="Plastic Bottels"
-            typeOfProduct="Plastic"
-            cardLocation="Sana'a"
-            cardPrice="777YER"
-          />
-          <Card
-            cardImageSrc="https://source.unsplash.com/random"
-            cardImageAlt="Rescrap Product"
-            productDetailsLink="#"
-            cardTitle="Plastic Bottels"
-            typeOfProduct="Plastic"
-            cardLocation="Sana'a"
-            cardPrice="777YER"
-          />
+          {cards}
         </div>
       </div>
       <Button
