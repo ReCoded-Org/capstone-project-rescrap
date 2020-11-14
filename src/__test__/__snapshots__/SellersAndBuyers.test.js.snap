@@ -10,7 +10,7 @@ exports[`matches the snapshot 1`] = `
     <h1
       className="text-3xl normal text-green-200"
     >
-      HOW IT WORKS
+      translation:pages.home.how-it-works
     </h1>
     <a
       className="cursor-pointer"
@@ -19,7 +19,7 @@ exports[`matches the snapshot 1`] = `
       <h2
         className="text-2xl thin text-green-200 inline-block m-4 underline"
       >
-        Sellers
+        translation:pages.home.sellers
       </h2>
     </a>
     <a
@@ -29,7 +29,7 @@ exports[`matches the snapshot 1`] = `
       <h2
         className="text-2xl thin text-green-200 inline-block m-4"
       >
-        Buyers
+        translation:pages.home.buyers
       </h2>
     </a>
   </div>
@@ -40,57 +40,57 @@ exports[`matches the snapshot 1`] = `
       className="w-64 sm:pb-16 text-center undefined"
     >
       <img
-        alt="Post your offer"
+        alt="translation:pages.home.post-your-offer"
         className="h-24 w-24 inline-block bg-green-400"
         src="seller1.jpg"
       />
       <h2
         className="text-2xl thin my-3"
       >
-        Post your offer
+        translation:pages.home.post-your-offer
       </h2>
       <p
         className="text-base font-normal "
       >
-        Join the marketplace and post products you want to sell in less than a minute.
+        translation:pages.home.join-maketplace
       </p>
     </div>
     <div
       className="w-64 sm:pb-16 text-center undefined"
     >
       <img
-        alt="Get the best price"
+        alt="translation:pages.home.best-price"
         className="h-24 w-24 inline-block bg-green-400"
         src="seller2.jpg"
       />
       <h2
         className="text-2xl thin my-3"
       >
-        Get the best price
+        translation:pages.home.best-price
       </h2>
       <p
         className="text-base font-normal "
       >
-        Negotiate with buyers in real-time and get the best price for your products.
+        translation:pages.home.get-best-price
       </p>
     </div>
     <div
       className="w-64 sm:pb-16 text-center undefined"
     >
       <img
-        alt="Sell to customers"
+        alt="translation:pages.home.sell"
         className="h-24 w-24 inline-block bg-green-400"
         src="seller3.jpg"
       />
       <h2
         className="text-2xl thin my-3"
       >
-        Sell to customers
+        translation:pages.home.sell
       </h2>
       <p
         className="text-base font-normal "
       >
-        Sell products directly to customers in your country and around the world.
+        translation:pages.home.sell-product
       </p>
     </div>
   </div>
@@ -101,57 +101,57 @@ exports[`matches the snapshot 1`] = `
       className="w-64 sm:pb-16 text-center undefined"
     >
       <img
-        alt="Find what you’re looking for"
+        alt="translation:pages.home.buyer.looking-for"
         className="h-24 w-24 inline-block bg-green-400"
         src="buyer1.jpg"
       />
       <h2
         className="text-2xl thin my-3"
       >
-        Find what you’re looking for
+        translation:pages.home.buyer.looking-for
       </h2>
       <p
         className="text-base font-normal "
       >
-        Browse through thousands of offers posted in the marketplace and find what you’re looking for.
+        translation:pages.home.buyer.browser
       </p>
     </div>
     <div
       className="w-64 sm:pb-16 text-center undefined"
     >
       <img
-        alt="Negotiate the best deal"
+        alt="translation:pages.home.buyer.best-deal"
         className="h-24 w-24 inline-block bg-green-400"
         src="buyer2.jpg"
       />
       <h2
         className="text-2xl thin my-3"
       >
-        Negotiate the best deal
+        translation:pages.home.buyer.best-deal
       </h2>
       <p
         className="text-base font-normal "
       >
-        Negotiate with multiple sellers in real-time and make the best deal.
+        translation:pages.home.buyer.best-deal
       </p>
     </div>
     <div
       className="w-64 sm:pb-16 text-center undefined"
     >
       <img
-        alt="Buy directly from suppliers"
+        alt="translation:pages.home.buyer.buy-from-suppliers"
         className="h-24 w-24 inline-block bg-green-400"
         src="buyer3.jpg"
       />
       <h2
         className="text-2xl thin my-3"
       >
-        Buy directly from suppliers
+        translation:pages.home.buyer.buy-from-suppliers
       </h2>
       <p
         className="text-base font-normal "
       >
-        Buy directly from suppliers of quality material in your country or internationally.
+        translation:pages.home.buyer.buy-direct
       </p>
     </div>
   </div>

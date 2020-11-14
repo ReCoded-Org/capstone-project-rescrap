@@ -1,5 +1,5 @@
 import React,{ useEffect, useState} from 'react';
-import Card from './../card/Card';
+import Card from './../Card/Card';
 import Title from './../Title/Title';
 import Button from './../Button/Button';
 import { useTranslation } from 'react-i18next';
@@ -13,7 +13,7 @@ const [cards,setCards]=useState([]);
     setStart(0);
   }, []);
 
-  useEffect(async () => {
+  useEffect( () => {
    firebase.database().ref('posts/').limitToLast(8).on('value', async function(snapshot) {
     const fetchImage =async (imageID)=>{
       const ref =  firebase.storage().ref('/posts-images/'+imageID);

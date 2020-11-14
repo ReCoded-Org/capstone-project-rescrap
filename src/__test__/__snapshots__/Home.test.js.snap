@@ -12,18 +12,18 @@ Array [
       <h1
         className="text-3xl normal text-green-200 my-4"
       >
-        Scrap Recycling Marketplace
+        translation:pages.home.title
       </h1>
       <p
         className="text-base font-normal  text-lg my-4"
       >
-        Connect and trade directly with suppliers & buyers of recyclable plastics
+        translation:pages.home.paragraph
       </p>
       <button
         className="rounded-full py-2 px-4 bg-green-200 text-white my-4 "
         onClick=""
       >
-        Sign up
+        translation:pages.home.sginup-btn
       </button>
     </div>
      
@@ -37,7 +37,7 @@ Array [
       <h1
         className="text-3xl normal text-green-200"
       >
-        HOW IT WORKS
+        translation:pages.home.how-it-works
       </h1>
       <a
         className="cursor-pointer"
@@ -46,7 +46,7 @@ Array [
         <h2
           className="text-2xl thin text-green-200 inline-block m-4 underline"
         >
-          Sellers
+          translation:pages.home.sellers
         </h2>
       </a>
       <a
@@ -56,7 +56,7 @@ Array [
         <h2
           className="text-2xl thin text-green-200 inline-block m-4"
         >
-          Buyers
+          translation:pages.home.buyers
         </h2>
       </a>
     </div>
@@ -67,57 +67,57 @@ Array [
         className="w-64 sm:pb-16 text-center undefined"
       >
         <img
-          alt="Post your offer"
+          alt="translation:pages.home.post-your-offer"
           className="h-24 w-24 inline-block bg-green-400"
           src="seller1.jpg"
         />
         <h2
           className="text-2xl thin my-3"
         >
-          Post your offer
+          translation:pages.home.post-your-offer
         </h2>
         <p
           className="text-base font-normal "
         >
-          Join the marketplace and post products you want to sell in less than a minute.
+          translation:pages.home.join-maketplace
         </p>
       </div>
       <div
         className="w-64 sm:pb-16 text-center undefined"
       >
         <img
-          alt="Get the best price"
+          alt="translation:pages.home.best-price"
           className="h-24 w-24 inline-block bg-green-400"
           src="seller2.jpg"
         />
         <h2
           className="text-2xl thin my-3"
         >
-          Get the best price
+          translation:pages.home.best-price
         </h2>
         <p
           className="text-base font-normal "
         >
-          Negotiate with buyers in real-time and get the best price for your products.
+          translation:pages.home.get-best-price
         </p>
       </div>
       <div
         className="w-64 sm:pb-16 text-center undefined"
       >
         <img
-          alt="Sell to customers"
+          alt="translation:pages.home.sell"
           className="h-24 w-24 inline-block bg-green-400"
           src="seller3.jpg"
         />
         <h2
           className="text-2xl thin my-3"
         >
-          Sell to customers
+          translation:pages.home.sell
         </h2>
         <p
           className="text-base font-normal "
         >
-          Sell products directly to customers in your country and around the world.
+          translation:pages.home.sell-product
         </p>
       </div>
     </div>
@@ -128,57 +128,57 @@ Array [
         className="w-64 sm:pb-16 text-center undefined"
       >
         <img
-          alt="Find what you’re looking for"
+          alt="translation:pages.home.buyer.looking-for"
           className="h-24 w-24 inline-block bg-green-400"
           src="buyer1.jpg"
         />
         <h2
           className="text-2xl thin my-3"
         >
-          Find what you’re looking for
+          translation:pages.home.buyer.looking-for
         </h2>
         <p
           className="text-base font-normal "
         >
-          Browse through thousands of offers posted in the marketplace and find what you’re looking for.
+          translation:pages.home.buyer.browser
         </p>
       </div>
       <div
         className="w-64 sm:pb-16 text-center undefined"
       >
         <img
-          alt="Negotiate the best deal"
+          alt="translation:pages.home.buyer.best-deal"
           className="h-24 w-24 inline-block bg-green-400"
           src="buyer2.jpg"
         />
         <h2
           className="text-2xl thin my-3"
         >
-          Negotiate the best deal
+          translation:pages.home.buyer.best-deal
         </h2>
         <p
           className="text-base font-normal "
         >
-          Negotiate with multiple sellers in real-time and make the best deal.
+          translation:pages.home.buyer.best-deal
         </p>
       </div>
       <div
         className="w-64 sm:pb-16 text-center undefined"
       >
         <img
-          alt="Buy directly from suppliers"
+          alt="translation:pages.home.buyer.buy-from-suppliers"
           className="h-24 w-24 inline-block bg-green-400"
           src="buyer3.jpg"
         />
         <h2
           className="text-2xl thin my-3"
         >
-          Buy directly from suppliers
+          translation:pages.home.buyer.buy-from-suppliers
         </h2>
         <p
           className="text-base font-normal "
         >
-          Buy directly from suppliers of quality material in your country or internationally.
+          translation:pages.home.buyer.buy-direct
         </p>
       </div>
     </div>
@@ -189,413 +189,20 @@ Array [
     <h1
       className="text-3xl normaluppercase font-semibold leading-5  tracking-widest text-green-100 text-center p-2 my-2 "
     >
-      NEW OFFERS
+      translation:pages.home.new-offer
     </h1>
     <div
       className="flex justify-center"
     >
       <div
         className=" flex flex-wrap px-4 justify-between"
-      >
-        <div
-          className="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 flex-col bg-white border rounded-lg overflow-hidden shadow-lg mx-4 my-4"
-        >
-          <a
-            href="#"
-            target="_blank"
-          >
-            <img
-              alt="Rescrap Product"
-              className="h-40 w-full justify-self-center bg-green-400"
-              src="https://source.unsplash.com/random"
-            />
-          </a>
-          <div
-            className="p-4"
-          >
-            <a
-              href="#"
-              target="_blank"
-            >
-               
-              <h4
-                className="mt-1 font-semibold text-lg truncate leading-5"
-              >
-                Plastic Bottels
-              </h4>
-            </a>
-            <p
-              className="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide leading-8"
-            >
-              Plastic
-            </p>
-            <div
-              className="flex flex-row justify-between"
-            >
-              <span
-                className="ml-1 inline-block bg-green-500 text-white text-sm px-2 rounded-full"
-              >
-                Sana'a
-              </span>
-               
-              <h4
-                className="text-green-600"
-              >
-                777YER
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div
-          className="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 flex-col bg-white border rounded-lg overflow-hidden shadow-lg mx-4 my-4"
-        >
-          <a
-            href="#"
-            target="_blank"
-          >
-            <img
-              alt="Rescrap Product"
-              className="h-40 w-full justify-self-center bg-green-400"
-              src="https://source.unsplash.com/random"
-            />
-          </a>
-          <div
-            className="p-4"
-          >
-            <a
-              href="#"
-              target="_blank"
-            >
-               
-              <h4
-                className="mt-1 font-semibold text-lg truncate leading-5"
-              >
-                Plastic Bottels
-              </h4>
-            </a>
-            <p
-              className="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide leading-8"
-            >
-              Plastic
-            </p>
-            <div
-              className="flex flex-row justify-between"
-            >
-              <span
-                className="ml-1 inline-block bg-green-500 text-white text-sm px-2 rounded-full"
-              >
-                Sana'a
-              </span>
-               
-              <h4
-                className="text-green-600"
-              >
-                777YER
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div
-          className="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 flex-col bg-white border rounded-lg overflow-hidden shadow-lg mx-4 my-4"
-        >
-          <a
-            href="#"
-            target="_blank"
-          >
-            <img
-              alt="Rescrap Product"
-              className="h-40 w-full justify-self-center bg-green-400"
-              src="https://source.unsplash.com/random"
-            />
-          </a>
-          <div
-            className="p-4"
-          >
-            <a
-              href="#"
-              target="_blank"
-            >
-               
-              <h4
-                className="mt-1 font-semibold text-lg truncate leading-5"
-              >
-                Plastic Bottels
-              </h4>
-            </a>
-            <p
-              className="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide leading-8"
-            >
-              Plastic
-            </p>
-            <div
-              className="flex flex-row justify-between"
-            >
-              <span
-                className="ml-1 inline-block bg-green-500 text-white text-sm px-2 rounded-full"
-              >
-                Sana'a
-              </span>
-               
-              <h4
-                className="text-green-600"
-              >
-                777YER
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div
-          className="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 flex-col bg-white border rounded-lg overflow-hidden shadow-lg mx-4 my-4"
-        >
-          <a
-            href="#"
-            target="_blank"
-          >
-            <img
-              alt="Rescrap Product"
-              className="h-40 w-full justify-self-center bg-green-400"
-              src="https://source.unsplash.com/random"
-            />
-          </a>
-          <div
-            className="p-4"
-          >
-            <a
-              href="#"
-              target="_blank"
-            >
-               
-              <h4
-                className="mt-1 font-semibold text-lg truncate leading-5"
-              >
-                Plastic Bottels
-              </h4>
-            </a>
-            <p
-              className="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide leading-8"
-            >
-              Plastic
-            </p>
-            <div
-              className="flex flex-row justify-between"
-            >
-              <span
-                className="ml-1 inline-block bg-green-500 text-white text-sm px-2 rounded-full"
-              >
-                Sana'a
-              </span>
-               
-              <h4
-                className="text-green-600"
-              >
-                777YER
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div
-          className="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 flex-col bg-white border rounded-lg overflow-hidden shadow-lg mx-4 my-4"
-        >
-          <a
-            href="#"
-            target="_blank"
-          >
-            <img
-              alt="Rescrap Product"
-              className="h-40 w-full justify-self-center bg-green-400"
-              src="https://source.unsplash.com/random"
-            />
-          </a>
-          <div
-            className="p-4"
-          >
-            <a
-              href="#"
-              target="_blank"
-            >
-               
-              <h4
-                className="mt-1 font-semibold text-lg truncate leading-5"
-              >
-                Plastic Bottels
-              </h4>
-            </a>
-            <p
-              className="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide leading-8"
-            >
-              Plastic
-            </p>
-            <div
-              className="flex flex-row justify-between"
-            >
-              <span
-                className="ml-1 inline-block bg-green-500 text-white text-sm px-2 rounded-full"
-              >
-                Sana'a
-              </span>
-               
-              <h4
-                className="text-green-600"
-              >
-                777YER
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div
-          className="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 flex-col bg-white border rounded-lg overflow-hidden shadow-lg mx-4 my-4"
-        >
-          <a
-            href="#"
-            target="_blank"
-          >
-            <img
-              alt="Rescrap Product"
-              className="h-40 w-full justify-self-center bg-green-400"
-              src="https://source.unsplash.com/random"
-            />
-          </a>
-          <div
-            className="p-4"
-          >
-            <a
-              href="#"
-              target="_blank"
-            >
-               
-              <h4
-                className="mt-1 font-semibold text-lg truncate leading-5"
-              >
-                Plastic Bottels
-              </h4>
-            </a>
-            <p
-              className="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide leading-8"
-            >
-              Plastic
-            </p>
-            <div
-              className="flex flex-row justify-between"
-            >
-              <span
-                className="ml-1 inline-block bg-green-500 text-white text-sm px-2 rounded-full"
-              >
-                Sana'a
-              </span>
-               
-              <h4
-                className="text-green-600"
-              >
-                777YER
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div
-          className="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 flex-col bg-white border rounded-lg overflow-hidden shadow-lg mx-4 my-4"
-        >
-          <a
-            href="#"
-            target="_blank"
-          >
-            <img
-              alt="Rescrap Product"
-              className="h-40 w-full justify-self-center bg-green-400"
-              src="https://source.unsplash.com/random"
-            />
-          </a>
-          <div
-            className="p-4"
-          >
-            <a
-              href="#"
-              target="_blank"
-            >
-               
-              <h4
-                className="mt-1 font-semibold text-lg truncate leading-5"
-              >
-                Plastic Bottels
-              </h4>
-            </a>
-            <p
-              className="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide leading-8"
-            >
-              Plastic
-            </p>
-            <div
-              className="flex flex-row justify-between"
-            >
-              <span
-                className="ml-1 inline-block bg-green-500 text-white text-sm px-2 rounded-full"
-              >
-                Sana'a
-              </span>
-               
-              <h4
-                className="text-green-600"
-              >
-                777YER
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div
-          className="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 flex-col bg-white border rounded-lg overflow-hidden shadow-lg mx-4 my-4"
-        >
-          <a
-            href="#"
-            target="_blank"
-          >
-            <img
-              alt="Rescrap Product"
-              className="h-40 w-full justify-self-center bg-green-400"
-              src="https://source.unsplash.com/random"
-            />
-          </a>
-          <div
-            className="p-4"
-          >
-            <a
-              href="#"
-              target="_blank"
-            >
-               
-              <h4
-                className="mt-1 font-semibold text-lg truncate leading-5"
-              >
-                Plastic Bottels
-              </h4>
-            </a>
-            <p
-              className="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide leading-8"
-            >
-              Plastic
-            </p>
-            <div
-              className="flex flex-row justify-between"
-            >
-              <span
-                className="ml-1 inline-block bg-green-500 text-white text-sm px-2 rounded-full"
-              >
-                Sana'a
-              </span>
-               
-              <h4
-                className="text-green-600"
-              >
-                777YER
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
+      />
     </div>
     <button
       className="rounded-full py-2 px-4container block capitaliz mx-auto shadow bg-green-200 hover:bg-green-100 focus:shadow-outline focus:outline-none text-white text-lg py-3 px-10 rounded my-2"
       onClick=""
     >
-      See More
+      translation:pages.shop.btn-see-more
     </button>
   </div>,
   <div>
@@ -621,7 +228,7 @@ Array [
         <h2
           className="text-2xl thin"
         >
-          Countries
+          translation:pages.home.footer.Subtitle1
         </h2>
       </div>
       <div
@@ -642,7 +249,7 @@ Array [
         <h2
           className="text-2xl thin"
         >
-          Registered businesses
+          translation:pages.home.footer.Subtitle2
         </h2>
       </div>
       <div
@@ -663,7 +270,7 @@ Array [
         <h2
           className="text-2xl thin"
         >
-          Pounds of listed material
+          translation:pages.home.footer.Subtitle3
         </h2>
       </div>
     </div>

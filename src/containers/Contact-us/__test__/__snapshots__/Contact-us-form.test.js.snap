@@ -10,7 +10,7 @@ exports[`matches the snapshot 1`] = `
     <h1
       className="text-3xl normal text-green-100 pb-1"
     >
-      Let's Contact!!
+      translation:pages.contactus.form.title
       <h1 />
     </h1>
     <div
@@ -19,11 +19,11 @@ exports[`matches the snapshot 1`] = `
       <label
         className="text-sm"
       >
-        Name
+        translation:pages.contactus.form.name
       </label>
       <input
         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\\" id=\\"username"
-        placeholder="Name"
+        placeholder="translation:pages.contactus.form.name"
       />
     </div>
     <div
@@ -32,11 +32,11 @@ exports[`matches the snapshot 1`] = `
       <label
         className="text-sm"
       >
-        Subject
+        translation:pages.contactus.form.subject
       </label>
       <input
         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\\" id=\\"username"
-        placeholder="Subject"
+        placeholder="translation:pages.contactus.form.subject"
       />
     </div>
     <div
@@ -45,11 +45,11 @@ exports[`matches the snapshot 1`] = `
       <label
         className="text-sm"
       >
-        Email
+        translation:pages.contactus.form.email
       </label>
       <input
         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\\" id=\\"username"
-        placeholder="Email"
+        placeholder="translation:pages.contactus.form.email"
       />
     </div>
     <div
@@ -58,11 +58,11 @@ exports[`matches the snapshot 1`] = `
       <label
         className="text-sm"
       >
-        Message
+        translation:pages.contactus.form.message
       </label>
       <textarea
         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\\" id=\\"username"
-        placeholder="Message"
+        placeholder="translation:pages.contactus.form.message"
       />
     </div>
     <div
@@ -72,7 +72,7 @@ exports[`matches the snapshot 1`] = `
         className="bg-green-100 py-4 w-4/5 border rounded text-white "
         type="submit"
       >
-        Submit
+        translation:pages.contactus.form.submit
       </button>
     </div>
   </form>

@@ -20,7 +20,7 @@ const Shop = () => {
 
   const [term, setTerm] = useState('');
 
-  useEffect(async () => {
+  useEffect( () => {
     firebase
       .database()
       .ref('posts/')
