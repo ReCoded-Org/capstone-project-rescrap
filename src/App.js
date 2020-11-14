@@ -11,6 +11,7 @@ import AddProduct from './containers/Add-product/AddProduct';
 import ProductDetials from './containers/ProductDetials/ProductDetials';
 import Shop from './containers/Shop/Shop';
 import ContactUs from './containers/Contact-us/Contact-us';
+import NotFound from './containers/NotFound/NotFound';
 
 function App() {
   const [location, setLocation] = useState('/');
@@ -135,9 +136,6 @@ function App() {
         <Route path="/about-us">
           <AboutUs />
         </Route>
-        <Route path="/shop">
-          <Shop />
-        </Route>
         <Route path="/add-product">
           <AddProduct
             userData={user}
@@ -157,8 +155,17 @@ function App() {
             uid={user.uid}
           />
         </Route>
-        <Route path="/not-found">Not Found</Route>
-        <Route path="/">
+        <Route
+          path="/shop/:id/"
+          render={(props) => (
+            <ProductDetials {...props} loggedIn={user.loggedIn} uid={user.uid} userData={user} />
+          )}
+        />
+        <Route path="/shop">
+          <Shop />
+        </Route>
+
+        <Route exact path="/">
           <Home
             navbar={
               <Navbar
@@ -171,6 +178,7 @@ function App() {
             }
           />
         </Route>
+        <Route path="*" component={NotFound} />
       </Switch>
       <Footer setPath={setLocation} />
     </Router>

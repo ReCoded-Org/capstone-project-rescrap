@@ -3,36 +3,37 @@
 exports[`matches snapshot 1`] = `
 <div>
   <div
-    className="flex sm:flex-row md:flex-row lg:flex-row  justify-center "
+    className="flex flex-wrap justify-center "
   >
     <div
-      className="w-full md:w-1/2 lg:w-1/2 p-2 mx-6 my-4"
+      className="w-full md:w-1/2 lg:w-1/2 flex justify-center shadow-md mb-2"
     >
-      <img
-        alt="bottle"
-        src="https://cdn.mos.cms.futurecdn.net/3KnPinofHaKaQDaeRov3Qg-320-80.jpg"
-      />
+      <div
+        className="flex justify-center w-full mx-6 my-4"
+      >
+        <img
+          className="justify-self-center"
+        />
+      </div>
     </div>
     <div
-      className=" overflow-hidden  w-1/2 p-2 "
+      className="flex items-center justify-center w-full md:w-1/2 lg:w-1/2"
     >
-      <h1
-        className="text-3xl normaluppercase font-semibold leading-5  tracking-widest  text-left  my-2  "
-      >
-        Name of product
-      </h1>
       <div
-        className="text-base flex   my-3   text-gray-700"
+        className="flex flex-col justify-center overflow-hidden  w-1/2 p-2 "
       >
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum quis nunc ac efficitur consectetur adipiscing elit Vivamus vestibulum quis nunc ac efficitur consectetur adipiscing elit Vivamus vestibulum quis nunc ac efficitur consectetur adipiscing elit Vivamus vestibulum quis nunc ac efficitur consectetur adipiscing elit
-        </p>
+        <h1
+          className="text-3xl normaluppercase font-semibold leading-5  tracking-widest  text-left  my-2  "
+        />
+        <div
+          className="text-base flex   my-3   text-gray-700"
+        >
+          <p />
+        </div>
+        <h2
+          className="text-2xl thin text-green-200 uppercase font-semibold leading-5  tracking-widest  text-left  my-2  "
+        />
       </div>
-      <h2
-        className="text-2xl thin text-green-200 uppercase font-semibold leading-5  tracking-widest  text-left  my-2  "
-      >
-        5000 YR
-      </h2>
     </div>
   </div>
 </div>
