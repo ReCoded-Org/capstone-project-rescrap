@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const ShopSearch = ({ searchText }) => {
+  const {t, i18n}=useTranslation();
+
   const [text, setText] = useState('');
 
   const onSubmit = (e) => {
@@ -16,13 +19,13 @@ const ShopSearch = ({ searchText }) => {
             onChange={(e) => setText(e.target.value)}
             className="appearance-none bg-transparent border-none w-full text-gray-600 mr-3 py-1 px-2 leading-tight focus:outline-none"
             type="text"
-            placeholder="Search Product..."
+            placeholder={ t('translation:pages.shop.shopsearch.placeholder') }
           />
           <button
             className="flex-shrink-0 bg-green-500 hover:bg-green-600 border-green-500 hover:border-green-600 text-sm border-4 text-white py-1 px-2 rounded"
             type="submit"
           >
-            Search
+            { t('translation:pages.shop.shopsearch.search-btn') }
           </button>
         </div>
       </form>

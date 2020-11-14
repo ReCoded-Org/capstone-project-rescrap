@@ -3,13 +3,21 @@ import Card from '../../components/Card/Card';
 import Button from '../../components/Button/Button';
 import Title from '../../components/Title/Title';
 import ShopSearch from './ShopSearch';
+import { useTranslation } from 'react-i18next';
 import firebase from '../../firebase.config';
 
+
 const Shop = () => {
+    const {t, i18n}=useTranslation();
   const [cards, setCards] = useState([]);
   // const [search, setSearch] = useState('');
   // const [filteredProducts, setFilteredProducts] = useState([]);
   // const [isLoading, setIsLoading] = useState(true);
+//    const [start, setStart] = useState(0);
+//   useEffect(() => {
+//     setStart(0);
+//   }, []);
+
   const [term, setTerm] = useState('');
 
   useEffect(async () => {
@@ -63,7 +71,7 @@ const Shop = () => {
     <div className="container mx-auto">
       <Title
         classes="uppercase font-semibold leading-5  tracking-widest text-green-500 text-center p-2 my-2 "
-        text="SHOP PRODUCTS"
+        text={ t('translation:pages.shop.title') }
       />
       <ShopSearch searchText={(text) => setTerm(text)} />
       <div className="mb-4">
@@ -71,7 +79,7 @@ const Shop = () => {
       </div>
       <Button
         btnClasses="container block capitaliz mx-auto shadow bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none text-white text-lg py-3 px-10 rounded my-2"
-        btnText="See More"
+        btnText={ t('translation:pages.shop.btn-see-more') }
         btnClickHandler=""
       />
     </div>

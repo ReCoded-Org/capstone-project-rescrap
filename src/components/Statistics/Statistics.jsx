@@ -1,25 +1,30 @@
 import React from 'react';
 import Title from './../Title/Title';
 import SubTitle from './../SubTitle/SubTitle';
-const statisticsItems = [
-  {
-    icon: <i class="fas fa-globe-asia"></i>,
-    title: '150+',
-    subTitle: 'Countries',
-  },
-  {
-    icon: <i class="fas fa-chart-bar"></i>,
-    title: '4000+',
-    subTitle: 'Registered businesses',
-  },
-  {
-    icon: <i class="fas fa-shopping-cart"></i>,
-    title: '2.5m',
-    subTitle: 'Pounds of listed material',
-  },
-];
+import { useTranslation } from 'react-i18next';
+
 
 const Statistics = ({footer}) => {
+  const {t, i18n}=useTranslation();
+
+  const statisticsItems = [
+    {
+      icon: <i class="fas fa-globe-asia"></i>,
+      title: '150+',
+      subTitle: t('translation:pages.home.footer.Subtitle1') ,
+    },
+    {
+      icon: <i class="fas fa-chart-bar"></i>,
+      title: '4000+',
+      subTitle:  t('translation:pages.home.footer.Subtitle2') ,
+    },
+    {
+      icon: <i class="fas fa-shopping-cart"></i>,
+      title: '2.5m',
+      subTitle:  t('translation:pages.home.footer.Subtitle3') ,
+    },
+  ];
+  
   return (
     <div>
     <div

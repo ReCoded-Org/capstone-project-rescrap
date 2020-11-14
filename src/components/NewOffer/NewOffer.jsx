@@ -2,11 +2,11 @@ import React,{ useEffect, useState} from 'react';
 import Card from './../card/Card';
 import Title from './../Title/Title';
 import Button from './../Button/Button';
+import { useTranslation } from 'react-i18next';
 import firebase from 'firebase';
 
-
 const NewOffer = () => {
-
+ const {t, i18n}=useTranslation();
 const [cards,setCards]=useState([]);
   const [start, setStart] = useState(0);
   useEffect(() => {
@@ -50,7 +50,7 @@ const [cards,setCards]=useState([]);
     <div className="container mx-auto">
       <Title
         classes="uppercase font-semibold leading-5  tracking-widest text-green-100 text-center p-2 my-2 "
-        text="NEW OFFERS"
+        text={ t('translation:pages.home.new-offer') }
       />
       <div className="flex justify-center">
         <div className=" flex flex-wrap px-4 justify-between">
@@ -59,7 +59,7 @@ const [cards,setCards]=useState([]);
       </div>
       <Button
         btnClasses="container block capitaliz mx-auto shadow bg-green-200 hover:bg-green-100 focus:shadow-outline focus:outline-none text-white text-lg py-3 px-10 rounded my-2"
-        btnText="See More"
+        btnText={ t('translation:pages.shop.btn-see-more') }
         btnClickHandler=""
       />
     </div>

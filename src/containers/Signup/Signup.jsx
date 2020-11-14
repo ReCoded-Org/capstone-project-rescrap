@@ -4,6 +4,7 @@ import newUserBackground from '../../images/newUserPage.svg';
 import firebase from '../../firebase.config';
 import { useHistory } from 'react-router-dom';
 
+
 const Signup = (props) => {
   let history = useHistory();
   if (props.loggedIn && !props.firstLogin) {
