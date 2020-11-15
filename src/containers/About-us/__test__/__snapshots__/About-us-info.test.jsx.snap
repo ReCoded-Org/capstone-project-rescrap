@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the snapshot 1`] = `
+<div>
+  <h2
+    className="text-2xl thintext-5xl text-center text-green-100 m-4 "
+  >
+    translation:pages.aboutus.subtitle
+  </h2>
+  <div
+    className="text-base flex mx-8 mb-16"
+  >
+    <p>
+      translation:pages.aboutus.paragraph1
+    </p>
+    <p>
+      translation:pages.aboutus.paragraph2
+    </p>
+  </div>
+</div>
+`;

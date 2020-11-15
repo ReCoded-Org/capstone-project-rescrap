@@ -1,0 +1,29 @@
+.intro {
+  background-image: url(../../images/Component\ 2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.intro-content {
+  width: 32rem;
+}
+button {
+  background-color: white;
+  color: green;
+  border-radius: 9999px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 920px) {
+  .intro-content {
+    width: 24rem;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .intro-content {
+    width: 16rem;
+  }
+}

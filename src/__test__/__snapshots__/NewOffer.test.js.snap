@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="container mx-auto"
+>
+  <h1
+    className="text-3xl normaluppercase font-semibold leading-5  tracking-widest text-green-100 text-center p-2 my-2 "
+  >
+    translation:pages.home.new-offer
+  </h1>
+  <div
+    className="flex justify-center"
+  >
+    <div
+      className=" flex flex-wrap px-4 justify-between"
+    />
+  </div>
+  <button
+    className="rounded-full py-2 px-4container block capitaliz mx-auto shadow bg-green-200 hover:bg-green-100 focus:shadow-outline focus:outline-none text-white text-lg py-3 px-10 rounded my-2"
+    onClick=""
+  >
+    translation:pages.shop.btn-see-more
+  </button>
+</div>
+`;

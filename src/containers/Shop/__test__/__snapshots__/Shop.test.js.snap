@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="container mx-auto"
+>
+  <h1
+    className="text-3xl normaluppercase font-semibold leading-5  tracking-widest text-green-500 text-center p-2 my-2 "
+  >
+    translation:pages.shop.title
+  </h1>
+  <div
+    className="max-w-sm rounded overflow-hidden my-10 mx-auto"
+  >
+    <form
+      className="w-full max-w-sm"
+      onSubmit={[Function]}
+    >
+      <div
+        className="flex items-center border-b border-b-2 border-green-500 py-2"
+      >
+        <input
+          className="appearance-none bg-transparent border-none w-full text-gray-600 mr-3 py-1 px-2 leading-tight focus:outline-none"
+          onChange={[Function]}
+          placeholder="translation:pages.shop.shopsearch.placeholder"
+          type="text"
+        />
+        <button
+          className="flex-shrink-0 bg-green-500 hover:bg-green-600 border-green-500 hover:border-green-600 text-sm border-4 text-white py-1 px-2 rounded"
+          type="submit"
+        >
+          translation:pages.shop.shopsearch.search-btn
+        </button>
+      </div>
+    </form>
+  </div>
+  <div
+    className="mb-4"
+  >
+    <div
+      className=" flex flex-wrap justify-between"
+    />
+  </div>
+  <button
+    className="rounded-full py-2 px-4container block capitaliz mx-auto shadow bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none text-white text-lg py-3 px-10 rounded my-2"
+    onClick=""
+  >
+    translation:pages.shop.btn-see-more
+  </button>
+</div>
+`;

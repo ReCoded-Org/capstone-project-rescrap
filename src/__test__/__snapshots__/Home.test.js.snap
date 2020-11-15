@@ -1,0 +1,282 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the snapshot 1`] = `
+Array [
+  <div
+    className="intro h-screen"
+  >
+    <div />
+    <div
+      className="intro-content p-12 py-24"
+    >
+      <h1
+        className="text-3xl normal text-green-200 my-4"
+      >
+        translation:pages.home.title
+      </h1>
+      <p
+        className="text-base font-normal  text-lg my-4"
+      >
+        translation:pages.home.paragraph
+      </p>
+      <button
+        className="rounded-full py-2 px-4 bg-green-200 text-white my-4 "
+        onClick=""
+      >
+        translation:pages.home.sginup-btn
+      </button>
+    </div>
+     
+  </div>,
+  <div
+    className="sellersBuyers"
+  >
+    <div
+      className="text-center pt-24"
+    >
+      <h1
+        className="text-3xl normal text-green-200"
+      >
+        translation:pages.home.how-it-works
+      </h1>
+      <a
+        className="cursor-pointer"
+        onClick={[Function]}
+      >
+        <h2
+          className="text-2xl thin text-green-200 inline-block m-4 underline"
+        >
+          translation:pages.home.sellers
+        </h2>
+      </a>
+      <a
+        className="cursor-pointer"
+        onClick={[Function]}
+      >
+        <h2
+          className="text-2xl thin text-green-200 inline-block m-4"
+        >
+          translation:pages.home.buyers
+        </h2>
+      </a>
+    </div>
+    <div
+      className="grid sm:row-gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  col-gap-32 mx-32 my-20"
+    >
+      <div
+        className="w-64 sm:pb-16 text-center undefined"
+      >
+        <img
+          alt="translation:pages.home.post-your-offer"
+          className="h-24 w-24 inline-block bg-green-400"
+          src="seller1.jpg"
+        />
+        <h2
+          className="text-2xl thin my-3"
+        >
+          translation:pages.home.post-your-offer
+        </h2>
+        <p
+          className="text-base font-normal "
+        >
+          translation:pages.home.join-maketplace
+        </p>
+      </div>
+      <div
+        className="w-64 sm:pb-16 text-center undefined"
+      >
+        <img
+          alt="translation:pages.home.best-price"
+          className="h-24 w-24 inline-block bg-green-400"
+          src="seller2.jpg"
+        />
+        <h2
+          className="text-2xl thin my-3"
+        >
+          translation:pages.home.best-price
+        </h2>
+        <p
+          className="text-base font-normal "
+        >
+          translation:pages.home.get-best-price
+        </p>
+      </div>
+      <div
+        className="w-64 sm:pb-16 text-center undefined"
+      >
+        <img
+          alt="translation:pages.home.sell"
+          className="h-24 w-24 inline-block bg-green-400"
+          src="seller3.jpg"
+        />
+        <h2
+          className="text-2xl thin my-3"
+        >
+          translation:pages.home.sell
+        </h2>
+        <p
+          className="text-base font-normal "
+        >
+          translation:pages.home.sell-product
+        </p>
+      </div>
+    </div>
+    <div
+      className="grid sm:row-gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  col-gap-32 mx-32 my-20 hidden"
+    >
+      <div
+        className="w-64 sm:pb-16 text-center undefined"
+      >
+        <img
+          alt="translation:pages.home.buyer.looking-for"
+          className="h-24 w-24 inline-block bg-green-400"
+          src="buyer1.jpg"
+        />
+        <h2
+          className="text-2xl thin my-3"
+        >
+          translation:pages.home.buyer.looking-for
+        </h2>
+        <p
+          className="text-base font-normal "
+        >
+          translation:pages.home.buyer.browser
+        </p>
+      </div>
+      <div
+        className="w-64 sm:pb-16 text-center undefined"
+      >
+        <img
+          alt="translation:pages.home.buyer.best-deal"
+          className="h-24 w-24 inline-block bg-green-400"
+          src="buyer2.jpg"
+        />
+        <h2
+          className="text-2xl thin my-3"
+        >
+          translation:pages.home.buyer.best-deal
+        </h2>
+        <p
+          className="text-base font-normal "
+        >
+          translation:pages.home.buyer.best-deal
+        </p>
+      </div>
+      <div
+        className="w-64 sm:pb-16 text-center undefined"
+      >
+        <img
+          alt="translation:pages.home.buyer.buy-from-suppliers"
+          className="h-24 w-24 inline-block bg-green-400"
+          src="buyer3.jpg"
+        />
+        <h2
+          className="text-2xl thin my-3"
+        >
+          translation:pages.home.buyer.buy-from-suppliers
+        </h2>
+        <p
+          className="text-base font-normal "
+        >
+          translation:pages.home.buyer.buy-direct
+        </p>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="container mx-auto"
+  >
+    <h1
+      className="text-3xl normaluppercase font-semibold leading-5  tracking-widest text-green-100 text-center p-2 my-2 "
+    >
+      translation:pages.home.new-offer
+    </h1>
+    <div
+      className="flex justify-center"
+    >
+      <div
+        className=" flex flex-wrap px-4 justify-between"
+      />
+    </div>
+    <button
+      className="rounded-full py-2 px-4container block capitaliz mx-auto shadow bg-green-200 hover:bg-green-100 focus:shadow-outline focus:outline-none text-white text-lg py-3 px-10 rounded my-2"
+      onClick=""
+    >
+      translation:pages.shop.btn-see-more
+    </button>
+  </div>,
+  <div>
+    <div
+      className="container sm:block md:flex justify-between"
+      data-testid="statistics"
+    >
+      <div
+        className="sm:my-3 flex-1 text-center px-4 py-2 m-2"
+      >
+        <div
+          className="text-green-100 text-6xl"
+        >
+          <i
+            class="fas fa-globe-asia"
+          />
+        </div>
+        <h1
+          className="text-3xl normal"
+        >
+          150+
+        </h1>
+        <h2
+          className="text-2xl thin"
+        >
+          translation:pages.home.footer.Subtitle1
+        </h2>
+      </div>
+      <div
+        className="sm:my-3 flex-1 text-center px-4 py-2 m-2"
+      >
+        <div
+          className="text-green-100 text-6xl"
+        >
+          <i
+            class="fas fa-chart-bar"
+          />
+        </div>
+        <h1
+          className="text-3xl normal"
+        >
+          4000+
+        </h1>
+        <h2
+          className="text-2xl thin"
+        >
+          translation:pages.home.footer.Subtitle2
+        </h2>
+      </div>
+      <div
+        className="sm:my-3 flex-1 text-center px-4 py-2 m-2"
+      >
+        <div
+          className="text-green-100 text-6xl"
+        >
+          <i
+            class="fas fa-shopping-cart"
+          />
+        </div>
+        <h1
+          className="text-3xl normal"
+        >
+          2.5m
+        </h1>
+        <h2
+          className="text-2xl thin"
+        >
+          translation:pages.home.footer.Subtitle3
+        </h2>
+      </div>
+    </div>
+    <div
+      className="mt-16"
+    />
+  </div>,
+]
+`;

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the snapshot 1`] = `
+<div
+  className="intro h-screen"
+>
+  <div />
+  <div
+    className="intro-content p-12 py-24"
+  >
+    <h1
+      className="text-3xl normal text-green-200 my-4"
+    >
+      translation:pages.home.title
+    </h1>
+    <p
+      className="text-base font-normal  text-lg my-4"
+    >
+      translation:pages.home.paragraph
+    </p>
+    <button
+      className="rounded-full py-2 px-4 bg-green-200 text-white my-4 "
+      onClick=""
+    >
+      translation:pages.home.sginup-btn
+    </button>
+  </div>
+   
+</div>
+`;

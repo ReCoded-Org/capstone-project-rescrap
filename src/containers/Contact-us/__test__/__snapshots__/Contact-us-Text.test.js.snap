@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the snapshot 1`] = `
+<div
+  className="flex justify-center pt-10 lg:pt-0 lg:pb-20 lg:justify-start mb-4 items-center sm:h-full lg:h-screen w-full "
+  id="contact-text"
+>
+  <div
+    className="text-white w-3/4  "
+  >
+    <h1
+      className="text-4xl"
+    >
+      translation:pages.contactus.title
+    </h1>
+    <p
+      className="text-xl"
+    >
+       
+      translation:pages.contactus.paragraph
+    </p>
+  </div>
+</div>
+`;

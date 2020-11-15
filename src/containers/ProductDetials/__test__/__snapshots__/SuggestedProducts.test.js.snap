@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="mx-10 flex flex-col justify-center"
+>
+  <h1
+    className="text-3xl normaluppercase font-semibold leading-5  tracking-widest  text-left p-2 my-2 mx-4 "
+  >
+    Suggested products
+  </h1>
+  <div
+    className="flex flex-wrap justify-center"
+  >
+    <div
+      class="flex items-center "
+    >
+      <i
+        className=" far fa-angle-left text-green-100 hover:text-black font-bold hover:shadow-lg rounded-full text-6xl "
+        onClick={[Function]}
+      >
+          
+      </i>
+    </div>
+    <div
+      class="flex items-center "
+    >
+      <i
+        className="far fa-angle-right  text-green-100 hover:text-black font-bold hover:shadow-lg  text-6xl"
+        onClick={[Function]}
+      >
+         
+      </i>
+    </div>
+  </div>
+</div>
+`;
