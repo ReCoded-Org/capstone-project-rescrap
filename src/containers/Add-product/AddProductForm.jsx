@@ -237,12 +237,12 @@ const initialImageStatus={
                 Quantity
               </label>
               <Input
-                inputType="number"
+                inputType="text"
                 inputClasses=" shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-green-200"
                 inputName="Quantity"
                 handleChange={inputHandler}
                 inputValue={product.quantity}
-                inputPlaceholder="Enter Quantity"
+                inputPlaceholder="Quantity / unit (eg. KG, bottle, piece, ...)"
               />
             </div>
             <div className="w-full lg:w-6/12">

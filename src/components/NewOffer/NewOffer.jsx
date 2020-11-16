@@ -15,9 +15,9 @@ const [cards,setCards]=useState([]);
 
   useEffect( () => {
    firebase.database().ref('posts/').limitToLast(8).on('value', async function(snapshot) {
-    const fetchImage =async (imageID)=>{
+    const fetchImage = (imageID)=>{
       const ref =  firebase.storage().ref('/posts-images/'+imageID);
-      const url = await ref.getDownloadURL();
+      const url =  ref.getDownloadURL();
       return url;
     }
     const posts = snapshot.val();
