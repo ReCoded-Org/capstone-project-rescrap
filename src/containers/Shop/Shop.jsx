@@ -36,7 +36,7 @@ const Shop = () => {
         console.log(keys);
         for (let i = 0; i < keys.length; i++) {
           const post = posts[keys[i]];
-          console.log();
+          // console.log();
           const img = await fetchImage(posts[keys[i]].productImageKey);
           setCards((previousState) => {
             return [
@@ -44,7 +44,7 @@ const Shop = () => {
               <Card
                 cardImageSrc={img}
                 cardImageAlt={post.cardImageAlt}
-                productDetailsLink={'/shop/'}
+                productDetailsLink={'/shop/'+keys[i]}
                 cardTitle={post.productName}
                 typeOfProduct={post.category}
                 cardLocation={post.addressDetails}

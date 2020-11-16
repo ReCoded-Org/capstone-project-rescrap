@@ -26,7 +26,7 @@ const Statistics = ({footer}) => {
   ];
   
   return (
-    <div>
+    <div className="container mx-auto">
     <div
       className="container sm:block md:flex justify-between"
       data-testid="statistics"

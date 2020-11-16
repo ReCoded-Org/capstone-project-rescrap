@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`matches snapshot 1`] = `
-<div>
+<div
+  className="container mx-auto"
+>
   <div
     className="container sm:block md:flex justify-between"
     data-testid="statistics"

@@ -102,8 +102,8 @@ exports[`matches the snapshot 1`] = `
               id=""
               name="Quantity"
               onChange={[Function]}
-              placeholder="Enter Quantity"
-              type="number"
+              placeholder="Quantity / unit (eg. KG, bottle, piece, ...)"
+              type="text"
               value=""
             />
           </div>

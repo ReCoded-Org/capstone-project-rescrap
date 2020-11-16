@@ -9,7 +9,7 @@ function Footer(props) {
 
   return (
     <div className="main-footer font-body  bg-gradient-to-t from-green-100 via-transparent  to-transparent my-2 py-2">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row mx-5 my-5">
           {/* Column1 */}
           <div className="flex-1 pr-10 mb-4 justify-center">
