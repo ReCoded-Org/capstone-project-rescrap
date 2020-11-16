@@ -10,10 +10,10 @@ let postRef = null,
   newPostKey = null;
 
 const AddProductForm = (props) => {
-  const {t, i18n}=useTranslation();
+  const {t}=useTranslation();
 
   const history = useHistory();
-  if(props.uid==""){
+  if(props.uid===""){
     history.replace("/not-found")
   }
   const fileType = ['image/jpeg', 'image/jpg', 'image/png'];
@@ -41,7 +41,7 @@ const initialImageStatus={
       postRef = firebase.database().ref().child('posts');
       newPostKey = postRef.push().key;
       // console.log(newPostKey);
-      if (postRef == null) {
+      if (postRef === null) {
         alert('Connection Error!!!');
         history.replace('/not-found');
       }
@@ -98,7 +98,7 @@ const initialImageStatus={
   };
 
   const inputHandler = (event) => {
-    if(event.target.value!=""){
+    if(event.target.value!==""){
       event.target.classList.remove("border-red-700");
     }
     switch (event.target.name) {
@@ -145,13 +145,13 @@ const initialImageStatus={
     // console.log(inputs);
     let errorMessage="";
     inputs.forEach(element => {
-      if(element.value==""&&element.type!="file"){
+      if(element.value===""&&element.type!=="file"){
        element.classList.add("border-red-700");
        element.classList.remove("foucs:border-green-200")
         errorMessage +=element.name+" Can not be empty! \n";
       }
     });
-    if(errorMessage!=""){
+    if(errorMessage!==""){
       errorRequired.classList.remove("hidden");
       alert(errorMessage);
      return;

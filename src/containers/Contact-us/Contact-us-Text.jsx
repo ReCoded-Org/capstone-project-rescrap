@@ -3,7 +3,7 @@ import './Style.css'
 import { useTranslation } from 'react-i18next';
 
 const ContactUsText = () => {
-     const {t, i18n}=useTranslation();
+     const {t}=useTranslation();
 
      return <div id='contact-text' className='flex justify-center pt-10 lg:pt-0 lg:pb-20 lg:justify-start mb-4 items-center sm:h-full lg:h-screen w-full '>
      <div className='text-white w-3/4  '>

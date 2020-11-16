@@ -16,7 +16,7 @@ exports[`matches the snapshot 1`] = `
         <h1
           className="text-3xl normal text-green-100 "
         >
-          Add Product
+          translation:pages.Add Product.Add Product
         </h1>
       </div>
       <div
@@ -26,7 +26,7 @@ exports[`matches the snapshot 1`] = `
         <p
           className="text-red-700"
         >
-          *Please fill the red fields as they are required!!!
+          translation:pages.Add Product.fill
         </p>
       </div>
       <div
@@ -36,7 +36,7 @@ exports[`matches the snapshot 1`] = `
           className="block text-gray-700 text-sm font-bold mb-2"
           for="Upload-Image"
         >
-          Upload Product Image
+          translation:pages.Add Product.Upload Product Image
         </label>
         <input
           accept="image/png, image/jpeg"
@@ -53,14 +53,14 @@ exports[`matches the snapshot 1`] = `
           className="block text-gray-700 text-sm font-bold mb-2"
           for="Product Name"
         >
-          Product Name
+          translation:pages.Add Product.Product Name
         </label>
         <input
           className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight  shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-green-200"
           id=""
           name="Product Name"
           onChange={[Function]}
-          placeholder="Enter Product Name"
+          placeholder="translation:pages.Add Product.placeholders.Enter Product Name"
           type="text"
           value=""
         />
@@ -72,14 +72,14 @@ exports[`matches the snapshot 1`] = `
           className="block text-gray-700 text-sm font-bold mb-2"
           for="Product Name"
         >
-          Category
+          translation:pages.Add Product.Category
         </label>
         <input
           className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight  shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-green-200"
           id=""
           name="Category"
           onChange={[Function]}
-          placeholder="Enter Category"
+          placeholder="translation:pages.Add Product.placeholders.Enter Category"
           type="text"
           value=""
         />
@@ -94,14 +94,14 @@ exports[`matches the snapshot 1`] = `
             className="block text-gray-700 text-sm font-bold mb-2"
             for="Product Name"
           >
-            Quantity
+            translation:pages.Add Product.Quantity
           </label>
           <input
             className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight  shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-green-200"
             id=""
             name="Quantity"
             onChange={[Function]}
-            placeholder="Quantity / unit (eg. KG, bottle, piece, ...)"
+            placeholder="translation:pages.Add Product.placeholders.Enter Quantity"
             type="text"
             value=""
           />
@@ -113,14 +113,14 @@ exports[`matches the snapshot 1`] = `
             className="block text-gray-700 text-sm font-bold mb-2"
             for="Product Name"
           >
-            Price
+            translation:pages.Add Product.Price
           </label>
           <input
             className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight  shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-green-200"
             id=""
             name="Price"
             onChange={[Function]}
-            placeholder="Enter Price (*to donate for free type free or leave empty)"
+            placeholder="translation:pages.Add Product.placeholders.enter price"
             type="text"
             value=""
           />
@@ -133,13 +133,13 @@ exports[`matches the snapshot 1`] = `
           className="block text-gray-700 text-sm font-bold mb-2"
           for="Product Name"
         >
-          Description
+          translation:pages.Add Product.Description
         </label>
         <textarea
           className=" shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-green-200"
           name="Description"
           onChange={[Function]}
-          placeholder="Enter Description"
+          placeholder="translation:pages.Add Product.placeholders.Enter Description"
           value=""
         />
       </div>
@@ -150,14 +150,14 @@ exports[`matches the snapshot 1`] = `
           className="block text-gray-700 text-sm font-bold mb-2"
           for="Product Name"
         >
-          Phone Number
+          translation:pages.Add Product.Phone Number
         </label>
         <input
           className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight  shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-green-200"
           id=""
           name="Phone Number"
           onChange={[Function]}
-          placeholder="Enter your phone number"
+          placeholder="translation:pages.Add Product.placeholders.Enter your phone number"
           type="text"
           value=""
         />
@@ -169,13 +169,13 @@ exports[`matches the snapshot 1`] = `
           className="block text-gray-700 text-sm font-bold mb-2"
           for="Product Name"
         >
-          Address Details
+          translation:pages.Add Product.Address Details
         </label>
         <textarea
           className=" shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-green-200"
           name="Address Details"
           onChange={[Function]}
-          placeholder="Enter your address"
+          placeholder="translation:pages.Add Product.placeholders.Enter your address"
           value=""
         />
       </div>
@@ -186,7 +186,7 @@ exports[`matches the snapshot 1`] = `
           className=" py-2 px-4 bg-green-200 hover:bg-green-100 text-white font-bold rounded focus:outline-none"
           type="submit"
         >
-          Add product
+          translation:pages.Add Product.Add Product
         </button>
       </div>
     </div>

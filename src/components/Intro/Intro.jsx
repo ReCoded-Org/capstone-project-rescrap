@@ -1,6 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Navbar from '../Navbar/Navbar';
 import Title from '../Title/Title';
 import Description from '../Description/Description';
 import Button from '../Button/Button';
@@ -10,7 +8,7 @@ import { useTranslation } from 'react-i18next';
  
 
 const Intro = ({nav}) => {
-  const {t, i18n}=useTranslation();
+  const {t}=useTranslation();
     return ( <div className="intro h-screen">
       <div>{nav}</div>
     <div className="intro-content p-12 py-24">

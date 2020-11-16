@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 
 const AboutUsInfo = () => {
-    const {t, i18n}=useTranslation();
+    const {t}=useTranslation();
     return <div>
         <SubTitle
         text= { t('translation:pages.aboutus.subtitle') }

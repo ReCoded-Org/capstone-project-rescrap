@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../../components/Card/Card';
-import Button from '../../components/Button/Button';
 import Title from '../../components/Title/Title';
 import ShopSearch from './ShopSearch';
 import { useTranslation } from 'react-i18next';
@@ -8,7 +7,7 @@ import firebase from '../../firebase.config';
 
 
 const Shop = () => {
-    const {t, i18n}=useTranslation();
+    const {t}=useTranslation();
   const [cards, setCards] = useState([]);
   // const [search, setSearch] = useState('');
   // const [filteredProducts, setFilteredProducts] = useState([]);
@@ -18,7 +17,11 @@ const Shop = () => {
 //     setStart(0);
 //   }, []);
 
-  const [term, setTerm] = useState('');
+  const [term, setTerm] = useState("");
+
+  useEffect(() => {
+    // console.log(term);
+  }, [term])
 
   useEffect( () => {
     firebase
@@ -30,14 +33,23 @@ const Shop = () => {
           const url = await ref.getDownloadURL();
           return url;
         };
-        const posts = snapshot.val();
+        let posts = snapshot.val();
         const keys = Object.keys(snapshot.val());
-
-        console.log(keys);
+        
+        // console.log(keys);
         for (let i = 0; i < keys.length; i++) {
           const post = posts[keys[i]];
+          // if(term!==""){
+          //   if(!(post.productName.toLowerCase().includes(term)||
+          //   post.description.toLowerCase().includes(term)||
+          //   post.productName.toLowerCase().includes(term)||
+          //   post.productName.toLowerCase().includes(term))){
+          //       continue;
+          //   }
+          // }
           // console.log();
           const img = await fetchImage(posts[keys[i]].productImageKey);
+         
           setCards((previousState) => {
             return [
               ...previousState,
@@ -49,6 +61,7 @@ const Shop = () => {
                 typeOfProduct={post.category}
                 cardLocation={post.addressDetails}
                 cardPrice={post.price}
+                
               />,
             ];
           });
@@ -73,15 +86,24 @@ const Shop = () => {
         classes="uppercase font-semibold leading-5  tracking-widest text-green-500 text-center p-2 my-2 "
         text={ t('translation:pages.shop.title') }
       />
-      <ShopSearch searchText={(text) => setTerm(text)} />
+      <ShopSearch searchText={setTerm} text={term} />
       <div className="mb-4">
-        <div className=" flex flex-wrap justify-between">{cards}</div>
+        <div className=" flex flex-wrap justify-evenly">{cards.filter(obj=>{
+          if(term!==""){
+            return(obj.props.cardTitle.toLowerCase().includes(term)||
+            obj.props.cardLocation.toLowerCase().includes(term)||
+            obj.props.cardPrice.toLowerCase().includes(term)||
+            obj.props.typeOfProduct.toLowerCase().includes(term))
+          }else{
+            return obj;
+          }
+        })}</div>
       </div>
-      <Button
+      {/* <Button
         btnClasses="container block capitaliz mx-auto shadow bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none text-white text-lg py-3 px-10 rounded my-2"
         btnText={ t('translation:pages.shop.btn-see-more') }
         btnClickHandler=""
-      />
+      /> */}
     </div>
   );
 };

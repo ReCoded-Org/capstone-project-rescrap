@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 
 const Statistics = ({footer}) => {
-  const {t, i18n}=useTranslation();
+  const {t}=useTranslation();
 
   const statisticsItems = [
     {

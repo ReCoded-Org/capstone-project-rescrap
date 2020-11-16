@@ -13,10 +13,10 @@ import { useTranslation } from 'react-i18next';
 
 
 const SellersAndBuyers = () => {
-    const {t, i18n}=useTranslation();
+    const {t}=useTranslation();
 
 
-    const sellersAndBuyersClasses= "grid sm\:row-gap-10 sm\:grid-cols-1 md\:grid-cols-2 lg\:grid-cols-3 xl\:grid-cols-3  col-gap-32 mx-32 my-20"
+    const sellersAndBuyersClasses= "grid sm:row-gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  col-gap-32 mx-32 my-20"
     const subHeadersClasses=" text-green-200 inline-block m-4";
 
     let [sellerHeader,setSellerHeader]=useState(subHeadersClasses+" underline");

@@ -1,10 +1,6 @@
 import React, {useState ,useEffect} from 'react';
 import Card from '../../components/Card/Card';
 import Title from '../../components/Title/Title';
-import SubTitle from '../../components/SubTitle/SubTitle';
-
-
-   
 
 const cards = [];
 for(let i=0;i<12;i++){
@@ -23,7 +19,7 @@ function SuggestedProducts() {
     const items=Math.floor((event.target.innerWidth)/300);
     if(!(items>4))
     setItemsToShow(items);
-    else if(items==0)
+    else if(items===0)
     setItemsToShow(1);
     
   })

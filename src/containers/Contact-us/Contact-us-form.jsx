@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
  
 const ContactUsForm = () => {
-  const {t, i18n}=useTranslation();
+  const {t}=useTranslation();
 
      return <div className='sm:h-full lg:h-screen w-full px-20'>
                  <form  className='bg-white px-4 pb-16 pt-5 '>

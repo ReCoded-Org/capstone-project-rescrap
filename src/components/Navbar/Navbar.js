@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {Link, useHistory,useLocation} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 import RescrapLogo from './RescrapLogo';
 import NavbarItems from './NavbarItems';
 import './Navbar.css';
@@ -19,7 +19,7 @@ const Navbar = (props) => {
   useEffect(() => {
       // document.dir=i18n.dir();
      
-      if(i18n.language=="ar"){
+      if(i18n.language==="ar"){
         navBar=document.getElementById("mainNav");
         navBar.classList.add("active")
       }
@@ -44,7 +44,7 @@ const Navbar = (props) => {
     } else {
    
       // setHumbergur("fill-current text-white");
-      if(i18n.language=="ar"){
+      if(i18n.language==="ar"){
         navBar=document.getElementById("mainNav");
         navBar.classList.add("active")
       }else{

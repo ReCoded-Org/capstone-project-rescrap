@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Intro from './Intro';
 import Info from './Info';
 import SuggestedProducts from './SuggestedProducts';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 import firebase from '../../firebase.config';
 
 const ProductsDetials = (props) => {
@@ -21,14 +21,14 @@ const ProductsDetials = (props) => {
 
   const [ownerInfo, setOwnerInfo] = useState({});
   const [productImg, setProductImg] = useState('');
-  const history = useHistory();
+  // const history = useHistory();
 
-  if (!props.loggedIn) {
+  // if (!props.loggedIn) {
     // alert("Login first to display details")
     // history.replace("/shop");
-  }
+  // }
 
-  useEffect(async () => {
+  useEffect( () => {
     setProduct({
       addressDetails: '',
       category: '',

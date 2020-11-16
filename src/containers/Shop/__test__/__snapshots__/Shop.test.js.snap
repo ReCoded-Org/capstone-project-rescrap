@@ -24,6 +24,7 @@ exports[`matches snapshot 1`] = `
           onChange={[Function]}
           placeholder="translation:pages.shop.shopsearch.placeholder"
           type="text"
+          value=""
         />
         <button
           className="flex-shrink-0 bg-green-500 hover:bg-green-600 border-green-500 hover:border-green-600 text-sm border-4 text-white py-1 px-2 rounded"
@@ -38,14 +39,8 @@ exports[`matches snapshot 1`] = `
     className="mb-4"
   >
     <div
-      className=" flex flex-wrap justify-between"
+      className=" flex flex-wrap justify-evenly"
     />
   </div>
-  <button
-    className="rounded-full py-2 px-4container block capitaliz mx-auto shadow bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none text-white text-lg py-3 px-10 rounded my-2"
-    onClick=""
-  >
-    translation:pages.shop.btn-see-more
-  </button>
 </div>
 `;

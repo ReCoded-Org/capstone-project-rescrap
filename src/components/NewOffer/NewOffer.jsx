@@ -6,12 +6,9 @@ import { useTranslation } from 'react-i18next';
 import firebase from 'firebase';
 
 const NewOffer = () => {
- const {t, i18n}=useTranslation();
+ const {t}=useTranslation();
 const [cards,setCards]=useState([]);
-  const [start, setStart] = useState(0);
-  useEffect(() => {
-    setStart(0);
-  }, []);
+
 
   useEffect( () => {
    firebase.database().ref('posts/').limitToLast(8).on('value', async function(snapshot) {
@@ -23,7 +20,7 @@ const [cards,setCards]=useState([]);
     const posts = snapshot.val();
     const keys=Object.keys(snapshot.val());
     
-    console.log(keys);
+
     for(let i =0;i<keys.length;i++){
       const post =posts[keys[i]];
       console.log();
@@ -33,7 +30,7 @@ const [cards,setCards]=useState([]);
               return [...previousState,<Card
                 cardImageSrc={img}
                 cardImageAlt={post.description}
-                productDetailsLink={"/shop/"}
+                productDetailsLink={"/shop/"+keys[i]}
                 cardTitle={post.productName}
                 typeOfProduct={post.category}
                 cardLocation={post.addressDetails}

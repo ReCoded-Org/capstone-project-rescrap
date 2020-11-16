@@ -1,6 +1,6 @@
 import React from 'react';
 import SubTitle from '../../components/SubTitle/SubTitle';
-import Title from '../../components/Title/Title';
+
 const Info = (props) => {
   return (
     <div className="mx-10 flex flex-col justify-center ">

@@ -3,7 +3,7 @@ import { useLocation , Link} from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 function Footer(props) {
-  const {t, i18n}=useTranslation();
+  const {t}=useTranslation();
   const location = useLocation();
   props.setPath(location.pathname);
 
@@ -13,7 +13,7 @@ function Footer(props) {
         <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row mx-5 my-5">
           {/* Column1 */}
           <div className="flex-1 pr-10 mb-4 justify-center">
-            <img className="w-24 mb-3" src="..\images\logo.png" />
+            <img className="w-24 mb-3" src="..\images\logo.png" alt=""/>
             <p className="text-sm text-gray-700">
               <span className="text-black font-semibold"> { t('translation:pages.footer.logo') } </span> { t('translation:pages.footer.text') }
             </p>
