@@ -9,6 +9,27 @@
 		"signout": "Sign out"
 	},
 	"pages": {
+		"Add Product": {
+			"Add Product": "Add Product",
+			"Address Details": " Address Details",
+			"Category": "Category",
+			"Description": "Description",
+			"Phone Number": "Phone Number",
+			"Price": "Price",
+			"Product Name": "Product Name",
+			"Quantity": "Quantity",
+			"Upload Product Image": "Upload Product Image",
+			"fill": "*Please fill the red fields as they are required!!!",
+			"placeholders": {
+				"Enter Category": "Enter Category",
+				"Enter Description": "Enter Description",
+				"Enter Product Name": "Enter Product Name",
+				"Enter Quantity": "Enter Quantity",
+				"Enter your address": "Enter your address",
+				"Enter your phone number": "Enter your phone number",
+				"enter price": "Enter Price (*to donate for free type free or leave empty)"
+			}
+		},
 		"aboutus": {
 			"paragraph1": "ReScrap is an online marketplace designed specifically for trading recycled and recyclable plastic materials. Sellers place their recyclable resources on the platform, and buyers can get in contact with sellers. It offers a truly unique global platform for recyclers, manufacturers, mills, re-grinders and brokers wherever they are worldwide. With the age of digitalisation the world has not only become a smaller place but it’s no longer a localised marketplace, with worldwide trading you can always expect the best buyers and sellers to unite for the single purpose of trading.",
 			"paragraph2": "Our mission is to create an efficient set of cloud based technologies to enable traders of bulk materials to be more effective, more efficient and more profitable in their materials trading activities.\nOur values are Integrity; Transparency and Customer Service. We believe in providing a high value service and delivering on our promises. To the best of our ability we endeavour to make our activities transparent to all users and provide top customer service.",
@@ -26,6 +47,23 @@
 			},
 			"paragraph": "Please select a topic below related to your inquiry. If you \ndon't find what you need, fill out our contact form.\nEmail us with any questions or inquiries. We would be happy to answer your questions.",
 			"title": "How Can We Help?"
+		},
+		"footer": {
+			"About Us": "About Us",
+			"Become a partner": "Become a partner",
+			"Categories": "Categories",
+			"Countries": "Countries",
+			"Earn Money": "Earn Money",
+			"Engage": "Engage",
+			"FAQ": "FAQ",
+			"Locations": "Locations",
+			"Pricing": "Pricing",
+			"ReScarp?": "ReScarp?",
+			"Sell?": "Sell?",
+			"logo": "ReScrap",
+			"product": "Products",
+			"right": "ReScrap | All rights reserved |\n            Terms Of Service | Privacy",
+			"text": "is a Yemen-based company\n that is revolutionizing the plastic recyclables trading industry\n by promoting a free and open market through use of technology."
 		},
 		"home": {
 			"best-price": "Get the best price",

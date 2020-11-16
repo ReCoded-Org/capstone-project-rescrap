@@ -3,11 +3,15 @@ import { useHistory } from 'react-router-dom';
 import Input from '../../components/Input/Input';
 import Title from '../../components/Title/Title';
 import firebase from '../../firebase.config';
+import { useTranslation } from 'react-i18next';
+
 
 let postRef = null,
   newPostKey = null;
 
 const AddProductForm = (props) => {
+  const {t, i18n}=useTranslation();
+
   const history = useHistory();
   if(props.uid==""){
     history.replace("/not-found")
@@ -175,17 +179,17 @@ const initialImageStatus={
       >
         <div className="w-full md:w-4/5 lg:w4/5 lg:shadow-lg py-8 px-8 rounded-lg">
           <div className="mb-4 text-center">
-            <Title text="Add Product" classes=" text-green-100 " />
+            <Title text={ t('translation:pages.Add Product.Add Product') } classes=" text-green-100 " />
           </div>
           <div id="errorRequired" className="mb-4 hidden">
-            <p className="text-red-700">*Please fill the red fields as they are required!!!</p>
+            <p className="text-red-700">{ t('translation:pages.Add Product.fill') }</p>
           </div>
           <div className="mb-4">
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
               for="Upload-Image"
             >
-              Upload Product Image
+              { t('translation:pages.Add Product.Upload Product Image') }
             </label>
             <input
               className=""
@@ -200,7 +204,7 @@ const initialImageStatus={
               className="block text-gray-700 text-sm font-bold mb-2"
               for="Product Name"
             >
-              Product Name
+              { t('translation:pages.Add Product.Product Name') }
             </label>
             <Input
               inputType="text"
@@ -208,7 +212,7 @@ const initialImageStatus={
               inputName="Product Name"
               handleChange={inputHandler}
               inputValue={product.productName}
-              inputPlaceholder="Enter Product Name"
+              inputPlaceholder={ t('translation:pages.Add Product.placeholders.Enter Product Name') }
             />
           </div>
           <div className="mb-4">
@@ -216,7 +220,7 @@ const initialImageStatus={
               className="block text-gray-700 text-sm font-bold mb-2"
               for="Product Name"
             >
-              Category
+              { t('translation:pages.Add Product.Category') }
             </label>
             <Input
               inputType="text"
@@ -224,7 +228,7 @@ const initialImageStatus={
               inputName="Category"
               handleChange={inputHandler}
               inputValue={product.category}
-              inputPlaceholder="Enter Category"
+              inputPlaceholder={ t('translation:pages.Add Product.placeholders.Enter Category') }
             />
           </div>
 
@@ -234,7 +238,7 @@ const initialImageStatus={
                 className="block text-gray-700 text-sm font-bold mb-2"
                 for="Product Name"
               >
-                Quantity
+                { t('translation:pages.Add Product.Quantity') }
               </label>
               <Input
                 inputType="number"
@@ -242,7 +246,7 @@ const initialImageStatus={
                 inputName="Quantity"
                 handleChange={inputHandler}
                 inputValue={product.quantity}
-                inputPlaceholder="Enter Quantity"
+                inputPlaceholder={ t('translation:pages.Add Product.placeholders.Enter Quantity') }
               />
             </div>
             <div className="w-full lg:w-6/12">
@@ -250,7 +254,7 @@ const initialImageStatus={
                 className="block text-gray-700 text-sm font-bold mb-2"
                 for="Product Name"
               >
-                Price
+                { t('translation:pages.Add Product.Price') }
               </label>
               <Input
                 inputType="text"
@@ -258,7 +262,7 @@ const initialImageStatus={
                 inputName="Price"
                 handleChange={inputHandler}
                 inputValue={product.price}
-                inputPlaceholder="Enter Price (*to donate for free type free or leave empty)"
+                inputPlaceholder={ t('translation:pages.Add Product.placeholders.enter price') }
               />
             </div>
           </div>
@@ -267,14 +271,14 @@ const initialImageStatus={
               className="block text-gray-700 text-sm font-bold mb-2"
               for="Product Name"
             >
-              Description
+              { t('translation:pages.Add Product.Description') }
             </label>
             <textarea
               className=" shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-green-200"
               name="Description"
               onChange={inputHandler}
               value={product.description}
-              placeholder="Enter Description"
+              placeholder={ t('translation:pages.Add Product.placeholders.Enter Description') }
             />
           </div>
           <div className="mb-4">
@@ -282,7 +286,7 @@ const initialImageStatus={
               className="block text-gray-700 text-sm font-bold mb-2"
               for="Product Name"
             >
-              Phone Number
+              { t('translation:pages.Add Product.Phone Number') }
             </label>
             <Input
               inputType="text"
@@ -290,7 +294,7 @@ const initialImageStatus={
               inputName="Phone Number"
               handleChange={inputHandler}
               inputValue={product.phoneNumber}
-              inputPlaceholder="Enter your phone number"
+              inputPlaceholder={ t('translation:pages.Add Product.placeholders.Enter your phone number') }
             />
           </div>
 
@@ -299,14 +303,14 @@ const initialImageStatus={
               className="block text-gray-700 text-sm font-bold mb-2"
               for="Product Name"
             >
-              Address Details
+             { t('translation:pages.Add Product.Address Details') }
             </label>
             <textarea
               className=" shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-green-200"
               name="Address Details"
               onChange={inputHandler}
               value={product.addressDetails}
-              placeholder="Enter your address"
+              placeholder={ t('translation:pages.Add Product.placeholders.Enter your address') }
             />
           </div>
 
@@ -315,7 +319,7 @@ const initialImageStatus={
               type="submit"
               className=" py-2 px-4 bg-green-200 hover:bg-green-100 text-white font-bold rounded focus:outline-none"
             >
-              Add product
+              { t('translation:pages.Add Product.Add Product') }
             </button>
           </div>
         </div>
