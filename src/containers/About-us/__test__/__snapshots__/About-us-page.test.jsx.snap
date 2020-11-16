@@ -12,19 +12,25 @@ exports[`matches the snapshot 1`] = `
       translation:pages.aboutus.title
     </h1>
   </div>
-  <div>
+  <div
+    className=""
+  >
     <h2
       className="text-2xl thintext-5xl text-center text-green-100 m-4 "
     >
       translation:pages.aboutus.subtitle
     </h2>
     <div
-      className="text-base flex mx-8 mb-16"
+      className="text-base flex flex-col md:flex-row lg:flex-row xl:flex-row mx-8 mb-16"
     >
-      <p>
+      <p
+        className="p-8 text-justify"
+      >
         translation:pages.aboutus.paragraph1
       </p>
-      <p>
+      <p
+        className="p-8 text-justify"
+      >
         translation:pages.aboutus.paragraph2
       </p>
     </div>
