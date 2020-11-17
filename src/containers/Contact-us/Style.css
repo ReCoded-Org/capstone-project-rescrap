@@ -3,10 +3,10 @@
   background-size: cover;
 }
 .xLarge{
-  width: 33% !important;
+  width:33% !important;
 }
-@media only screen and(max-width:1333px){
-  .xLarge{
-    width:100% !important;
-  }
+@media only screen and (max-width: 1400px) {
+  .xLarge {
+       width: 100% !important;
+  }   
 }
