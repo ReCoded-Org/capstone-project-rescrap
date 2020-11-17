@@ -1,7 +1,4 @@
 #contact {
-    background-image: url(../Contact-us/images/Contact-us-wallpaper.svg);
-    background-size: auto;
-    }
-#contact-text {
-    /* height: 37.5rem; */
+  background-image: url(../Contact-us/images/Contact-us-wallpaper.svg);
+  background-size: cover;
 }
