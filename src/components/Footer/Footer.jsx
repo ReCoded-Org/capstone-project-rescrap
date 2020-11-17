@@ -7,6 +7,28 @@ function Footer(props) {
   const location = useLocation();
   props.setPath(location.pathname);
 
+  //   {/* Column3 */}
+  //   <div className="flex-1 mb-4">
+  //   <h4 className="font-semibold">{ t('translation:pages.footer.Engage') }</h4>
+  //   <ul className="list-none">
+  //     <li className="text-gray-700 py-2 text-xs">
+  //       <a herf="#">{ t('translation:pages.footer.ReScarp?') }</a>
+  //     </li>
+  //     <li className="text-gray-700 py-2 text-xs"><Link to="/faq">{ t('translation:pages.footer.FAQ') }</Link></li>
+  //     <li className="text-gray-700 py-2 text-xs"><Link to="/about-us">{ t('translation:pages.footer.About Us') }</Link></li>
+  //   </ul>
+  // </div>
+  // {/* Column4 */}
+  // <div className="flex-1 mb-4">
+  //   <ul className="list-none ">
+  //     <h4 className="font-semibold">{ t('translation:pages.footer.Earn Money') }</h4>
+  //     <li className="  text-gray-700 py-2 text-xs">
+  //       <a herf="#">{ t('translation:pages.footer.Sell?') }</a>
+  //     </li>
+  //     <li className=" text-gray-700 py-2 text-xs">{ t('translation:pages.footer.Become a partner') }</li>
+  //   </ul>
+  // </div>
+
   return (
     <div className="main-footer font-body  bg-gradient-to-t from-green-100 via-transparent  to-transparent my-2 py-2">
       <div className="container mx-auto">
@@ -15,40 +37,21 @@ function Footer(props) {
           <div className="flex-1 pr-10 mb-4 justify-center">
             <img className="w-24 mb-3" src="..\images\logo.png" alt=""/>
             <p className="text-sm text-gray-700">
-              <span className="text-black font-semibold"> { t('translation:pages.footer.logo') } </span> { t('translation:pages.footer.text') }
+              <span className="text-black font-semibold"> { t('translation:pages.footer.logo') }
+               </span> { t('translation:pages.footer.text') }
             </p>
           </div>
           {/* Column2 */}
           <div className="flex-1 mb-4">
             <h4 className="font-semibold">{ t('translation:pages.footer.product') }</h4>
             <ul className="list-none">
-              <li className="text-gray-700 py-2 text-xs">{ t('translation:pages.footer.Categories') }</li>
-              <li className="text-gray-700 py-2 text-xs">{ t('translation:pages.footer.Pricing') }</li>
-              <li className="text-gray-700 py-2 text-xs">{ t('translation:pages.footer.Locations') }</li>
-              <li className="text-gray-700 py-2 text-xs">{ t('translation:pages.footer.Countries') }</li>
+              <li className="text-gray-700 py-2 text-xs"><Link to="/">{ t('translation:navigation.Home') }</Link></li>
+              <li className="text-gray-700 py-2 text-xs"><Link to="shop">{ t('translation:navigation.Shop') }</Link></li>
+              <li className="text-gray-700 py-2 text-xs"><Link to="about-us">{ t('translation:navigation.About Us') }</Link> </li>
+              <li className="text-gray-700 py-2 text-xs"><Link to="contact-us">{ t('translation:navigation.Contact Us') }</Link></li>
             </ul>
           </div>
-          {/* Column3 */}
-          <div className="flex-1 mb-4">
-            <h4 className="font-semibold">{ t('translation:pages.footer.Engage') }</h4>
-            <ul className="list-none">
-              <li className="text-gray-700 py-2 text-xs">
-                <a herf="#">{ t('translation:pages.footer.ReScarp?') }</a>
-              </li>
-              <li className="text-gray-700 py-2 text-xs"><Link to="/faq">{ t('translation:pages.footer.FAQ') }</Link></li>
-              <li className="text-gray-700 py-2 text-xs"><Link to="/about-us">{ t('translation:pages.footer.About Us') }</Link></li>
-            </ul>
-          </div>
-          {/* Column4 */}
-          <div className="flex-1 mb-4">
-            <ul className="list-none ">
-              <h4 className="font-semibold">{ t('translation:pages.footer.Earn Money') }</h4>
-              <li className="  text-gray-700 py-2 text-xs">
-                <a herf="#">{ t('translation:pages.footer.Sell?') }</a>
-              </li>
-              <li className=" text-gray-700 py-2 text-xs">{ t('translation:pages.footer.Become a partner') }</li>
-            </ul>
-          </div>
+        
         </div>
         <div className="row">
           <p className="my-4 text-sm text-gray-700 mx-5 my-5">

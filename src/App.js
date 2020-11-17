@@ -167,6 +167,7 @@ function App() {
 
         <Route exact path="/">
           <Home
+            signIn={signIn}
             navbar={
               <Navbar
                 handleSignInClick={signIn}

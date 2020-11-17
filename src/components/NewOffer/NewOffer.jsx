@@ -4,6 +4,7 @@ import Title from './../Title/Title';
 import Button from './../Button/Button';
 import { useTranslation } from 'react-i18next';
 import firebase from 'firebase';
+import {Link } from 'react-router-dom';
 
 const NewOffer = () => {
  const {t}=useTranslation();
@@ -54,11 +55,13 @@ const [cards,setCards]=useState([]);
           {cards}
         </div>
       </div>
-      <Button
+      <Link
+      to="/shop"><Button
         btnClasses="container block capitaliz mx-auto shadow bg-green-200 hover:bg-green-100 focus:shadow-outline focus:outline-none text-white text-lg py-3 px-10 rounded my-2"
         btnText={ t('translation:pages.shop.btn-see-more') }
         btnClickHandler=""
       />
+      </Link>
     </div>
   );
 };
