@@ -21,7 +21,6 @@ Array [
       </p>
       <button
         className="rounded-full py-2 px-4 bg-green-200 text-white my-4 "
-        onClick=""
       >
         translation:pages.home.sginup-btn
       </button>
@@ -198,12 +197,17 @@ Array [
         className=" flex flex-wrap px-4 justify-between"
       />
     </div>
-    <button
-      className="rounded-full py-2 px-4container block capitaliz mx-auto shadow bg-green-200 hover:bg-green-100 focus:shadow-outline focus:outline-none text-white text-lg py-3 px-10 rounded my-2"
-      onClick=""
+    <a
+      href="/shop"
+      onClick={[Function]}
     >
-      translation:pages.shop.btn-see-more
-    </button>
+      <button
+        className="rounded-full py-2 px-4container block capitaliz mx-auto shadow bg-green-200 hover:bg-green-100 focus:shadow-outline focus:outline-none text-white text-lg py-3 px-10 rounded my-2"
+        onClick=""
+      >
+        translation:pages.shop.btn-see-more
+      </button>
+    </a>
   </div>,
   <div
     className="container mx-auto"

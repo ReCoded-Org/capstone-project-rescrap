@@ -22,12 +22,12 @@ const ShopSearch = ({ searchText,text }) => {
             placeholder={ t('translation:pages.shop.shopsearch.placeholder') }
             value={text}
           />
-          <button
+          {/* <button
             className="flex-shrink-0 bg-green-500 hover:bg-green-600 border-green-500 hover:border-green-600 text-sm border-4 text-white py-1 px-2 rounded"
             type="submit"
           >
             { t('translation:pages.shop.shopsearch.search-btn') }
-          </button>
+          </button> */}
         </div>
       </form>
     </div>

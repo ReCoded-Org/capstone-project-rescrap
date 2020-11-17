@@ -2,7 +2,7 @@
 
 exports[`matches the snapshot 1`] = `
 <div
-  className="sm:h-full lg:h-screen w-full px-20"
+  className="sm:h-full lg:h-screen px-20 xLarge"
 >
   <form
     className="bg-white px-4 pb-16 pt-5 "

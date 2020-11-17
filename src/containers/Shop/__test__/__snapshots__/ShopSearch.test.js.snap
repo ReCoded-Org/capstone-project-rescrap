@@ -17,12 +17,6 @@ exports[`matches snapshot 1`] = `
         placeholder="translation:pages.shop.shopsearch.placeholder"
         type="text"
       />
-      <button
-        className="flex-shrink-0 bg-green-500 hover:bg-green-600 border-green-500 hover:border-green-600 text-sm border-4 text-white py-1 px-2 rounded"
-        type="submit"
-      >
-        translation:pages.shop.shopsearch.search-btn
-      </button>
     </div>
   </form>
 </div>

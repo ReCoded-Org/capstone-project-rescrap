@@ -130,7 +130,7 @@ const items=NavbarItems;
               
             {user.loggedIn ? (
               <span className="flex align-center justify-between">
-              <i className="text-green-100 fas fa-user-circle fa-2x mx-2"></i>  
+              <i className="text-green-100 fas fa-user-circle fa-1x mx-1"></i>  
              {user.name.split(" ")[0]}
               </span>
             
@@ -138,17 +138,17 @@ const items=NavbarItems;
                t('translation:navigation.signin') 
             )}
           </button>
-          {user.loggedIn?<button className="bg-red-500 text-white hover:bg-red-600" onClick={()=>{
+          {user.loggedIn?<button className="bg-red-500 text-white hover:bg-red-600 mx-2" onClick={()=>{
             props.handleSignout()
-          }}>Sign out</button>:""}
-          <select className="bg-green-200 text-white rounded-lg" onChange={(event)=>{
+          }}> {t('translation:navigation.signout')} </button>:""}
+          <select className="bg-green-200 text-white rounded-lg py-1 px-1 mx-1" onChange={(event)=>{
               i18n.changeLanguage(event.target.value);
            
             
             }
           }>
-            <option value="en">en</option>
-            <option value="ar">ar</option>
+            <option value="en">En</option>
+            <option value="ar">Ar</option>
           </select>
         </nav>
      

@@ -42,8 +42,8 @@ const initialImageStatus={
       newPostKey = postRef.push().key;
       // console.log(newPostKey);
       if (postRef === null) {
-        alert('Connection Error!!!');
-        history.replace('/not-found');
+        // alert('Connection Error!!!');
+        history.replace('/');
       }
     } catch (exception) {}
   }, []);
@@ -163,6 +163,7 @@ const initialImageStatus={
       firebase.database().ref().child("posts").child(newPostKey).update(product).then(()=>{
         alert("Posted Successfully :D");
       setProduct(initialProduct);
+      history.goBack();
       });
      } catch (error) {
        

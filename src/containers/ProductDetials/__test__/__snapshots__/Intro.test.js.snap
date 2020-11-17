@@ -20,10 +20,10 @@ exports[`matches snapshot 1`] = `
       className="flex items-center justify-center w-full md:w-1/2 lg:w-1/2"
     >
       <div
-        className="flex flex-col justify-center overflow-hidden  w-1/2 p-2 "
+        className="flex flex-col justify-center overflow-hidden  w-4/5 p-2 "
       >
         <h1
-          className="text-3xl normaluppercase font-semibold leading-5  tracking-widest  text-left  my-2  "
+          className="text-3xl normaluppercase font-semibold tracking-widest  text-left  my-2  "
         />
         <div
           className="text-base flex   my-3   text-gray-700"
@@ -31,7 +31,7 @@ exports[`matches snapshot 1`] = `
           <p />
         </div>
         <h2
-          className="text-2xl thin text-green-200 uppercase font-semibold leading-5  tracking-widest  text-left  my-2  "
+          className="text-2xl thin text-green-200 uppercase font-semibold leading-5  tracking-widest  text-left  my-2 underline "
         />
       </div>
     </div>

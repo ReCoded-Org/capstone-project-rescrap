@@ -15,9 +15,9 @@ const Intro = (props) => {
         </div>
         </div>
         <div className="flex items-center justify-center w-full md:w-1/2 lg:w-1/2">
-        <div className="flex flex-col justify-center overflow-hidden  w-1/2 p-2 ">
+        <div className="flex flex-col justify-center overflow-hidden  w-4/5 p-2 ">
           <Title
-            classes="uppercase font-semibold leading-5  tracking-widest  text-left  my-2  "
+            classes="uppercase font-semibold tracking-widest  text-left  my-2  "
             text={props.productName}
           />
 
@@ -28,7 +28,7 @@ const Intro = (props) => {
           </div>
           <SubTitle
             text={props.price}
-            classes=" text-green-200 uppercase font-semibold leading-5  tracking-widest  text-left  my-2  "
+            classes=" text-green-200 uppercase font-semibold leading-5  tracking-widest  text-left  my-2 underline "
           />
         </div>
         </div>

@@ -2,11 +2,11 @@
 
 exports[`matches the snapshot 1`] = `
 <div
-  className="flex flex-col md:flex-col lg:flex-row xl:flex-row "
+  className="flex flex-col md:flex-col lg:flex-row xl:flex-row justify-center"
   id="contact"
 >
   <div
-    className="sm:h-full lg:h-screen w-full px-20"
+    className="sm:h-full lg:h-screen px-20 xLarge"
   >
     <form
       className="bg-white px-4 pb-16 pt-5 "
@@ -82,7 +82,7 @@ exports[`matches the snapshot 1`] = `
     </form>
   </div>
   <div
-    className="flex justify-center pt-10 lg:pt-0 lg:pb-20 lg:justify-start mb-4 items-center sm:h-full lg:h-screen w-full "
+    className="flex justify-center pt-10 lg:pt-0 lg:pb-20 lg:justify-start mb-4 items-center sm:h-full lg:h-screen xLarge"
     id="contact-text"
   >
     <div

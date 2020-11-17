@@ -6,29 +6,7 @@ function Footer(props) {
   const {t}=useTranslation();
   const location = useLocation();
   props.setPath(location.pathname);
-
-  //   {/* Column3 */}
-  //   <div className="flex-1 mb-4">
-  //   <h4 className="font-semibold">{ t('translation:pages.footer.Engage') }</h4>
-  //   <ul className="list-none">
-  //     <li className="text-gray-700 py-2 text-xs">
-  //       <a herf="#">{ t('translation:pages.footer.ReScarp?') }</a>
-  //     </li>
-  //     <li className="text-gray-700 py-2 text-xs"><Link to="/faq">{ t('translation:pages.footer.FAQ') }</Link></li>
-  //     <li className="text-gray-700 py-2 text-xs"><Link to="/about-us">{ t('translation:pages.footer.About Us') }</Link></li>
-  //   </ul>
-  // </div>
-  // {/* Column4 */}
-  // <div className="flex-1 mb-4">
-  //   <ul className="list-none ">
-  //     <h4 className="font-semibold">{ t('translation:pages.footer.Earn Money') }</h4>
-  //     <li className="  text-gray-700 py-2 text-xs">
-  //       <a herf="#">{ t('translation:pages.footer.Sell?') }</a>
-  //     </li>
-  //     <li className=" text-gray-700 py-2 text-xs">{ t('translation:pages.footer.Become a partner') }</li>
-  //   </ul>
-  // </div>
-
+  
   return (
     <div className="main-footer font-body  bg-gradient-to-t from-green-100 via-transparent  to-transparent my-2 py-2">
       <div className="container mx-auto">

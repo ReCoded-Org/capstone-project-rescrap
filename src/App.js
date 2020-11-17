@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import './styles/main.css';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import firebase from './firebase.config';
@@ -113,75 +113,84 @@ function App() {
 
   return (
     <Router>
-      {location === '/' ? (
-        ''
-      ) : (
-        <Navbar
-          handleSignInClick={signIn}
-          handleSignout={signOut}
-          userData={user}
-          bg
-          setPath={setLocation}
-        />
-      )}
-      {/* <Navbar
+      <Suspense fallback="Loading...">
+        <div>
+          {location === '/' ? (
+            ''
+          ) : (
+            <Navbar
+              handleSignInClick={signIn}
+              handleSignout={signOut}
+              userData={user}
+              bg
+              setPath={setLocation}
+            />
+          )}
+          {/* <Navbar
         handleSignInClick={signIn}
         handleSignout={signOut}
         userData={user}
         bg={false}
         setPath={setLocation}
       /> */}
-      <Switch>
-        {/* Later you will replace the words I placed with your components */}
-        <Route path="/about-us">
-          <AboutUs />
-        </Route>
-        <Route path="/add-product">
-          <AddProduct
-            userData={user}
-            loggedIn={user.loggedIn}
-            firstLogin={user.firstLogin}
-            uid={user.uid}
-          />
-        </Route>
-        <Route path="/contact-us">
-          <ContactUs />
-        </Route>
-        <Route path="/sign-up">
-          <Signup
-            userData={user}
-            loggedIn={user.loggedIn}
-            firstLogin={user.firstLogin}
-            uid={user.uid}
-          />
-        </Route>
-        <Route
-          path="/shop/:id/"
-          render={(props) => (
-            <ProductDetials {...props} loggedIn={user.loggedIn} uid={user.uid} userData={user} />
-          )}
-        />
-        <Route path="/shop">
-          <Shop />
-        </Route>
-
-        <Route exact path="/">
-          <Home
-            signIn={signIn}
-            navbar={
-              <Navbar
-                handleSignInClick={signIn}
-                handleSignout={signOut}
+          <Switch>
+            {/* Later you will replace the words I placed with your components */}
+            <Route path="/about-us">
+              <AboutUs />
+            </Route>
+            <Route path="/add-product">
+              <AddProduct
                 userData={user}
-                bg={false}
-                setPath={setLocation}
+                loggedIn={user.loggedIn}
+                firstLogin={user.firstLogin}
+                uid={user.uid}
               />
-            }
-          />
-        </Route>
-        <Route path="*" component={NotFound} />
-      </Switch>
-      <Footer setPath={setLocation} />
+            </Route>
+            <Route path="/contact-us">
+              <ContactUs />
+            </Route>
+            <Route path="/sign-up">
+              <Signup
+                userData={user}
+                loggedIn={user.loggedIn}
+                firstLogin={user.firstLogin}
+                uid={user.uid}
+              />
+            </Route>
+            <Route
+              path="/shop/:id/"
+              render={(props) => (
+                <ProductDetials
+                  {...props}
+                  loggedIn={user.loggedIn}
+                  uid={user.uid}
+                  userData={user}
+                />
+              )}
+            />
+            <Route path="/shop">
+              <Shop />
+            </Route>
+
+            <Route exact path="/">
+              <Home
+                signIn={signIn}
+                navbar={
+                  <Navbar
+                    handleSignInClick={signIn}
+                    handleSignout={signOut}
+                    userData={user}
+                    bg={false}
+                    setPath={setLocation}
+                  />
+                }
+              />
+            </Route>
+            <Route path="*" component={NotFound} />
+          </Switch>
+          <Footer setPath={setLocation} />
+        </div>
+      </Suspense>
     </Router>
   );
 

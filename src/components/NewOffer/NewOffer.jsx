@@ -45,7 +45,8 @@ const [cards,setCards]=useState([]);
   }, [])
 
   return (
-    <div className="container mx-auto">
+   
+      <div className="container mx-auto">
       <Title
         classes="uppercase font-semibold leading-5  tracking-widest text-green-100 text-center p-2 my-2 "
         text={ t('translation:pages.home.new-offer') }
@@ -55,8 +56,7 @@ const [cards,setCards]=useState([]);
           {cards}
         </div>
       </div>
-      <Link
-      to="/shop"><Button
+      <Link to="/shop"><Button
         btnClasses="container block capitaliz mx-auto shadow bg-green-200 hover:bg-green-100 focus:shadow-outline focus:outline-none text-white text-lg py-3 px-10 rounded my-2"
         btnText={ t('translation:pages.shop.btn-see-more') }
         btnClickHandler=""

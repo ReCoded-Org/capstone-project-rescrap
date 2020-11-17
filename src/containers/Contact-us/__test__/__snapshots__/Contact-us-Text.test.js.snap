@@ -2,7 +2,7 @@
 
 exports[`matches the snapshot 1`] = `
 <div
-  className="flex justify-center pt-10 lg:pt-0 lg:pb-20 lg:justify-start mb-4 items-center sm:h-full lg:h-screen w-full "
+  className="flex justify-center pt-10 lg:pt-0 lg:pb-20 lg:justify-start mb-4 items-center sm:h-full lg:h-screen xLarge"
   id="contact-text"
 >
   <div
