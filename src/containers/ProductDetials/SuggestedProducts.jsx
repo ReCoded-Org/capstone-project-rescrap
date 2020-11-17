@@ -1,17 +1,19 @@
 import React, {useState ,useEffect} from 'react';
 import Card from '../../components/Card/Card';
 import Title from '../../components/Title/Title';
+import firebase from '../../firebase.config';
 
-const cards = [];
-for(let i=0;i<12;i++){
-  cards.push(<Card 
-    cardTitle={i}
-  />)
-}
-console.log(cards);
+// const cards = [];
+// for(let i=0;i<12;i++){
+//   cards.push(<Card 
+//     cardTitle={i}
+//   />)
+// }
+// console.log(cards);
 
 function SuggestedProducts() {
   const [itemsToShow,setItemsToShow]=useState(0);
+  const [cards,setCards]=useState([]);
 
   
   window.addEventListener("resize",(event)=>{
@@ -28,10 +30,41 @@ function SuggestedProducts() {
   useEffect(() => {
     setStart(0);
     setItemsToShow((window.screen.width)/384);
+    firebase.database().ref('posts/').limitToLast(8).on('value', async function(snapshot) {
+      const fetchImage = (imageID)=>{
+        const ref =  firebase.storage().ref('/posts-images/'+imageID);
+        const url =  ref.getDownloadURL();
+        return url;
+      }
+      const posts = snapshot.val();
+      const keys=Object.keys(snapshot.val());
+      
+  
+      for(let i =0;i<keys.length;i++){
+        const post =posts[keys[i]];
+        console.log();
+        const img=await fetchImage(posts[keys[i]].productImageKey);
+             setCards(
+              (previousState) => {
+                return [...previousState,<Card
+                  cardImageSrc={img}
+                  cardImageAlt={post.description}
+                  productDetailsLink={"/shop/"+keys[i]}
+                  cardTitle={post.productName}
+                  typeOfProduct={post.category}
+                  cardLocation={post.addressDetails}
+                  cardPrice={post.price}
+                     />];
+            }
+           );
+      }
+    }
+     )
   }, []);
-  useEffect(() => {
-  //  console.log(itemsToShow);
-  }, [itemsToShow])
+
+
+
+
 
   return (<div className="mx-10 flex flex-col justify-center" >
     <Title classes="uppercase font-semibold leading-5  tracking-widest  text-left p-2 my-2 mx-4 "

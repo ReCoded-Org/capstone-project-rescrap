@@ -4,7 +4,7 @@ import Title from './../Title/Title';
 import Button from './../Button/Button';
 import { useTranslation } from 'react-i18next';
 import firebase from 'firebase';
-import {Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const NewOffer = () => {
  const {t}=useTranslation();
