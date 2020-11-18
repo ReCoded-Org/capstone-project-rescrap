@@ -30,7 +30,8 @@ function SuggestedProducts() {
   useEffect(() => {
     setStart(0);
     setItemsToShow((window.screen.width)/384);
-    firebase.database().ref('posts/').limitToLast(8).on('value', async function(snapshot) {
+    firebase.database().ref('posts/').limitToLast(12).on('value', async function(snapshot) {
+      
       const fetchImage = (imageID)=>{
         const ref =  firebase.storage().ref('/posts-images/'+imageID);
         const url =  ref.getDownloadURL();
@@ -39,7 +40,6 @@ function SuggestedProducts() {
       const posts = snapshot.val();
       const keys=Object.keys(snapshot.val());
       
-  
       for(let i =0;i<keys.length;i++){
         const post =posts[keys[i]];
         console.log();
@@ -85,6 +85,7 @@ function SuggestedProducts() {
         for(let i=start;i<itemsToShow+start;i++){
         disp.push(cards[i]);
       }
+      
       return disp;
       })()}
 

@@ -52,7 +52,7 @@ const [cards,setCards]=useState([]);
         text={ t('translation:pages.home.new-offer') }
       />
       <div className="flex justify-center">
-        <div className=" flex flex-wrap px-4 justify-between">
+        <div className=" flex flex-wrap px-4 justify-evenly">
           {cards}
         </div>
       </div>
