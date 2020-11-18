@@ -1,22 +1,21 @@
 import React from 'react';
 import SubTitle from '../../components/SubTitle/SubTitle';
+import { useTranslation } from 'react-i18next';
+
 
 
 const AboutUsInfo = () => {
-    return <div>
+    const {t}=useTranslation();
+    return <div className="">
         <SubTitle
-        text='THE STORY OF RESCRAP'
+        text= { t('translation:pages.aboutus.subtitle') }
         classes='text-5xl text-center text-green-100 m-4 ' />
-        <div className='text-base flex mx-8 mb-16'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum quis nunc ac efficitur.
-                 Donec euismod mauris vel massa ullamcorper, sit amet varius sapien tempus. Pellentesque rutrum ac
-                  ipsum tristique porttitor. Sed ornare, enim faucibus placerat luctus, dolor sem convallis quam,
-                   nec pellentesque ipsum neque id ligula. Pellentesque accumsan accumsan nulla, id luctus odio 
+        <div className='text-base flex flex-col md:flex-row lg:flex-row xl:flex-row mx-8 mb-16'>
+            <p className="p-8 text-justify">
+                { t('translation:pages.aboutus.paragraph1') }
                    </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum quis nunc ac efficitur.
-                 Donec euismod mauris vel massa ullamcorper, sit amet varius sapien tempus. Pellentesque rutrum ac
-                  ipsum tristique porttitor. Sed ornare, enim faucibus placerat luctus, dolor sem convallis quam,
-                   nec pellentesque ipsum neque id ligula. Pellentesque accumsan accumsan nulla, id luctus odio 
+                    <p className="p-8 text-justify">{ t('translation:pages.aboutus.paragraph2') }
+
                    </p>
             </div>
     </div> ;

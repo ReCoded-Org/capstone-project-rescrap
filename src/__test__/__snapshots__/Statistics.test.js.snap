@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`matches snapshot 1`] = `
-<div>
+<div
+  className="container mx-auto"
+>
   <div
     className="container sm:block md:flex justify-between"
     data-testid="statistics"
@@ -24,7 +26,7 @@ exports[`matches snapshot 1`] = `
       <h2
         className="text-2xl thin"
       >
-        Countries
+        translation:pages.home.footer.Subtitle1
       </h2>
     </div>
     <div
@@ -45,7 +47,7 @@ exports[`matches snapshot 1`] = `
       <h2
         className="text-2xl thin"
       >
-        Registered businesses
+        translation:pages.home.footer.Subtitle2
       </h2>
     </div>
     <div
@@ -66,7 +68,7 @@ exports[`matches snapshot 1`] = `
       <h2
         className="text-2xl thin"
       >
-        Pounds of listed material
+        translation:pages.home.footer.Subtitle3
       </h2>
     </div>
   </div>

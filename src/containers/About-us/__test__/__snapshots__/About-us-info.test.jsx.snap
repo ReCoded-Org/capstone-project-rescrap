@@ -1,20 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`matches the snapshot 1`] = `
-<div>
+<div
+  className=""
+>
   <h2
     className="text-2xl thintext-5xl text-center text-green-100 m-4 "
   >
-    THE STORY OF RESCRAP
+    translation:pages.aboutus.subtitle
   </h2>
   <div
-    className="text-base flex mx-8 mb-16"
+    className="text-base flex flex-col md:flex-row lg:flex-row xl:flex-row mx-8 mb-16"
   >
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum quis nunc ac efficitur. Donec euismod mauris vel massa ullamcorper, sit amet varius sapien tempus. Pellentesque rutrum ac ipsum tristique porttitor. Sed ornare, enim faucibus placerat luctus, dolor sem convallis quam, nec pellentesque ipsum neque id ligula. Pellentesque accumsan accumsan nulla, id luctus odio
+    <p
+      className="p-8 text-justify"
+    >
+      translation:pages.aboutus.paragraph1
     </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum quis nunc ac efficitur. Donec euismod mauris vel massa ullamcorper, sit amet varius sapien tempus. Pellentesque rutrum ac ipsum tristique porttitor. Sed ornare, enim faucibus placerat luctus, dolor sem convallis quam, nec pellentesque ipsum neque id ligula. Pellentesque accumsan accumsan nulla, id luctus odio
+    <p
+      className="p-8 text-justify"
+    >
+      translation:pages.aboutus.paragraph2
     </p>
   </div>
 </div>

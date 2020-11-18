@@ -4,10 +4,10 @@ import SellersAndBuyers from './../../components/SellersAndBuyers/SellersAndBuye
 import NewOffer from './../../components/NewOffer/NewOffer';
 import Statistics from './../../components/Statistics/Statistics';
 
-const Home= ({navbar, footer}) => {
+const Home= ({navbar, footer,signIn}) => {
     
     return (<>
-    <Intro nav={navbar}/>
+    <Intro nav={navbar} signIn={signIn}/>
     <SellersAndBuyers/>
     <NewOffer/>
     <Statistics footer={footer}/>

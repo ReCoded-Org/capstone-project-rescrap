@@ -2,11 +2,11 @@
 
 exports[`matches the snapshot 1`] = `
 <div
-  className="flex flex-col md:flex-col lg:flex-row xl:flex-row "
+  className="flex flex-col md:flex-col lg:flex-row xl:flex-row justify-center"
   id="contact"
 >
   <div
-    className="sm:h-full lg:h-screen w-full px-20"
+    className="sm:h-full lg:h-screen px-20 xLarge"
   >
     <form
       className="bg-white px-4 pb-16 pt-5 "
@@ -14,7 +14,7 @@ exports[`matches the snapshot 1`] = `
       <h1
         className="text-3xl normal text-green-100 pb-1"
       >
-        Let's Contact!!
+        translation:pages.contactus.form.title
         <h1 />
       </h1>
       <div
@@ -23,11 +23,11 @@ exports[`matches the snapshot 1`] = `
         <label
           className="text-sm"
         >
-          Name
+          translation:pages.contactus.form.name
         </label>
         <input
           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\\" id=\\"username"
-          placeholder="Name"
+          placeholder="translation:pages.contactus.form.name"
         />
       </div>
       <div
@@ -36,11 +36,11 @@ exports[`matches the snapshot 1`] = `
         <label
           className="text-sm"
         >
-          Subject
+          translation:pages.contactus.form.subject
         </label>
         <input
           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\\" id=\\"username"
-          placeholder="Subject"
+          placeholder="translation:pages.contactus.form.subject"
         />
       </div>
       <div
@@ -49,11 +49,11 @@ exports[`matches the snapshot 1`] = `
         <label
           className="text-sm"
         >
-          Email
+          translation:pages.contactus.form.email
         </label>
         <input
           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\\" id=\\"username"
-          placeholder="Email"
+          placeholder="translation:pages.contactus.form.email"
         />
       </div>
       <div
@@ -62,11 +62,11 @@ exports[`matches the snapshot 1`] = `
         <label
           className="text-sm"
         >
-          Message
+          translation:pages.contactus.form.message
         </label>
         <textarea
           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline\\" id=\\"username"
-          placeholder="Message"
+          placeholder="translation:pages.contactus.form.message"
         />
       </div>
       <div
@@ -76,13 +76,13 @@ exports[`matches the snapshot 1`] = `
           className="bg-green-100 py-4 w-4/5 border rounded text-white "
           type="submit"
         >
-          Submit
+          translation:pages.contactus.form.submit
         </button>
       </div>
     </form>
   </div>
   <div
-    className="flex justify-center pt-10 lg:pt-0 lg:pb-20 lg:justify-start mb-4 items-center sm:h-full lg:h-screen w-full "
+    className="flex justify-center pt-10 lg:pt-0 lg:pb-20 lg:justify-start mb-4 items-center sm:h-full lg:h-screen xLarge"
     id="contact-text"
   >
     <div
@@ -91,12 +91,13 @@ exports[`matches the snapshot 1`] = `
       <h1
         className="text-4xl"
       >
-        How Can We Help?
+        translation:pages.contactus.title
       </h1>
       <p
         className="text-xl"
       >
-        Please select a topic below related to your inquiry. If you don't find what you need, fill out our contact form.Email us with any questions or inquiries or call 518-387-9327. We would be happy to answer your questions and set up a meeting with you.
+         
+        translation:pages.contactus.paragraph
       </p>
     </div>
   </div>

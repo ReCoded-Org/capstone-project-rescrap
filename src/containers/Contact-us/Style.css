@@ -1,7 +1,12 @@
 #contact {
-    background-image: url(../Contact-us/images/Contact-us-wallpaper.svg);
-    background-size: auto;
-    }
-#contact-text {
-    /* height: 37.5rem; */
+  background-image: url(../Contact-us/images/Contact-us-wallpaper.svg);
+  background-size: cover;
+}
+.xLarge{
+  width:33% !important;
+}
+@media only screen and (max-width: 1400px) {
+  .xLarge {
+       width: 100% !important;
+  }   
 }

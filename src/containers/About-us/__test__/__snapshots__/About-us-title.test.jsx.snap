@@ -8,7 +8,7 @@ exports[`matches the snapshot 1`] = `
   <h1
     className="text-5xl text-center text-white py-20"
   >
-    OUR BUSSINESS
+    translation:pages.aboutus.title
   </h1>
 </div>
 `;

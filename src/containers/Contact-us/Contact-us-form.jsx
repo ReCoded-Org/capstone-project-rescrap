@@ -1,38 +1,41 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
  
 const ContactUsForm = () => {
-     return <div className='sm:h-full lg:h-screen w-full px-20'>
+  const {t}=useTranslation();
+
+     return <div className='sm:h-full lg:h-screen px-20 xLarge'>
                  <form  className='bg-white px-4 pb-16 pt-5 '>
-                 <h1 className='text-3xl normal text-green-100 pb-1'>Let's Contact!!<h1/>
+                 <h1 className='text-3xl normal text-green-100 pb-1'>{ t('translation:pages.contactus.form.title') }<h1/>
                 </h1>
           <div className="py-1">
-      <label className='text-sm'>Name</label>
+      <label className='text-sm'>{ t('translation:pages.contactus.form.name') }</label>
       <input className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username'
-        placeholder="Name"
+        placeholder={ t('translation:pages.contactus.form.name') }
         
       />
       </div>
       <div className="py-1">
-      <label className='text-sm'>Subject</label>
+      <label className='text-sm'>{ t('translation:pages.contactus.form.subject') }</label>
       <input className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username'
-        placeholder="Subject"
+        placeholder={ t('translation:pages.contactus.form.subject') }
         
       />
       </div>
       
       <div className="py-1">
-      <label className='text-sm'>Email</label>
+      <label className='text-sm'>{ t('translation:pages.contactus.form.email') }</label>
       <input className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username'
-        placeholder="Email"
+        placeholder={ t('translation:pages.contactus.form.email') }
         
       />
       </div>
 
       <div className="py-1">
-      <label className='text-sm'>Message</label>
+      <label className='text-sm'>{ t('translation:pages.contactus.form.message') }</label>
       <textarea className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username'
-        placeholder="Message"
+        placeholder={ t('translation:pages.contactus.form.message') }
         
       ></textarea>
       </div>
@@ -41,7 +44,7 @@ const ContactUsForm = () => {
         type="submit"
         
       >
-        Submit
+        { t('translation:pages.contactus.form.submit') }
       </button>
       </div>
 

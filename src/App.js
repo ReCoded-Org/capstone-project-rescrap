@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import './styles/main.css';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import firebase from './firebase.config';
@@ -10,6 +10,8 @@ import AboutUs from './containers/About-us/About-us-page';
 import AddProduct from './containers/Add-product/AddProduct';
 import ProductDetials from './containers/ProductDetials/ProductDetials';
 import Shop from './containers/Shop/Shop';
+import ContactUs from './containers/Contact-us/Contact-us';
+import NotFound from './containers/NotFound/NotFound';
 
 function App() {
   const [location, setLocation] = useState('/');
@@ -111,58 +113,84 @@ function App() {
 
   return (
     <Router>
-      {location === '/' ? (
-        ''
-      ) : (
-        <Navbar
-          handleSignInClick={signIn}
-          handleSignout={signOut}
-          userData={user}
-          bg
-          setPath={setLocation}
-        />
-      )}
-      <Switch>
-        {/* Later you will replace the words I placed with your components */}
-        <Route path="/about-us">
-          <AboutUs />
-        </Route>
-        <Route path="/shop">
-          <Shop />
-        </Route>
-        <Route path="/add-product">
-          <AddProduct
-            userData={user}
-            loggedIn={user.loggedIn}
-            firstLogin={user.firstLogin}
-            uid={user.uid}
-          />
-        </Route>
-        <Route path="/contact-us">Contact Us</Route>
-        <Route path="/sign-up">
-          <Signup
-            userData={user}
-            loggedIn={user.loggedIn}
-            firstLogin={user.firstLogin}
-            uid={user.uid}
-          />
-        </Route>
-        <Route path="/not-found">Not Found</Route>
-        <Route path="/">
-          <Home
-            navbar={
-              <Navbar
-                handleSignInClick={signIn}
-                handleSignout={signOut}
+      <Suspense fallback="Loading...">
+        <div>
+          {location === '/' ? (
+            ''
+          ) : (
+            <Navbar
+              handleSignInClick={signIn}
+              handleSignout={signOut}
+              userData={user}
+              bg
+              setPath={setLocation}
+            />
+          )}
+          {/* <Navbar
+        handleSignInClick={signIn}
+        handleSignout={signOut}
+        userData={user}
+        bg={false}
+        setPath={setLocation}
+      /> */}
+          <Switch>
+            {/* Later you will replace the words I placed with your components */}
+            <Route path="/about-us">
+              <AboutUs />
+            </Route>
+            <Route path="/add-product">
+              <AddProduct
                 userData={user}
-                bg={false}
-                setPath={setLocation}
+                loggedIn={user.loggedIn}
+                firstLogin={user.firstLogin}
+                uid={user.uid}
               />
-            }
-          />
-        </Route>
-      </Switch>
-      <Footer setPath={setLocation} />
+            </Route>
+            <Route path="/contact-us">
+              <ContactUs />
+            </Route>
+            <Route path="/sign-up">
+              <Signup
+                userData={user}
+                loggedIn={user.loggedIn}
+                firstLogin={user.firstLogin}
+                uid={user.uid}
+              />
+            </Route>
+            <Route
+              path="/shop/:id/"
+              render={(props) => (
+                <ProductDetials
+                  {...props}
+                  loggedIn={user.loggedIn}
+                  uid={user.uid}
+                  userData={user}
+                />
+              )}
+            />
+            <Route path="/shop">
+              <Shop />
+            </Route>
+
+            <Route exact path="/">
+              <Home
+                signIn={signIn}
+                navbar={
+                  <Navbar
+                    handleSignInClick={signIn}
+                    handleSignout={signOut}
+                    userData={user}
+                    bg={false}
+                    setPath={setLocation}
+                  />
+                }
+              />
+            </Route>
+            <Route path="*" component={NotFound} />
+          </Switch>
+          <Footer setPath={setLocation} />
+        </div>
+      </Suspense>
     </Router>
   );
 

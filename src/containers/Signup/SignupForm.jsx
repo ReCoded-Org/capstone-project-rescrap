@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Input from '../../components/Input/Input.jsx';
+import Input from '../../components/Input/Input';
 import Title from '../../components/Title/Title';
 import Description from '../../components/Description/Description';
 import Button from '../../components/Button/Button';
@@ -62,19 +62,19 @@ const SignupForm = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
     let noError = true;
-    if (phoneNumber == '') {
+    if (phoneNumber === '') {
       setphoneState('border-red-700 text-red-700');
       noError = false;
     } else {
       setphoneState('text-green-100 border-green-200');
     }
-    if (countryCity == '') {
+    if (countryCity === '') {
       setCountryState('border-red-700 text-red-700');
       noError = false;
     } else {
       setCountryState('text-green-100 border-green-200');
     }
-    if (address == '') {
+    if (address === '') {
       noError = false;
       setaddressState('border-red-700 text-red-700');
     } else {
@@ -113,8 +113,8 @@ const SignupForm = (props) => {
         inputValue={phoneNumber}
       />
 
-      {phoneState == 'border-red-700 text-red-700' ? <br /> : ''}
-      {phoneState == 'border-red-700 text-red-700' ? (
+      {phoneState === 'border-red-700 text-red-700' ? <br /> : ''}
+      {phoneState === 'border-red-700 text-red-700' ? (
         <span class="text-red-700">(Phone Number is required*)</span>
       ) : (
         ''
@@ -133,8 +133,8 @@ const SignupForm = (props) => {
         inputValue={countryCity}
       />
 
-      {countryState == 'border-red-700 text-red-700' ? <br /> : ''}
-      {countryState == 'border-red-700 text-red-700' ? (
+      {countryState === 'border-red-700 text-red-700' ? <br /> : ''}
+      {countryState === 'border-red-700 text-red-700' ? (
         <span class="text-red-700">(Country name and city are required*)</span>
       ) : (
         ''
@@ -152,8 +152,8 @@ const SignupForm = (props) => {
           addressState
         }
       ></textarea>
-      {addressState == 'border-red-700 text-red-700' ? <br /> : ''}
-      {addressState == 'border-red-700 text-red-700' ? (
+      {addressState === 'border-red-700 text-red-700' ? <br /> : ''}
+      {addressState === 'border-red-700 text-red-700' ? (
         <span class="text-red-700">(Address Required*)</span>
       ) : (
         ''
