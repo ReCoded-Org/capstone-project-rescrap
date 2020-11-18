@@ -577,6 +577,16 @@ video {
   height: auto;
 }
 
+@font-face {
+  font-family: 'Titillium Web';
+
+  src: local('Titillium Web'), url(./font/Titillium_Web/TitilliumWeb-Regular.ttf) format('Titillium Web');
+}
+
+*{
+  font-family: "Titillium Web";
+}
+
 .container {
   width: 100%;
 }
