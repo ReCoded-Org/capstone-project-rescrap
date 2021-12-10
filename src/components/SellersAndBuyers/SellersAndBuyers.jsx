@@ -41,8 +41,8 @@ const SellersAndBuyers = () => {
     return ( <div className="sellersBuyers">
         <div className="text-center pt-24">
         <Title classes=" text-green-200" text={ t('translation:pages.home.how-it-works') }/>
-        <a  onClick={sellerHandeler} className="cursor-pointer"><SubTitle classes={sellerHeader} text={ t('translation:pages.home.sellers') }/></a>
-        <a  onClick={buyerHandeler} className="cursor-pointer"><SubTitle classes={buyerHeader} text={ t('translation:pages.home.buyers') }/></a>
+        <span  onClick={sellerHandeler} className="cursor-pointer" ><SubTitle classes={sellerHeader} text={ t('translation:pages.home.sellers') }/></span>
+        <span  onClick={buyerHandeler} className="cursor-pointer"><SubTitle classes={buyerHeader} text={ t('translation:pages.home.buyers') }/></span>
         </div>
         <div className={sellerClasses}>
             <FeatureCard imgPath={seller1} imgDesc={ t('translation:pages.home.post-your-offer') }

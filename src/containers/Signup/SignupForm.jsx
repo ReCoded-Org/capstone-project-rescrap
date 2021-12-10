@@ -41,7 +41,7 @@ const SignupForm = (props) => {
     if (!user.firstLogin) {
       props.handleSubmit(user);
     }
-  }, [user]);
+  }, [user,props]);
 
   const inputHandler = (event) => {
     switch (event.target.name) {

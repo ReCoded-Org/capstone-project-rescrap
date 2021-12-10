@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useRef } from 'react';
 import {Link, useHistory} from 'react-router-dom';
 import RescrapLogo from './RescrapLogo';
 import NavbarItems from './NavbarItems';
@@ -15,18 +15,18 @@ const Navbar = (props) => {
   
   const {t, i18n}=useTranslation();
 
-
+  const refNavbar=useRef(document.getElementById("mainNav"))
   useEffect(() => {
       // document.dir=i18n.dir();
      
       if(i18n.language==="ar"){
-        navBar=document.getElementById("mainNav");
-        navBar.classList.add("active")
+      
+        refNavbar.classList.add("active")
       }
   }, [i18n,i18n.language])
 
 
-  useEffect(() => {
+  useEffect((history) => {
    setUser(props.userData);
    if(props.userData.loggedIn&&props.userData.firstLogin)
    history.push("/sign-up");
@@ -118,6 +118,8 @@ const items=NavbarItems;
                   <Link to={item.url}>{t("navigation."+item.label)}</Link>
                 </li>
               );
+               }else{
+                 return("")
                }
               }
                 

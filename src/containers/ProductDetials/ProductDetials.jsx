@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Intro from './Intro';
 import Info from './Info';
 import SuggestedProducts from './SuggestedProducts';
-// import { useHistory } from 'react-router-dom';
 import firebase from '../../firebase.config';
 
 const ProductsDetials = (props) => {
@@ -28,7 +27,7 @@ const ProductsDetials = (props) => {
     // history.replace("/shop");
   // }
 
-  useEffect( () => {
+  useEffect( (props) => {
     setProduct({
       addressDetails: '',
       category: '',
@@ -82,7 +81,7 @@ const ProductsDetials = (props) => {
   // console.log(props.match.params.id);
   return (
     <div>
-      <Intro imgSrc={productImg} description={product.description} 
+      <Intro imgSrc={productImg} 
         productName={product.productName}
         description={product.description}
         price={product.price}

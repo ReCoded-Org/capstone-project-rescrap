@@ -36,7 +36,7 @@ const initialImageStatus={
   const [imageStatus, setImageStatus] = useState(initialImageStatus);
   const [product, setProduct] = useState(initialProduct);
 
-  useEffect(() => {
+  useEffect((history) => {
     try {
       postRef = firebase.database().ref().child('posts');
       newPostKey = postRef.push().key;
@@ -48,7 +48,7 @@ const initialImageStatus={
     } catch (exception) {}
   }, []);
 
-  useEffect(() => {
+  useEffect((product) => {
     console.log(imageStatus);
     if (imageStatus.imageUploaded) {
       setProduct({ ...product, productImageKey: imageStatus.imageKey,datePosted:getDate() });
