@@ -27,7 +27,7 @@ const ProductsDetials = (props) => {
     // history.replace("/shop");
   // }
 
-  useEffect( (props) => {
+  useEffect( () => {
     setProduct({
       addressDetails: '',
       category: '',
@@ -75,7 +75,7 @@ const ProductsDetials = (props) => {
           fetchOwner(product.ownerID);
         });
     } catch (exception) {}
-  }, []);
+  }, [props]);
 
   // console.log(props);
   // console.log(props.match.params.id);
