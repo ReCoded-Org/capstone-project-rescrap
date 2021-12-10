@@ -30,7 +30,7 @@ function SuggestedProducts() {
   useEffect(() => {
     setStart(0);
     setItemsToShow((window.screen.width)/384);
-    firebase.database().ref('posts/').limitToLast(12).on('value', async function(snapshot) {
+    firebase.database().ref('posts/').orderByChild("datePosted").limitToLast(12).on('value', async function(snapshot) {
       
       const fetchImage = (imageID)=>{
         const ref =  firebase.storage().ref('/posts-images/'+imageID);
@@ -75,7 +75,7 @@ function SuggestedProducts() {
        <i  className=" far fa-angle-left text-green-100 hover:text-black font-bold hover:shadow-lg rounded-full text-6xl "
         onClick={(event)=>{
          if(start-itemsToShow>=0)
-        setStart(start-itemsToShow)
+        setStart(start-Math.round(itemsToShow))
       }}>  </i>
       </div>
      
@@ -93,8 +93,11 @@ function SuggestedProducts() {
 
 <i className="far fa-angle-right  text-green-100 hover:text-black font-bold hover:shadow-lg  text-6xl"
   onClick={(event)=>{
+    // console.log(start)
+    // console.log(Math.floor(itemsToShow))
+    // console.log(cards.length)
         if(start+itemsToShow <cards.length)
-        setStart(start+itemsToShow)
+        setStart(start+Math.round(itemsToShow))
       }}> </i>
       </div>
 
