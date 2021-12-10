@@ -6,7 +6,7 @@ exports[`matches the snapshot 1`] = `
 >
   <div />
   <div
-    className="intro-content p-12 py-24"
+    className="intro-content p-12 py-40"
   >
     <h1
       className="text-3xl normal text-green-200 my-4"
@@ -24,6 +24,5 @@ exports[`matches the snapshot 1`] = `
       translation:pages.home.sginup-btn
     </button>
   </div>
-   
 </div>
 `;

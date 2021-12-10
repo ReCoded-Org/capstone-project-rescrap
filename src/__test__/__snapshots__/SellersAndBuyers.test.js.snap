@@ -12,7 +12,7 @@ exports[`matches the snapshot 1`] = `
     >
       translation:pages.home.how-it-works
     </h1>
-    <a
+    <span
       className="cursor-pointer"
       onClick={[Function]}
     >
@@ -21,8 +21,8 @@ exports[`matches the snapshot 1`] = `
       >
         translation:pages.home.sellers
       </h2>
-    </a>
-    <a
+    </span>
+    <span
       className="cursor-pointer"
       onClick={[Function]}
     >
@@ -31,7 +31,7 @@ exports[`matches the snapshot 1`] = `
       >
         translation:pages.home.buyers
       </h2>
-    </a>
+    </span>
   </div>
   <div
     className="grid sm:row-gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  col-gap-32 mx-32 my-20"

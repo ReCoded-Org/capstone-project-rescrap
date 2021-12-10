@@ -11,7 +11,7 @@ exports[`matches the snapshot 1`] = `
       className="text-3xl normal text-green-100 pb-1"
     >
       translation:pages.contactus.form.title
-      <h1 />
+       
     </h1>
     <div
       className="py-1"
